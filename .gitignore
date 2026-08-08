@@ -1,0 +1,19 @@
+node_modules/
+site/dist/
+site/dist-ssr/
+site/.vite/
+*.local
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.pyc
+
+# Generated at build time; regenerate rather than edit.
+site/src/generated/
+# Copied from assets/video by the build.
+site/public/video/
+
+# NOTE: site/public/media/ is intentionally committed. It's generated from
+# assets/originals, but committing it lets CI deploy without pulling ~754 MB of LFS
+# objects on every build. Regenerate with: npm --prefix site run images

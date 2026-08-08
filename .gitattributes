@@ -1,0 +1,25 @@
+# Archive-quality originals (~754 MB). These cannot be re-fetched once the Adobe
+# Portfolio subscription lapses, so they are version controlled — but via LFS, to keep
+# ordinary clones and the Pages build fast.
+#
+# CI checks out with lfs: false and builds from site/public/media, which is committed
+# normally. That keeps LFS bandwidth at zero for deploys.
+assets/originals/** filter=lfs diff=lfs merge=lfs -text
+
+# The 6 rescued videos stay in ordinary git (39 MB total): CI skips LFS, and it copies
+# these into the site at build time rather than carrying a second committed copy.
+assets/video/**     binary
+
+# Web-sized derivatives are regular git objects: the deploy needs them without LFS.
+site/public/media/** -filter -diff -merge binary
+
+# Keep line endings sane across machines.
+*.md   text eol=lf
+*.json text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.mjs  text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
