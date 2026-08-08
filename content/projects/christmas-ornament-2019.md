@@ -13,6 +13,8 @@ source: adobe-portfolio
 
 As Christmas approached, my girlfriend and I had to figure out what to get for our parents. Having just purchased an Elegoo Mars MSLA 3D-Printer, I was eager to use it in making the gifts. I decided to make a customized Christmas ornament for our parents based on a scan of my girlfriend and I.
 
+## PROCESS
+
 After having a friend complete the scan using Skanect by Occipital with an old Kinect V1, I cleaned it up in Autodesk Meshmixer. There I also added the base and hanging loop (on our inner shoulders). I exported the model, set up supports in ChiTuBox, and sent it off to the printer.
 
 :::gallery
@@ -22,10 +24,10 @@ After having a friend complete the scan using Skanect by Occipital with an old K
   ::item{asset="98ff11c1-c296-44a3-a96a-8114adc5de02" caption="Post \"snow\" and clear coat."}
 :::
 
-## RESULTS
-
 After the first print came off looking great, I printed the rest two at a time. After priming them, we spent hours painting and trying to get close to the original colors. After they were painted, I went to apply a final protective clear coat. Unfortunately... I grabbed the wrong can and accidentally blasted them all with a white protective enamel. We rushed to get some of the spraypaint off with some Q-tips and rubbing alcohol, which was able to get most of the white off. Even then, they still had white speckles. We committed to the look and decided to make us look snowed-on. It was for Christmas after all!
 
 After double checking I had the right can, I applied a clear coat and we were able to bring all the ornaments to our family gatherings in time.
+
+## RESULTS
 
 Our families loved them, despite the spooky faces. The only problem now is topping it... annually.

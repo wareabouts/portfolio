@@ -24,9 +24,9 @@ The Integrated Teaching and Learning Laboratory (ITLL) at CU Boulder was updatin
   ::item{asset="51bc5a20-26f4-4c6f-ba6c-97cef3dcc152" caption="Animated Logo."}
 :::
 
-## Submission 2: Dimension
-
 This logo was made to directly call to the hands-on approach the ITLL takes to learning. For all of these logos, I started with the letters and distorted them to different extents. This was also my first time trying to make an animated logo, and I was really happy with the result.
+
+## Submission 2: Dimension
 
 :::gallery
   ::item{asset="4b7d78e7-d7d2-4a62-8a73-b52a3e198b70" caption="Vector logo."}

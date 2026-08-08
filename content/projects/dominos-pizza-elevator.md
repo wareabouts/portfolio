@@ -17,6 +17,8 @@ I branded the whole thing after my favorite pizza place, and they noticed!
 
 I was contacted by Dominos and paid to create a second, upgraded version with accompanying TikTok video for their social media.
 
+## process
+
 For the second version, I wanted to add some additional functionality, especially some from comments on the first version. 
 
 Ultimately this meant adding:
@@ -30,6 +32,8 @@ Lights were straightforward, and I updated the design of the platform to allow d
 I spent the majority of my time refining (read: overcomplicating) the lift mechanism. 
 
 The confetti cannon was made from a few sections of pipe, sealed with thread tape rated for gas and then with a small pushbutton release.
+
+## results
 
 After listening to brand-safe music for a week, trying to find something that I liked. I found it! From there, it was just a matter of lining up beats in the build. In truth, the final build was actually LESS reliable than the first version. Funny how when you add extra complexity, there's more opportunities for bugs!
 
@@ -59,7 +63,7 @@ At the end of the day, it worked well enough for the video and Domino's was happ
 
 :::column
 
-::figure{asset="04c71c6f-b7e4-42b6-b824-8e23fb935394"}
+::figure{asset="04c71c6f-b7e4-42b6-b824-8e23fb935394" caption="Initial design sketches"}
 
 :::
 

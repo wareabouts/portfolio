@@ -13,7 +13,11 @@ One of the many millions of memes circulating the internet inspired this Borzoi-
 
 The TLDR; is that someone sang FKA Twigs' "Cellophane" in the voice of Miss Piggy. From there, the internet did what it does and somehow related it to the Borzoi dog breed and their long long faces. Later, @drawzillazzz created a stylized animation, where the dog helps their owner retrieve the last chip in a Pringles can...
 
-You following the logic?.... No? Me either, I just think it's hilarious for some reason.So... I designed and built a costume for my vacuum that turned it's long handle into the quintessential Borzoi snout, and the narrow head attachment into an extended tongue. 
+You following the logic?.... No? Me either, I just think it's hilarious for some reason.
+
+process
+
+So... I designed and built a costume for my vacuum that turned it's long handle into the quintessential Borzoi snout, and the narrow head attachment into an extended tongue. 
 
 For the design I used Polycam on my iPad pro to get a 3D model of the rough shape of the vacuum. From there, I imported that into Blender and built a dog-shaped low-poly shell around it. Fortunately... I hoard random project parts and happened to have a long cylindrical cardboard tube that fit perfectly over the end of the vacuum. With those parts combined and the design finished, I exported the model using the papercraft addon for Blender, printed the files and transferred the template to cardboard. Taped together with masking tape, wrapped in newspaper soaked in Mod Podge and painted.... ta da! All that was left was buying Sour Cream and Onion Pringles, and filming the last few shots.
 

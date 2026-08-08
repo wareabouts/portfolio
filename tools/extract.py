@@ -288,21 +288,45 @@ def render_module(el, page, depth=0):
     kind = module_type(el)
 
     if kind == "text":
+        # One rich-text block often holds SEVERAL sections: title, body, title, body...
+        # so walk its children in order rather than assuming a single leading title.
+        # Body markup also varies across the site's history (`.main-text`, a bare <div>,
+        # or `.main-text` followed by more divs), which this handles uniformly.
         blocks = []
         for rt in el.select(".rich-text.module-text") or [el]:
-            title = rt.select_one(".title")
-            if title and title.get_text(strip=True):
-                blocks.append(f"## {clean_text(title.get_text(' ', strip=True))}")
-            # Markup varies across the site's history: some modules wrap the body in
-            # `.main-text`, some use a bare <div>, and some have `.main-text` followed by
-            # further content divs. Taking "the whole module minus its title" is the only
-            # form that captures all three without dropping trailing copy.
-            body_root = BeautifulSoup(rt.decode(), "html.parser")
-            for t in body_root.select(".title"):
-                t.decompose()
-            body = html_to_md(body_root)
-            if body:
-                blocks.append(body)
+            children = rt.find_all(recursive=False)
+            if not children:
+                body = html_to_md(rt)
+                if body:
+                    blocks.append(body)
+                continue
+
+            buf = []
+
+            def flush():
+                if not buf:
+                    return
+                frag = BeautifulSoup("".join(str(x) for x in buf), "html.parser")
+                body = html_to_md(frag)
+                if body:
+                    blocks.append(body)
+                buf.clear()
+
+            for child in children:
+                cls = child.get("class") or []
+                if "title" in cls:
+                    flush()
+                    t = clean_text(child.get_text(" ", strip=True))
+                    if t:
+                        blocks.append(f"## {t}")
+                elif "sub-title" in cls:
+                    flush()
+                    t = clean_text(child.get_text(" ", strip=True))
+                    if t:
+                        blocks.append(f"### {t}")
+                else:
+                    buf.append(child)
+            flush()
         return blocks
 
     if kind == "image":
@@ -396,11 +420,9 @@ def render_module(el, page, depth=0):
         # flex weights are dropped -- the renderer decides how (or whether) to split.
         cols = []
         for col in el.select(".tree-child-wrapper"):
-            inner = []
-            for child in col.find_all(class_="project-module", recursive=True):
-                if child.find_parent(class_="tree-child-wrapper") is not col:
-                    continue
-                inner.extend(render_module(child, page, depth + 1))
+            members = [c for c in col.find_all(class_="project-module", recursive=True)
+                       if c.find_parent(class_="tree-child-wrapper") is col]
+            inner = render_sequence(members, page, depth + 1)
             if inner:
                 cols.append("\n\n".join(inner))
         if not cols:
@@ -412,6 +434,30 @@ def render_module(el, page, depth=0):
         return ["::::columns\n\n" + inner + "\n\n::::"]
 
     return []
+
+
+def render_sequence(elements, page, depth=0):
+    """Render modules in document order, folding caption modules into the figure above.
+
+    Adobe puts a caption in its own `.module-caption-container` module -- sometimes a
+    sibling of the image, sometimes nested inside it, and sometimes inside a tree column.
+    Handling it in one place keeps all three cases working.
+    """
+    blocks, pending = [], None
+    for el in elements:
+        if module_type(el) == "caption":
+            cap = clean_text(el.get_text(" ", strip=True))
+            if cap and blocks and blocks[-1].startswith("::figure{"):
+                blocks[-1] = blocks[-1][:-1] + f' caption="{attr(cap)}"}}'
+            elif cap:
+                pending = cap
+            continue
+        rendered = render_module(el, page, depth)
+        if pending and rendered and rendered[0].startswith("::figure{"):
+            rendered[0] = rendered[0][:-1] + f' caption="{attr(pending)}"}}'
+            pending = None
+        blocks.extend(rendered)
+    return blocks
 
 
 def top_level_modules(container):
@@ -513,21 +559,7 @@ def extract_page(name, meta, cats):
     info = meta.get(name, {})
     title = info.get("title") or (h1.get_text(" ", strip=True) if h1 else name)
 
-    blocks, pending_caption = [], None
-    for el in top_level_modules(container):
-        if module_type(el) == "caption":
-            cap = el.get_text(" ", strip=True)
-            # Captions are siblings that follow their figure -- fold into the previous one.
-            if cap and blocks and blocks[-1].startswith("::figure{"):
-                blocks[-1] = blocks[-1][:-1] + f' caption="{attr(cap)}"}}'
-            elif cap:
-                pending_caption = cap
-            continue
-        rendered = render_module(el, name)
-        if pending_caption and rendered and rendered[0].startswith("::figure{"):
-            rendered[0] = rendered[0][:-1] + f' caption="{attr(pending_caption)}"}}'
-            pending_caption = None
-        blocks.extend(rendered)
+    blocks = render_sequence(top_level_modules(container), name)
 
     # The h1 becomes frontmatter `title`; drop any duplicate of it from the body.
     if blocks and blocks[0].lstrip("# ").strip().lower() == title.strip().lower():

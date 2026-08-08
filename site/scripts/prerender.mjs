@@ -1,8 +1,8 @@
-/**
+﻿/**
  * Bake every route into static HTML.
  *
  * GitHub Pages serves files, not routes, so a plain SPA would 404 on /openai-case until
- * the 404.html fallback kicked in — bad for search engines and link previews. Rendering
+ * the 404.html fallback kicked in -- bad for search engines and link previews. Rendering
  * each route to its own index.html means real markup on first paint; the client then
  * hydrates it.
  */
@@ -59,6 +59,16 @@ async function main() {
       continue
     }
 
+    // React 19 auto-preloads images with a srcset. renderToString has no <head> to hoist
+    // those <link> tags into, so it emits them inline; on the client React puts them in
+    // <head> instead, and the differing first child breaks hydration. Move them here so
+    // both sides agree -- and the preload hint survives.
+    const hoisted = []
+    html = html.replace(/<link\b[^>]*>/g, (tag) => {
+      hoisted.push(tag)
+      return ''
+    })
+
     let page = template
       .replace('<!--app-html-->', html)
       .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(r.title)}</title>`)
@@ -69,13 +79,31 @@ async function main() {
       .replace(/(<meta\s+property="og:title"\s+content=")[\s\S]*?(")/, `$1${esc(r.title)}$2`)
       .replace(/(<meta\s+property="og:description"\s+content=")[\s\S]*?(")/, `$1${esc(r.desc)}$2`)
 
-    if (r.image) {
-      page = page.replace('</head>', `  <meta property="og:image" content="${esc(r.image)}" />\n  </head>`)
+    // Vite rewrites href/src in index.html for the base path but not meta content, so
+    // point og:image at the right absolute URL here (project cover, else the default).
+    page = page.replace(
+      /(<meta\s+property="og:image"\s+content=")[^"]*(")/,
+      `$1${esc(r.image ?? `${base}og-image.jpg`)}$2`,
+    )
+
+    if (hoisted.length) {
+      page = page.replace('</head>', `  ${hoisted.join('\n    ')}\n  </head>`)
     }
 
-    const dir = r.url === '/' ? DIST : path.join(DIST, r.url)
-    fs.mkdirSync(dir, { recursive: true })
-    fs.writeFileSync(path.join(dir, 'index.html'), page)
+    if (r.url === '/') {
+      fs.writeFileSync(path.join(DIST, 'index.html'), page)
+    } else {
+      // Write both `slug/index.html` and `slug.html`.
+      //
+      // Static hosts disagree about extensionless paths: some resolve /about to
+      // about/index.html, others (including `vite preview`) fall through to the SPA
+      // shell -- which serves the *home* page's markup and breaks hydration. Emitting
+      // both means /about and /about/ are each served the right HTML directly.
+      const dir = path.join(DIST, r.url)
+      fs.mkdirSync(dir, { recursive: true })
+      fs.writeFileSync(path.join(dir, 'index.html'), page)
+      fs.writeFileSync(path.join(DIST, `${r.url}.html`), page)
+    }
     written++
   }
 

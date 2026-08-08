@@ -21,6 +21,8 @@ I've had the idea for a while, but worked on developing an MVP for around 3 mont
 
 Currently in the process of cleaning up the code and experimenting with the UI/UX around navigating the visualization.
 
+## PROCESS
+
 ( This process is kind of a TLDR, more complete [process blog here](/fishcity-devlog) )
 
 Because there wasn't really a platform to test out the user experience of navigating non-location content through a a city visualization, I spent most of capstone creating that. I wanted the city to develop procedurally, but had no experience creating something like that before. Much of the first month was spent creating a [Seeded Voronoi-Based Object Oriented Bounding Box Subdivision](https://codesandbox.io/s/dark-tree-l7eeu) process to create building plots.

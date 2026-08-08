@@ -19,13 +19,13 @@ I joined Ellumen at the end of a brand refresh. I created a new logo and accompa
 
 :::column
 
-::figure{asset="46b92854-7a29-4131-8855-851f8e101d37"}
+::figure{asset="46b92854-7a29-4131-8855-851f8e101d37" caption="Hand-drawn, frame animation of transition."}
 
 :::
 
 :::column
 
-::figure{asset="8182fb2d-8235-484c-afe6-bf5b5f46102b"}
+::figure{asset="8182fb2d-8235-484c-afe6-bf5b5f46102b" caption="Final transition animation made in Blender."}
 
 :::
 

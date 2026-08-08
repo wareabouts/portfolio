@@ -15,6 +15,8 @@ Chartreuse is a motion-tracking face made as the final project for ATLS 3300: Ob
 
 She was a joint project with [Anna Lynton](https://www.linkedin.com/in/anna-lynton-62a276179/) who edited and assembled the mask using Slicer for Autodesk Fusion 360. I worked on the electronics / design and [code](https://gist.github.com/scealux/136b90b354d1a31f203b4f4105bf7b94?fbclid=IwAR0_ZKMIEB0m4yTNhF6hlXD4e15cC9rFM0m8GRBGALyUnYse5ArOxjVZRo8).
 
+## process
+
 We wanted the project to be low cost and so we settled on MDF construction with a few supporting 3D Printed parts. I happened to have half of a PLA spool lying around that we decided to use as the "lazy Susan" for the rotating head. To get it to run smoothly, I bought a few loose ball bearings and 3D printed two halves of a ring to hold them captive. A soldering iron melts the two halves together. The bearings are held to tight to move at first. Placed between the smooth concrete floor and a plank of wood i stepped on the whole thing and moved around until it rolled smooth. The finished bearing reduces the work the stepper motor has to do.
 
 Anna drafted and sliced the mask in Autodesk Fusion 360 while I tested out various methods for motion tracking. From what we gathered, the original Albert tracks by flashing his eyes and using photodetectors to align the face toward the brightest nearby object. We were planning on having the eyes be reactive, and weren't interested in blinding the people who interacted with her. Additionally, Albert works best in a darker area and we wanted Chartreuse to work in other environments. After a few different tests, we decided an ultrasonic sensor rotating on a servo worked best for our application.

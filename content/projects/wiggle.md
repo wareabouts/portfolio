@@ -13,15 +13,17 @@ source: adobe-portfolio
 
 Having seen multi-lens Film cameras from the 80's, I wanted to see if it was possible to get a similar effect with a custom lens on my mirrorless camera. The original cameras simultaneously exposed multiple frames at the same time, capturing a moment from slightly different perspectives. Edited together into a GIF, by bouncing between the frames you can get a really interesting "moment-in-time" effect.
 
+## Process
+
 I forked the Sony E-Mount lens off an old prototype I had from a few years ago and rather than print it with a fixed distance focus I added a helicoid / focus ring.
 
 The design fits in 3 parts, the mount, focus ring, and slider. The mount interfaces with the camera body and has half of a tilt-snap bearing I’ve used before. The other half of the bearing is the focus ring and when the two halves come together around these 5.95mm plastic BB’s…. SNAP, the pieces are held together but the ring can still rotate freely.
 
 The last piece, the slider, interfaces with the threads on the focus ring but this notch and matching tab here stop it from rotating. That keeps the orientation of the lenses in line with the camera’s sensor!
 
-I needed lenses and a local film development shop was kind enough to let me scavenge them from used disposable cameras. I collected a few of the same and plucked the lenses. The image is surprisingly clear and definitely looks more... filmic?
+### I needed lenses and a local film development shop was kind enough to let me scavenge them from used disposable cameras. I collected a few of the same and plucked the lenses. The image is surprisingly clear and definitely looks more... filmic? A couple of tests later I was able to mostly separate each lens light into its own portion of the sensor.
 
-A couple of tests later I was able to mostly separate each lens light into its own portion of the sensor.
+## Outcome
 
 I finished the lens just in time for a trip to London. It was a great time to test it in a variety of situations!
 

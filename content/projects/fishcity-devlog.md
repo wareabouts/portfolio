@@ -11,15 +11,15 @@ source: adobe-portfolio
 
 This page was used to document project progress over the course of ATLS 4010: Capstone Projects
 
-Related Links:[fishcity.co](http://fishcity.co) (not yet published) | Project Proposal
+### Related Links: fishcity.co (not yet published) | Project Proposal
 
 ## Project Overview
 
-Elevator Pitch:
+### Elevator Pitch:
 
 An online education platform centered around connecting existing educational resources into a navigable “city” visualization.
 
-Description:
+### Description:
 
 fishcity is an online education platform built around the idea of connection and navigation of existing content. Typical online education platforms center around the creation of exclusive content. Locked behind a paywall, the website supports itself with paid memberships. I believe this model is flawed and leads to the creation of redundant and restricted content.
 
@@ -35,7 +35,7 @@ Development Progress:
 
 ## Dev Notes
 
-Pandemic Weeks: 3/10 -> 4/28
+### Pandemic Weeks: 3/10 -> 4/28
 
 Hi there. Been a minute. A lot's changed. The worlds gone a bit nuts. Anyways, I have a city!
 
@@ -55,7 +55,7 @@ all of it on Firebase!
 
 ::figure{asset="daab3875-5217-400c-9262-dfc7d7387f19"}
 
-Week 9: 3/3 -> 3/10
+### Week 9: 3/3 -> 3/10
 
 This week, the whole thing started looking like a city. I finished the OBB splitting algorithm...
 
@@ -80,11 +80,11 @@ That being said, once I get the city to display with THREEjs, there's two layers
 
 After that is Firebase integration and UI; neither is trivial but they're more in my wheelhouse than 3D graphics have been.
 
-Week 8: 2/25 -> 3/3
+### Week 8: 2/25 -> 3/3
 
 I posted for this week but I'm not sure where it went?...
 
-Week 7: 2/18 -> 2/25
+### Week 7: 2/18 -> 2/25
 
 This week involved getting back into procedural generation and tackling d3-delauany all over again. Last time I stopped working on the Voronoi pattern after I ran into issues being able to iterate through cells. I began this week by tackling that again, but instead of laying out sites randomly, I used a seeded random number generator so when I found an issue I could reproduce the same circumstances it occurred under.
 
@@ -116,7 +116,7 @@ Link to [Process Presentation](https://docs.google.com/presentation/d/1rhwnKlu7u
 
 ::figure{asset="02d74b08-f797-4298-972c-269002404cf4"}
 
-Week 5: 2/4 -> 2/11
+### Week 5: 2/4 -> 2/11
 
 Mentor Review & Placement Algorithm
 
@@ -182,7 +182,7 @@ After explaining the idea, I wrote down some of the following conversation:
 
 He offered to set up a meeting between myself and 4-5 education experts. We decided to try that closer to spring break when the MVP of my idea is functional. Then, I can sit down with the experts, explain my idea and get their first impressions as they navigate the city. That way, their input could help conceptualize where the platform heads as it expands.
 
-Week 4: 1/28 -> 2/4
+### Week 4: 1/28 -> 2/4
 
 3D City + Topic Based Node Grouping
 
@@ -197,24 +197,16 @@ From there, the goal was to prototype ways that the city might expand, and how t
 
 To keep things simple, I'm assuming each new node will have three referential pieces of information to inform its placement (3 tags, 2 tags + tool, category + tool + topic, etc.) My initial thought was having "tag capitals" (locations for certain tags), be anchor points, create circles of various radii around the points and find where the intersected to place the new point. It was along the lines of triangulation but felt a little over-complicated. Next, I looked into simple spring functions, where each could anchor to a "tag capital" and the rigidity / rest length of the spring could further weight placement. I didn't end up getting that to work (though I'm still looking to try it), but moved on to centroid and weighted centroid placement. They're easy to calculate and implement for triangles. For the weighted version, I'd assign weights to each of the informing pieces of data and, after the centroid is found, the weights pull the point off the centroid and toward them proportionally. The demo of that is also on [Code Sandbox.](https://codesandbox.io/s/city-generation-influences-test-vouhl)
 
-Week 3: 1/21 -> 1/28
-
-City generation cont. + Firebase Login
-
-I dove deeper into procedural city generation and research around it. I spent much of the week trying to complete an algorithm for placing Voronoi "seeds" across a grid evenly but randomly. I didn't get that complete, but in looking into it I ran into some other approaches for city generation. After learning about the Wave Function Collapse Algorithm and other methods for procedural generation, I realized a need create separate, modular layers for the final website.
-
-For this, I decided to have the city stored in GeoJSON format, a common format for mapping applications. One of the generators I liked (Medieval City Map Generator) has an option to export maps in the GeoJSON format.
+### Week 3: 1/21 -> 1/28 City generation cont. + Firebase Login I dove deeper into procedural city generation and research around it. I spent much of the week trying to complete an algorithm for placing Voronoi "seeds" across a grid evenly but randomly. I didn't get that complete, but in looking into it I ran into some other approaches for city generation. After learning about the Wave Function Collapse Algorithm and other methods for procedural generation, I realized a need create separate, modular layers for the final website. For this, I decided to have the city stored in GeoJSON format, a common format for mapping applications. One of the generators I liked (Medieval City Map Generator) has an option to export maps in the GeoJSON format.
 
 :::gallery
   ::item{asset="8365337c-194e-4c1c-83b0-47f71ce1926e" caption="Exported Map"}
   ::item{asset="3e945dbc-4625-41bd-934c-e4d013ff57bb" caption="Removing extraneous information from the geoJSON file"}
 :::
 
-I exported one of those maps, reduced it to just four-sided buildings and spent way too much time getting the JavaScript file to read the JSON. Then, information from the JSON file is used to build the city.
+### I exported one of those maps, reduced it to just four-sided buildings and spent way too much time getting the JavaScript file to read the JSON. Then, information from the JSON file is used to build the city. This process means that the city visualization becomes interchangeable, built on top of the GeoJSON standard. I didn't make it to adding Firebase login to the interface but I feel confident in focusing on the city visualization. I believe it is important to the overall experience and spending time polishing its look and navigation will contribute to the success of the platform.
 
-This process means that the city visualization becomes interchangeable, built on top of the GeoJSON standard. I didn't make it to adding Firebase login to the interface but I feel confident in focusing on the city visualization. I believe it is important to the overall experience and spending time polishing its look and navigation will contribute to the success of the platform.
-
-Week 2: 1/14 -> 1/21
+### Week 2: 1/14 -> 1/21
 
 First week of classes, building out the interface and setting up the city visualization.
 

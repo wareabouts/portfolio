@@ -11,7 +11,7 @@ source: adobe-portfolio
 
 :::column
 
-::figure{asset="e907d3c5-f68a-494e-9ace-94c0379d3240"}
+::figure{asset="e907d3c5-f68a-494e-9ace-94c0379d3240" caption="Screenshot of the final warehouse model in Blender"}
 
 :::
 
@@ -28,6 +28,8 @@ source: adobe-portfolio
 VR's come a long way, even since I first tried it in 2016. I've used the Valve Index over the last year and only recently picked up a Meta Quest 2. Trying out wireless VR and the impressive capability of the headset really made me want to take a swing at VR development.
 
 Ellumen works in training and after hearing about companies like StriVR creating VR training for Walmart, I proposed we do the same. My boss, Mary Caroll gave me the go-ahead and I began development.
+
+## process
 
 To create a realistic demo, I worked with one of the Ellumen trainers (Jeremy Wiley) to find relevant tasks that would work well in VR. Eventually, we'd settled on some basic inventory duties that would give participants experience navigating and manipulating objects in the virtual world. 
 

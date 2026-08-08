@@ -13,7 +13,11 @@ Another meme project! Maxwell the Cat has been making his rounds on social media
 
 Simple videos of the 3D model rotating in space garnered millions of views and spawned hundreds of remixes.
 
-I've loved seeing so many people, myself included, get excited about such a little cute thing... so I had to throw my hat in the ring. I'd seen these floating plant pots around on the internet before and bought a renewed one off Amazon. I stripped it down to the core components and used Blender and Autodesk Fusion 360 to create a new enclosure for the magnetic base and to replace the floating pot. 
+I've loved seeing so many people, myself included, get excited about such a little cute thing... so I had to throw my hat in the ring. 
+
+process
+
+I'd seen these floating plant pots around on the internet before and bought a renewed one off Amazon. I stripped it down to the core components and used Blender and Autodesk Fusion 360 to create a new enclosure for the magnetic base and to replace the floating pot. 
 
 Maxwell, the floater, was MSLA printed on my Elegoo Mars resin printer, and the base was printed in matte white PLA on my Creality CR-10. Some spackle, paint, nail polish topcoat, and string later... I had this:
 

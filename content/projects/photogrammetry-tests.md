@@ -57,7 +57,7 @@ I took the above model and retopologized it with Blender. The final model is opt
 
 On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Pose), I've done some tests with photogrammetry. I'm not happy with the results yet but this is just a selection of some of what I've tried!
 
-1. Worst-Case Test: bad quality camera, dim lighting, Few Source Photos ( Reality Capture )
+### 1. Worst-Case Test: bad quality camera, dim lighting, Few Source Photos ( Reality Capture )
 
 :::gallery
   ::item{asset="753df2c6-ecc6-4212-9714-e7d16bc47651"}
@@ -65,7 +65,7 @@ On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Po
   ::item{asset="1b8b3ce6-7fa0-49a8-820d-bbc4033d38ea"}
 :::
 
-2. Nose REference for Ghenghis Khan Costume
+### 2. Nose REference for Ghenghis Khan Costume
 
 :::gallery
   ::item{asset="cf6fa6ed-d363-480c-b53f-7090a43e8db4"}
@@ -73,7 +73,7 @@ On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Po
   ::item{asset="7c31be32-bcb6-4bf9-b018-9b81da42d509"}
 :::
 
-3. Ghenghis Khan COstume
+### 3. Ghenghis Khan COstume
 
 :::gallery
   ::item{asset="49112349-a379-47c0-ba19-d0712ffb386b"}
@@ -82,7 +82,7 @@ On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Po
   ::item{asset="e800fb07-5d21-483e-b40c-4f7ec2584d9a"}
 :::
 
-4. Tripod arm supports, cloudy day, full body
+### 4. Tripod arm supports, cloudy day, full body
 
 :::gallery
   ::item{asset="9a0cfc81-01ef-4180-8bb2-ceacd2cf18af"}

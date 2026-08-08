@@ -26,7 +26,7 @@ With the idea down, we divided up the work:
 - Ryan worked on the tree chopping mechanic and Thneed crafting. 
 - My brother, Andrew took a stab at the enemy( environmental defender? )'s AI and pathfinding.
 
-Assets created:
+### Assets created:
 
 :::gallery
   ::item{asset="5e90662d-bbb3-4f88-a787-d8e42c9e915b" caption="Onceler's Axe"}

@@ -45,11 +45,15 @@ Meta’s new Quest Pro includes “partial light blockers” for a more “immer
 
 The other day, their shape gave me an idea… and I just had to try it out.
 
+## process
+
 The most complicated step was making sure I had the correct geometry to model around. I dusted one of the light-blockers with some cornstarch to give it a non-repeating distinct texture, then used Polycam to create a 3D model. This combination worked out great and gave me a very useable model. 
 
 Not wanting to cover my Quest Pro istself in cornstarch, however, meant those dimensions were a bit harder to nail down. 
 
 Then, I hadn't used Fusion 360's surface modeling tools, but after a few tutorials I got the general process and the flexibility of PLA gave the parts some wiggle room.
+
+## reception
 
 It's been great to see people's responses to such a simple add-on. It quickly became my most downloaded model on Printables and was featured in a series of tweets by a prominent VR news source: Brad Lynch (SadlyItsBradley).
 

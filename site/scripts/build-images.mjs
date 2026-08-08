@@ -184,6 +184,31 @@ function indexExisting(assets) {
   return [...found.values()]
 }
 
+// Alex's own favicon / touch icon / social image, carried over from the original site
+// so the rebuild keeps his branding rather than a placeholder.
+const CHROME = {
+  '7879825e-e400-430a-89d5-f8d1f039c791': { out: 'favicon.png', size: 64 },
+  '70d66cda-2bb6-45c6-8262-a2bfb78def5e': { out: 'apple-touch-icon.png', size: 180 },
+  // JPEG, not PNG: it's a photo, and PNG made it a 1 MB social preview.
+  'd9ce7d9a-2ac3-4cd8-ad8e-5355561569a9': { out: 'og-image.jpg', width: 1200, jpeg: true },
+}
+
+async function buildChrome(assets) {
+  const pub = path.join(HERE, '../public')
+  for (const [uuid, spec] of Object.entries(CHROME)) {
+    const a = assets.find((x) => x.uuid === uuid)
+    if (!a) continue
+    const src = path.join(SRC, `${a.uuid}.${a.ext}`)
+    const dest = path.join(pub, spec.out)
+    if (!fs.existsSync(src) || (fs.existsSync(dest) && !force)) continue
+    const sized = spec.size
+      ? sharp(src).resize(spec.size, spec.size, { fit: 'cover', position: 'centre' })
+      : sharp(src).resize({ width: spec.width, withoutEnlargement: true })
+    await (spec.jpeg ? sized.jpeg({ quality: 85 }) : sized.png()).toFile(dest)
+    console.log(`  chrome -> public/${spec.out}`)
+  }
+}
+
 async function main() {
   fs.mkdirSync(OUT, { recursive: true })
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'))
@@ -202,6 +227,8 @@ async function main() {
       JSON.stringify(Object.fromEntries(existing.map((r) => [r.uuid, r]))))
     return
   }
+
+  await buildChrome(assets)
 
   const stats = { still: 0, animated: 0, covers: 0, missing: [], copiedAnimated: [] }
   const results = []

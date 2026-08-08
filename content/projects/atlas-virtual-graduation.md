@@ -15,6 +15,8 @@ With my college graduation canceled because of COVID-19; faced with the alternat
 
 The idea was to recreate the event location on a platform that allowed faculty, students and their families to "return" to campus one last time. I've used photogrammetry in the past, and was planning to use that for the playable area. That said, I was planning to use socket.io to create a simple Three.js multiplayer experience that allowed users to walk around and talk via text chat.
 
+## process
+
 In doing research into how to create the multiplayer platform, I quickly came across Mozilla Hubs. They were already in the process of building the infrastructure for VRChat-style interactions in the browser. I decided to build around their platform which greatly reduced the workload really enabled the whole experience. That left me to focus on the avatar customizer and the custom map.
 
 I started with the map. Never having used Blender before, and with YouTube as my guide, I learned the workflow for capturing and cleaning up photogrammetry scans in the software. I was looking into a couple paid paid photogrammetry software solutions, but ultimately chose to use the open-source Alice Vision Meshroom. I probably visited the area outside the Visual Arts Center a dozen times, each time returning with a new set of pictures to process. I learned something each time, and after upgrading from my mirrorless camera to a DJI Mavic Mini, I was able to get a highly detailed scan of the entire plaza.

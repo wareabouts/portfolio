@@ -7,8 +7,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ab109214-a970-48e4-bb5e-42f4ff00a20e_rwc_159x0x3511x3511x3511.jpg?h=ccf26b466021eebe4f728a9ea760cba8",
       "is_original": false,
       "best_width": 3511,
-      "intrinsic_width": 3511,
-      "intrinsic_height": 3511,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -33,8 +33,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/5e31c287-88d3-4a4d-b215-ec8004e5442b_rwc_0x157x964x964x964.jpeg?h=42c5e82c5e5a0e9a28db27a70d0cdad7",
       "is_original": false,
       "best_width": 964,
-      "intrinsic_width": 964,
-      "intrinsic_height": 964,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -59,8 +59,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/be2e15e7-d623-49db-a855-10de622e9ed0_rwc_0x0x530x530x530.gif?h=8845e85026425bb6e8ea83a1edbd1e60",
       "is_original": false,
       "best_width": 530,
-      "intrinsic_width": 530,
-      "intrinsic_height": 530,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -85,8 +85,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/0b978638-4645-4a0b-9180-5e9403a5bb5f_rwc_0x0x530x530x530.gif?h=b335c32f0929d5576d2f6168b10425dc",
       "is_original": false,
       "best_width": 530,
-      "intrinsic_width": 530,
-      "intrinsic_height": 530,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -111,8 +111,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3d88a5fc-153f-4453-a711-3f6a8602ea9c_rwc_323x755x1186x1186x1186.jpg?h=a6bfe957b169851fa42ad8f075530be8",
       "is_original": false,
       "best_width": 1186,
-      "intrinsic_width": 1186,
-      "intrinsic_height": 1186,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -137,8 +137,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c4a945f1-6654-44cb-839b-34796274b620_rwc_102x102x294x294x294.gif?h=2f5ee6a2ac79676dfbcb8119287e7e36",
       "is_original": false,
       "best_width": 294,
-      "intrinsic_width": 294,
-      "intrinsic_height": 294,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -163,8 +163,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/0b1ad96e-ff5a-4cb7-af01-24f651a11420_rwc_0x0x500x500x500.gif?h=8048b9fff0ec4b279b3efb437f3b4f41",
       "is_original": false,
       "best_width": 500,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -189,8 +189,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/dcc9fe88-5043-4fa5-b1ea-d53d0145ff5f_carw_1x1x5120.gif?h=de9ae036c2d666a015645ae43babb17a",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -215,8 +215,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3c91d65b-c466-4529-9ae6-8793c8c0510b_rwc_0x0x600x600x600.gif?h=639d5590f7f1a1ff5e0b16b8deda65d4",
       "is_original": false,
       "best_width": 600,
-      "intrinsic_width": 600,
-      "intrinsic_height": 600,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -241,8 +241,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/bc3d3cdd-9702-45c9-8ba1-aae8eb3baee3_rwc_0x0x500x500x500.gif?h=bb612f79e9f2381ac0bebdf390f01938",
       "is_original": false,
       "best_width": 500,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -267,8 +267,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/1099521e-bfbd-46f6-9b8e-621dae09e770_rwc_0x0x500x500x500.gif?h=884354f089110191b6d927722ac1e329",
       "is_original": false,
       "best_width": 500,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -293,8 +293,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ea38e073-dc5d-4a6c-9ba0-1acecb71cb03_carw_1x1x5120.gif?h=aa9dc8738e4d2069058c0e634b5a132b",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -319,8 +319,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/69f12581-9651-428a-85ae-30047509eff1_carw_1x1x5120.gif?h=b32a21755d6d6c3ccf0b31ca48658164",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 650,
-      "intrinsic_height": 650,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -345,8 +345,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ff9c8754-adcc-4f7b-9d52-5040d1d67696_carw_1x1x5120.gif?h=7428fc0800ca3af130a1e7681add8a62",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 431,
-      "intrinsic_height": 431,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -371,8 +371,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/299e9694-c668-4bbc-99de-d3fe2e2a013b_carw_1x1x5120.jpg?h=631ca82d47f106c8ce5a14ff67118b75",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 3608,
-      "intrinsic_height": 3608,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -397,8 +397,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c76d56c8-8155-4c05-be6a-7f61db6b4123_carw_1x1x5120.jpg?h=2bc2c5adf7f58052100e17da9bb484a1",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 5120,
-      "intrinsic_height": 5120,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -423,8 +423,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/84d9db20-a3ab-413f-a159-afab05779f0a_rwc_0x0x533x533x533.jpg?h=68ad340fc56d38350bc83eb6c4417b47",
       "is_original": false,
       "best_width": 533,
-      "intrinsic_width": 533,
-      "intrinsic_height": 533,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -449,8 +449,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3f606f5c-63fb-407e-aeb4-bbe3f990fb88_carw_1x1x5120.gif?h=29e144446df2ac97e232ec8fab6f0d07",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 600,
-      "intrinsic_height": 600,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -475,8 +475,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/783db8e9-0ba0-4c5d-8fce-4c75d306a60a_carw_1x1x5120.gif?h=cbd880ea54b44b434381b60571706c9b",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 397,
-      "intrinsic_height": 397,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -501,8 +501,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/512432d9-7ea0-4c31-9480-1ef0e95fb647_carw_1x1x5120.gif?h=502f542f0e3125bba6b68d8fbb00f79d",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 436,
-      "intrinsic_height": 436,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -527,8 +527,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ba80df2b-9445-4ae3-8f3c-3e2a339a304f_carw_1x1x5120.gif?h=641770f5e0c1a0c455deb202ca5d2d87",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 334,
-      "intrinsic_height": 334,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -553,8 +553,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c1db8307-050f-4c15-b686-631aaa4b5156_carw_1x1x5120.jpg?h=79bc5c731fda390e3da07a12206594ae",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 3870,
-      "intrinsic_height": 3870,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -579,8 +579,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/5d26ef59-993b-4374-8145-5551a0202bde_carw_1x1x5120.jpg?h=2bb5978505ac9bbc2b1d7b74d7292e54",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1920,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -605,8 +605,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c1e5de02-4dd0-4aa5-b3f4-a787222e4bed_carw_1x1x5120.jpg?h=02b73b4f1203d9f02446079a875b0aaf",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2212,
-      "intrinsic_height": 2212,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -631,8 +631,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/0ce9eedc-506a-4ba8-9ab3-74588da64a27_carw_1x1x5120.jpg?h=c70369b6b0d50704726b59b391bec94b",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2104,
-      "intrinsic_height": 2104,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -657,8 +657,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/82a37fab-2173-4bfa-a5fd-390c9a5d2a12_carw_1x1x5120.jpg?h=fd550ff6ce8946acc4f56625c4b99c7c",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1569,
-      "intrinsic_height": 1569,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -683,8 +683,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d96ceaea-7735-4ecf-ba27-49b7cae9ab9d_carw_1x1x5120.jpg?h=4e336fd923cc7f6c60a69249c0481310",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2304,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -709,8 +709,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/598a7f07-5c3d-422d-b3dd-e0c5b766ea82_carw_1x1x5120.gif?h=af8ea0d5190237395f840d04938ac026",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 500,
-      "intrinsic_height": 500,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -735,8 +735,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a32648ff-5ca9-4089-a09a-aecf4ac6cb36_carw_1x1x5120.jpg?h=99c09c9ea327e36a654eff3bb2069045",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2304,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -761,8 +761,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ba8a3693-8a7c-40b2-832e-c50919fb4b2d_carw_1x1x5120.jpg?h=42a3f9fd62f4d39beed7fdc2beba2cb2",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1080,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -787,8 +787,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/ace0cf7a-e83d-4936-946e-d989a7be4ccb_carw_1x1x5120.jpg?h=854c56607c30bdfc156b7ac489b5a15a",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1953,
-      "intrinsic_height": 1953,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -813,8 +813,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/72c1b81f-1f10-479f-8ab9-523daa04cc29_carw_1x1x5120.png?h=1d8ee1baa53e3f05df62f134ce8be841",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 740,
-      "intrinsic_height": 740,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -839,8 +839,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2edceeab-4bdc-44e6-924e-bc3f3f82841b_carw_1x1x5120.jpg?h=602d94a714c45848a6889c6007806948",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2355,
-      "intrinsic_height": 2355,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -865,8 +865,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/b479d1ae-89d0-4416-bf82-795449c531d3_carw_1x1x5120.jpg?h=1791abde1482fe8af770465a17192814",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 559,
-      "intrinsic_height": 559,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -891,8 +891,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3f7fe519-f170-4948-853e-0231d60b735f_carw_1x1x5120.PNG?h=36ab5cb3f11648bea32402372e0eb7fa",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 446,
-      "intrinsic_height": 446,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -917,8 +917,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/1cadb04e-0724-4eb9-a27f-6149196fc1e7_carw_1x1x5120.png?h=4de7327f815a584e651d87954394e0ec",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1465,
-      "intrinsic_height": 1465,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -943,8 +943,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e25c7f12-0fe6-4aac-ac17-81570589f544_carw_1x1x5120.png?h=3cddfda647a23e8b2b2bc4bca8dabb0e",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1920,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -969,8 +969,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/cac1df65-3a73-4d91-bc71-5442fcea25c9_carw_1x1x5120.jpg?h=0acd8f017e0372e06def7d0faf7c0049",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2304,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -995,8 +995,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/4124f01b-97d5-4af2-b4dd-37fe32ef7c3a_carw_1x1x5120.PNG?h=df42b235fac75293fdcbc55e6c858425",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 794,
-      "intrinsic_height": 794,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -1021,8 +1021,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a27a1b25-8a1f-4a9e-b595-f2b662973b58_carw_1x1x5120.gif?h=db16151ac49118a98313af7ec4459bdd",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 410,
-      "intrinsic_height": 410,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -1047,8 +1047,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/5c4d0fc1-9696-41ba-b6be-17c16ab146e6_carw_1x1x5120.jpg?h=de2d6c14bc984456b8062dcca18b6f74",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 2520,
-      "intrinsic_height": 2520,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -1073,8 +1073,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/b704312b-ac18-409d-8656-a216a1b6ae8c_carw_1x1x5120.PNG?h=edcd72f0645775c2e34a0a8a58227851",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 847,
-      "intrinsic_height": 847,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -1099,8 +1099,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/bde3c931-ae42-42fa-a0cb-18c3888d69f0_carw_1x1x5120.png?h=6da50775c0298e314746e5c61fdb1be0",
       "is_original": false,
       "best_width": 5120,
-      "intrinsic_width": 720,
-      "intrinsic_height": 720,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "cover"
@@ -1125,8 +1125,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/cd769df0-e25c-4a6b-925b-b12c24cf5246_rwc_4x0x651x321x4096.png?h=30984cbaada3c988bb4451484e7ec168",
       "is_original": false,
       "best_width": 4096,
-      "intrinsic_width": 651,
-      "intrinsic_height": 321,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": "Alex Fiel Logo",
       "roles": [
         "chrome"
@@ -1151,8 +1151,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/7879825e-e400-430a-89d5-f8d1f039c791_carw_1x1x32.png?h=f278185c1032e67669fad9e585830851",
       "is_original": false,
       "best_width": 32,
-      "intrinsic_width": 32,
-      "intrinsic_height": 32,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "chrome"
@@ -1177,8 +1177,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/70d66cda-2bb6-45c6-8262-a2bfb78def5e_carw_1x1x180.png?h=7d4eaafda1f6e3511cf931c9be4edc95",
       "is_original": false,
       "best_width": 180,
-      "intrinsic_width": 180,
-      "intrinsic_height": 180,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "chrome"
@@ -1203,8 +1203,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d9ce7d9a-2ac3-4cd8-ad8e-5355561569a9_rwc_0x0x1370x789x1370.PNG?h=c0f6033bc7349b0664b5d446d8662f27",
       "is_original": false,
       "best_width": 1370,
-      "intrinsic_width": 1370,
-      "intrinsic_height": 789,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "chrome"
@@ -1229,8 +1229,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/9b927fa2-d193-49dc-a338-27168d09cb08.jpg?h=6e6a1c97ae2abef1681b8faefa1963ab",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 8333,
-      "intrinsic_height": 8333,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -1255,8 +1255,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/6ae14c01-2545-47da-b680-fb3f340de0c3.jpg?h=f375bb3d56be90fa4b2f563dffe1ce9d",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4608,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -1308,7 +1308,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 2756,
+      "intrinsic_height": 2755,
       "alt": null,
       "roles": [
         "gallery"
@@ -1334,7 +1334,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3170,
+      "intrinsic_height": 3169,
       "alt": null,
       "roles": [
         "gallery"
@@ -1360,7 +1360,7 @@
       "is_original": false,
       "best_width": 1200,
       "intrinsic_width": 851,
-      "intrinsic_height": 1433,
+      "intrinsic_height": 1432,
       "alt": null,
       "roles": [
         "gallery"
@@ -1489,8 +1489,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d08f6066-2fe6-4f2f-adc8-be466cd92334.png?h=120babdcdb6b7ddc3a58aee988483614",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1280,
-      "intrinsic_height": 720,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -1515,8 +1515,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d48ee981-11b3-4b59-8b7a-82fe02e13127.PNG?h=77b0d94e9914fb3e893d1c8b56e45390",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1168,
-      "intrinsic_height": 636,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -1724,7 +1724,7 @@
       "is_original": false,
       "best_width": 600,
       "intrinsic_width": 407,
-      "intrinsic_height": 729,
+      "intrinsic_height": 728,
       "alt": null,
       "roles": [
         "gallery"
@@ -1749,8 +1749,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/b3650d2d-56fd-4f5a-85c9-033b41c12dd0.PNG?h=d009560bd895c26eb7a57e0085a6263a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 950,
-      "intrinsic_height": 746,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -1775,8 +1775,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d8f00ef4-a63b-4ea9-9f7b-9c2b76a6bf7d.PNG?h=abbfe9e53d917fac9d7ca1c85b83ecdf",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 930,
-      "intrinsic_height": 751,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2347,8 +2347,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/59b27475-ede9-403c-b9ae-a5a37b272129.jpg?h=292c7cd424fb6ee2eb933eb9983fa5c4",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1200,
-      "intrinsic_height": 700,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2373,8 +2373,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2e939af0-74f5-43bf-827f-0f792e59e171.jpg?h=ec3e86f8e593d73ed907b084a76f975f",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 6144,
-      "intrinsic_height": 8160,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2452,7 +2452,7 @@
       "is_original": false,
       "best_width": 1200,
       "intrinsic_width": 1036,
-      "intrinsic_height": 772,
+      "intrinsic_height": 771,
       "alt": null,
       "roles": [
         "gallery"
@@ -2660,7 +2660,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 2410,
+      "intrinsic_height": 2409,
       "alt": null,
       "roles": [
         "gallery"
@@ -2685,8 +2685,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e806463b-57a7-4a71-89f8-d91a3bf3553c.jpg?h=dc0c703d8aa3941f75a6c43fd49e3c5e",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 5724,
-      "intrinsic_height": 3867,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2712,7 +2712,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 1863,
+      "intrinsic_height": 1862,
       "alt": null,
       "roles": [
         "gallery"
@@ -2738,7 +2738,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 3396,
+      "intrinsic_height": 3395,
       "alt": null,
       "roles": [
         "gallery"
@@ -2763,8 +2763,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3752f770-afb2-4c87-a09a-b7a3ea4c1c3a_rw_3840.JPG?h=197185354437556c2e92230b992e94b6",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -2816,7 +2816,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 3654,
+      "intrinsic_height": 3653,
       "alt": null,
       "roles": [
         "gallery"
@@ -2945,8 +2945,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2921d13b-839b-49ce-b700-ea7c86f28dc8.png?h=9a565f7d66642c421c661c7cca1c1c6a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 561,
-      "intrinsic_height": 94,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2971,8 +2971,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/60cf49c4-3996-44aa-bcdf-17901a63ec2c.jpg?h=c29736e4cd4275d95652093087368a55",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1862,
-      "intrinsic_height": 1223,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -2997,8 +2997,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/446d24a9-e306-4c45-9102-2915743f6912.jpg?h=1882d75e95f4e07b28a3828c435477b0",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 2232,
-      "intrinsic_height": 1376,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3076,7 +3076,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3610,
+      "intrinsic_height": 3609,
       "alt": null,
       "roles": [
         "gallery"
@@ -3127,8 +3127,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/48af06b9-e280-4304-ae97-c99300bfd575.PNG?h=c1ca93c1942a90c2d8cf6755a2b91fc1",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1659,
-      "intrinsic_height": 847,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3153,8 +3153,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/d6f77904-8a35-481a-b7ea-f4f7bee13fd0.jpg?h=d1245648fc89d60657f151c30d05b1ab",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4608,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3284,7 +3284,7 @@
       "is_original": false,
       "best_width": 1200,
       "intrinsic_width": 1075,
-      "intrinsic_height": 486,
+      "intrinsic_height": 485,
       "alt": null,
       "roles": [
         "gallery"
@@ -3309,8 +3309,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/bac47fab-a047-49b0-96f3-19ea83893214.jpg?h=77d6520c9b6252afe76a7041afd95f24",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1080,
-      "intrinsic_height": 1533,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3335,8 +3335,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/8ea974ae-ccf1-4b3d-9024-b7105932f9e6.jpg?h=db9711eee212837e67ec020d91072dc1",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 5093,
-      "intrinsic_height": 3177,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3361,8 +3361,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e1219031-c5b2-4c7c-bac9-ddaeadac3e38.jpg?h=c13b9292828c4125bfd9867fe27995d9",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 6000,
-      "intrinsic_height": 3376,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3387,8 +3387,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/04c71c6f-b7e4-42b6-b824-8e23fb935394.jpg?h=a42a896e17b54e4bd725f6a77adfc4fa",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1668,
-      "intrinsic_height": 2388,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3413,8 +3413,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e7046a11-bc76-4646-9e2d-8634eb553e85.jpg?h=e979502765acb37c33508e59145580a4",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1668,
-      "intrinsic_height": 2388,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3439,8 +3439,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c3cf3e71-e6cd-4831-accc-d1da3517cb14.gif?h=ff894eaae2d9f5d2a6b0bc3cba08a83e",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 600,
-      "intrinsic_height": 600,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3465,8 +3465,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/46b92854-7a29-4131-8855-851f8e101d37.GIF?h=b30e1348dd711550480fdcbb4ac12631",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1080,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3491,8 +3491,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/8182fb2d-8235-484c-afe6-bf5b5f46102b.gif?h=c8d2956e1ca458c9f2916057719d0757",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 437,
-      "intrinsic_height": 338,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -3544,7 +3544,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1576,
-      "intrinsic_height": 1464,
+      "intrinsic_height": 1463,
       "alt": null,
       "roles": [
         "gallery"
@@ -3570,7 +3570,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1576,
-      "intrinsic_height": 1464,
+      "intrinsic_height": 1463,
       "alt": null,
       "roles": [
         "gallery"
@@ -3882,7 +3882,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3413,
+      "intrinsic_height": 3412,
       "alt": null,
       "roles": [
         "gallery"
@@ -3908,7 +3908,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3413,
+      "intrinsic_height": 3412,
       "alt": null,
       "roles": [
         "gallery"
@@ -3934,7 +3934,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3413,
+      "intrinsic_height": 3412,
       "alt": null,
       "roles": [
         "gallery"
@@ -3960,7 +3960,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3413,
+      "intrinsic_height": 3412,
       "alt": null,
       "roles": [
         "gallery"
@@ -3986,7 +3986,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3413,
+      "intrinsic_height": 3412,
       "alt": null,
       "roles": [
         "gallery"
@@ -4012,7 +4012,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3142,
+      "intrinsic_height": 3141,
       "alt": null,
       "roles": [
         "gallery"
@@ -4038,7 +4038,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3087,
+      "intrinsic_height": 3086,
       "alt": null,
       "roles": [
         "gallery"
@@ -4064,7 +4064,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3215,
+      "intrinsic_height": 3214,
       "alt": null,
       "roles": [
         "gallery"
@@ -4090,7 +4090,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 3224,
+      "intrinsic_height": 3223,
       "alt": null,
       "roles": [
         "gallery"
@@ -4167,8 +4167,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2e0ec87f-845a-4ce4-84bb-de5be61d11d2.png?h=d16100fde1d07a85d1df0dd5e75d0bbf",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 3600,
-      "intrinsic_height": 1387,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4193,8 +4193,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/fa35a3d2-43b7-4232-8d13-e5218adf3a9b.PNG?h=81dc55f0441556405f2f7f3d7e4105de",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1111,
-      "intrinsic_height": 636,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4219,8 +4219,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e0c7d992-2b75-4703-bb69-6da570b46d7f.gif?h=3992dc585f76d8a01dfffd5b28bee60a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 590,
-      "intrinsic_height": 525,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4245,8 +4245,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2b4ab4ff-f0d4-4c0f-9f44-6839bc369bc8.gif?h=73624f1f034bb5c6a680c08d24f4da76",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1108,
-      "intrinsic_height": 685,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4271,8 +4271,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/daab3875-5217-400c-9262-dfc7d7387f19.PNG?h=cd8bef489a4b06ed37171395fd3ac2dd",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1295,
-      "intrinsic_height": 703,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4401,8 +4401,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/60ff6ac3-4f5e-4e82-b362-bca12563389f.PNG?h=5ba555816e31c3c6d45cf2e5f4ec32a4",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 891,
-      "intrinsic_height": 889,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4427,8 +4427,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/f813e650-5644-4c21-8c3b-671c294530c4.PNG?h=3a894dae975acdd8b2d9b163686685f6",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 757,
-      "intrinsic_height": 466,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4453,8 +4453,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/002fe25b-e940-4cdf-9e71-163c6b7ab779.PNG?h=d4cb879d4254a2d7da95f5a2c7a9bd0a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 788,
-      "intrinsic_height": 728,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4479,8 +4479,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/74b4556d-9b1d-4a31-b8f4-91a06aec8e45.PNG?h=c962996a52eda0511078fd741af3436e",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 767,
-      "intrinsic_height": 711,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4505,8 +4505,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/105150d6-6757-4e42-a4aa-110a13374ed8.PNG?h=67e648578f20acab5d93bb27c43bcc80",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 531,
-      "intrinsic_height": 153,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4531,8 +4531,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/02d74b08-f797-4298-972c-269002404cf4.png?h=8e93f37546c629b8e27771456d8264d5",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 5692,
-      "intrinsic_height": 3200,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4557,8 +4557,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/72677675-4a03-4f5c-a7ef-b41c4aaf31d0.PNG?h=3d72704d298c9496cf23f9fef808968a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 755,
-      "intrinsic_height": 422,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4610,7 +4610,7 @@
       "is_original": false,
       "best_width": 600,
       "intrinsic_width": 529,
-      "intrinsic_height": 484,
+      "intrinsic_height": 483,
       "alt": null,
       "roles": [
         "gallery"
@@ -4687,8 +4687,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/c6878fcb-153e-4f3a-9d58-712c79126716.png?h=3d7078e410afaf253403d9fd53ab1d01",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 3600,
-      "intrinsic_height": 1387,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4895,8 +4895,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/012987b8-46c4-4efc-b245-d87d1145b4a2.PNG?h=8992002614ab485af2a37924842ad7a0",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 891,
-      "intrinsic_height": 889,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4921,8 +4921,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/47732756-2eb7-44a1-ad10-2e81d20097f1.png?h=dd4548298ec98f35c8756ff3aabd7bb9",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1293,
-      "intrinsic_height": 774,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4947,8 +4947,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/967c3f61-c0af-4a7b-8b56-641f91d98814.png?h=359200df26ee28d30dcb92ea69d6e9e2",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1280,
-      "intrinsic_height": 720,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4973,8 +4973,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/36299b85-be4e-4a56-9f09-c8886ffb8509.jpg?h=b59679b4c287559909e447cd483f23a0",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4608,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -4999,8 +4999,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/08485b76-934c-4d00-bf86-56a1e35888e3.gif?h=caf9f501bc7b5326d028a564f43d1a73",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 650,
-      "intrinsic_height": 600,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5025,8 +5025,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/4328cb02-3f47-44aa-8b54-5a23f91151be.PNG?h=8065dcedb2c24543de5fea515ebd4cda",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1264,
-      "intrinsic_height": 581,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": "Screenshot of the finished Glowforge page.",
       "roles": [
         "figure"
@@ -5051,8 +5051,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/9996e9dd-d39c-4d49-898e-ef4fef268df8.png?h=e2221bb2ba1d2e558aa335f8fe33de45",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5077,8 +5077,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/8ab5d320-9f12-4e0c-bcc1-423c0e923572.gif?h=cee3962e3c9f4595db600feef2f3461d",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 500,
-      "intrinsic_height": 436,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5103,8 +5103,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/b268389b-53ac-48c8-ad6f-a40da6fb72da.gif?h=fa0bc8e84616edc4de042ad7750d00ee",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 500,
-      "intrinsic_height": 293,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5493,8 +5493,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3a2a9683-05f5-4899-b7b9-254a86601360.gif?h=13d27389880e0536fb0c37a4725e60cb",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 600,
-      "intrinsic_height": 600,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5753,8 +5753,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/3b5231cd-5b25-4321-addd-7aba2f19e992.jpg?h=0181eda3a50d007f852050271a04e3a4",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -5780,7 +5780,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2259,
+      "intrinsic_height": 2258,
       "alt": null,
       "roles": [
         "gallery"
@@ -5806,7 +5806,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2161,
+      "intrinsic_height": 2160,
       "alt": null,
       "roles": [
         "gallery"
@@ -5832,7 +5832,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2161,
+      "intrinsic_height": 2160,
       "alt": null,
       "roles": [
         "gallery"
@@ -5858,7 +5858,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2161,
+      "intrinsic_height": 2160,
       "alt": null,
       "roles": [
         "gallery"
@@ -5910,7 +5910,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2161,
+      "intrinsic_height": 2160,
       "alt": null,
       "roles": [
         "gallery"
@@ -5962,7 +5962,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2161,
+      "intrinsic_height": 2160,
       "alt": null,
       "roles": [
         "gallery"
@@ -6013,8 +6013,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/325362b2-0b62-4fc3-ad0a-cfea8fa19b76.jpg?h=b100032a22998e1b5bb174152b00399d",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4451,
-      "intrinsic_height": 2225,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6039,8 +6039,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2c47571d-d7e3-473f-890a-f3d8ecebabd0_rw_3840.JPG?h=6d4957f1a2beb77b194c48a9f7b4b4c7",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6144,7 +6144,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1484,
+      "intrinsic_height": 1483,
       "alt": null,
       "roles": [
         "gallery"
@@ -6169,8 +6169,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/cb09d1a8-65f5-4e61-951f-444f858246e7_rw_3840.JPG?h=03cb37bf353ddda620bfa5f71fbb7b16",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6221,8 +6221,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/4e13f1af-da07-4c9d-b038-b412d8c89da0_rw_3840.JPG?h=2dec51e671faba5e63c117428ea3d329",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6247,8 +6247,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/dc78c7fc-6e72-473c-a7c2-8187c1066b62_rw_3840.JPG?h=a0b63835d607c3ab76659b0533bc7281",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6273,8 +6273,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/72f750e8-49fd-47a4-9c64-63336ef927fc_rw_3840.JPG?h=6a387f87bfeac85fa3c9676c0cdd7821",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6299,8 +6299,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/484ba56b-3468-4d9d-ae24-7af81396ca5a_rw_3840.JPG?h=30f366892e5f531dcf0bbce6fa71e1d2",
       "is_original": false,
       "best_width": 3840,
-      "intrinsic_width": 3024,
-      "intrinsic_height": 4032,
+      "intrinsic_width": 3840,
+      "intrinsic_height": 2880,
       "alt": null,
       "roles": [
         "gallery"
@@ -6325,8 +6325,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/f74231e0-0f7a-4798-90d9-e483598184fc.png?h=562e3c63aa27af1f5100c1a5062a222f",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 552,
-      "intrinsic_height": 99,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6351,8 +6351,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/5be71405-fada-4551-b1c7-41f601e41d52.png?h=ca2db037a4f2fbb25279adbdc5e9f3ae",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 824,
-      "intrinsic_height": 191,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6377,8 +6377,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e7fb19d6-3405-440d-90fb-90aff361ba19.png?h=ae306c8b14aaad51b891888fc55fab01",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1235,
-      "intrinsic_height": 818,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6403,8 +6403,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/bc781cda-4030-4863-a230-8382f40b2bf7.jpg?h=e6a9edcd0a50372788b5e3b977197c06",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4608,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6429,8 +6429,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a225fafc-aeb7-4b65-9246-9710824ddb3f.jpg?h=64569c7d286b70273f66d2319f22ed03",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4608,
-      "intrinsic_height": 2304,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6637,8 +6637,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/03fd89e5-116e-4025-afed-04b42021c654.png?h=f61d5da00ebc79e401f93bcf35fdf2dd",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6767,8 +6767,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/66a1ee33-3041-406f-97c2-6bce1685c488.jpg?h=b2c6469098105ec8535993f413c848ad",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4080,
-      "intrinsic_height": 3072,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -6976,7 +6976,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 3058,
+      "intrinsic_height": 3057,
       "alt": null,
       "roles": [
         "gallery"
@@ -7002,7 +7002,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2608,
+      "intrinsic_height": 2607,
       "alt": null,
       "roles": [
         "gallery"
@@ -7131,8 +7131,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/88863fcc-58f6-4e5d-b7d6-e2505e17d056.png?h=dfbe1abb94bf4daa1c31cf952bcd3765",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1110,
-      "intrinsic_height": 740,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -7157,8 +7157,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e574a80e-f7bc-4080-a261-0e110e12ff12.PNG?h=417d22e2bc2663820449b52f855fdc44",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1213,
-      "intrinsic_height": 794,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -7339,8 +7339,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/4684c806-03cf-4a29-8085-28e2022aaa01.png?h=e9469971803cb65408543039553673c7",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1920,
-      "intrinsic_height": 1080,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -7521,8 +7521,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/fbc3ab22-5822-4daa-9565-7fdfea0f2e2b.JPG?h=85a1195baee00ca46dab367a6ac17c21",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4000,
-      "intrinsic_height": 2250,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8041,8 +8041,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/21a6146e-10a6-4d7e-a9db-83621c844e8e.jpg?h=883b846f41911ac451bba707ce67bce6",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 6000,
-      "intrinsic_height": 3608,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8379,8 +8379,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a7dd2c6d-6cc5-4e77-b137-f22598e76914.png?h=f0816d3e948baba782b3445754b460a9",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 614,
-      "intrinsic_height": 585,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8405,8 +8405,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/6f26671d-286e-43f5-b2f8-bb39da7f3fd1.png?h=f4c7af4817d722751e1a7a8aaafa6e14",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 745,
-      "intrinsic_height": 750,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8431,8 +8431,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/fdc41e6c-ccac-4299-b417-976add84bf96.jpg?h=af730d4a6b39e9db971812e9bc966596",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 5555,
-      "intrinsic_height": 2752,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8457,8 +8457,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/6468e3a3-1f51-4e9d-bf95-86bb08b78f72.png?h=0f2fe7e57d5cb97748edbc73dc2841ef",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1061,
-      "intrinsic_height": 255,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8510,7 +8510,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1663,
+      "intrinsic_height": 1662,
       "alt": null,
       "roles": [
         "gallery"
@@ -8614,7 +8614,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1504,
+      "intrinsic_height": 1503,
       "alt": null,
       "roles": [
         "gallery"
@@ -8640,7 +8640,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2369,
+      "intrinsic_height": 2368,
       "alt": null,
       "roles": [
         "gallery"
@@ -8666,7 +8666,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 2355,
+      "intrinsic_height": 2354,
       "alt": null,
       "roles": [
         "gallery"
@@ -8692,7 +8692,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1263,
+      "intrinsic_height": 1262,
       "alt": null,
       "roles": [
         "gallery"
@@ -8717,8 +8717,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/f0b18ba2-110c-48cd-a9a2-c0cbc854e7da.jpg?h=ace1269417f8bc5e4b7cf0cd91b2c9db",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 2088,
-      "intrinsic_height": 1424,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8873,8 +8873,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/bc45d936-b04c-44e5-b9b0-6c82eb13a094.gif?h=3bcfb9f44161e068e96ebc6f32905d10",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 387,
-      "intrinsic_height": 400,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8899,8 +8899,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/348bfa4b-58cd-437f-b125-3ca6a02f2879.gif?h=d074e62dec880cf543ca764e0cfe4711",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 630,
-      "intrinsic_height": 518,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -8925,8 +8925,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a60c7aa6-4a79-48c0-be6d-2319cf5b97ed.jpg?h=e45f0a3a8252ef3c58dd66d2d5f7689a",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 2380,
-      "intrinsic_height": 1050,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -9004,7 +9004,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1908,
+      "intrinsic_height": 1907,
       "alt": null,
       "roles": [
         "gallery"
@@ -9523,8 +9523,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/77f3c796-ce8b-4295-943e-34e5680b6431.jpg?h=3713812bcb1fc55ea12214eae6e8e2d5",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 2048,
-      "intrinsic_height": 1365,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -9654,7 +9654,7 @@
       "is_original": false,
       "best_width": 3840,
       "intrinsic_width": 3840,
-      "intrinsic_height": 1748,
+      "intrinsic_height": 1747,
       "alt": null,
       "roles": [
         "gallery"
@@ -9758,7 +9758,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 2371,
+      "intrinsic_height": 2370,
       "alt": null,
       "roles": [
         "gallery"
@@ -9784,7 +9784,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 2038,
+      "intrinsic_height": 2037,
       "alt": null,
       "roles": [
         "gallery"
@@ -9836,7 +9836,7 @@
       "is_original": false,
       "best_width": 1920,
       "intrinsic_width": 1920,
-      "intrinsic_height": 1371,
+      "intrinsic_height": 1370,
       "alt": null,
       "roles": [
         "gallery"
@@ -10147,8 +10147,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e904073b-8324-4d45-9a08-6490c0cbc366.png?h=f618a706f0fc827139c14109851d3969",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 8001,
-      "intrinsic_height": 3951,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -10173,8 +10173,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/b300daed-a026-43f6-b55b-8e7e14f3a0c1.png?h=209ce9e89ed03123686b58eb8b51842d",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 8001,
-      "intrinsic_height": 3951,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -10199,8 +10199,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/2e7fe31e-ba70-43b9-ae8f-28c73c81a964.png?h=d50bf367144ce777adefb7fd9af4b302",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 8001,
-      "intrinsic_height": 3951,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -10225,8 +10225,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/a6e14561-303c-4035-a0ec-4b64cb4ca115.png?h=e16dabb50581cfda79565ad510710d22",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 8001,
-      "intrinsic_height": 3951,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -10251,8 +10251,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/e907d3c5-f68a-494e-9ace-94c0379d3240.png?h=11e36ada357a404a19906307a1330129",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1120,
-      "intrinsic_height": 644,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -10719,8 +10719,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/df5bb61e-0bdc-49fe-a3ee-de545332bfb8.jpg?h=4f6de07ea7fa52d76842946f8eeece60",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1261,
-      "intrinsic_height": 709,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -12825,8 +12825,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/516be698-56d8-4103-b7b0-896a199db94d.jpg?h=cd570cb1f1ddd6fc97a9fd602a4c303e",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 4080,
-      "intrinsic_height": 3072,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"
@@ -12851,8 +12851,8 @@
       "source_url": "https://cdn.myportfolio.com/803ba528-c60a-4721-a6da-3c1706da6f46/70f4d2d3-1bf1-4ffc-9caa-906947f47dee.png?h=9467165cfd58e701c60f24df4aeebd77",
       "is_original": true,
       "best_width": null,
-      "intrinsic_width": 1175,
-      "intrinsic_height": 1018,
+      "intrinsic_width": null,
+      "intrinsic_height": null,
       "alt": null,
       "roles": [
         "figure"

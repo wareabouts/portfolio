@@ -15,6 +15,8 @@ During the semester of Spring '19, I had the opportunity to take the class "Desi
 
 The basis for the summer project was a prototype called the "Solar Arcade". At the time it consisted of a red felt walkway (the surface of the sun) under six 8-foot LED loops. There was a pressure pad where the loops could be activated to demonstrate coronal mass ejections. Taking that as a starting point, we decided to emphasize the Sun's shifting surface to illustrate how these dynamic motions create and influence coronal loops.
 
+## process
+
 The summer consisted of a couple weeks of prototyping, testing LED grids with different diffusion layers before settling on 1" thick HDPE to protect and support patrons walking on it. After that, we began planning and constructing five 2ft x 6ft panels that could be connected together to form a large LED screen. The panels use laser-cut MDF to evenly space addressable LED strips. A processing sketch written by another teammate is run on a Raspberry pi and displayed on the panels. Multiple Adafruit Fadecandy's instruct the LED strips how to function.
 
 ::::columns
