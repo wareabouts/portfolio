@@ -53,9 +53,20 @@ async function main() {
   for (const r of routes) {
     let html
     try {
-      html = render(r.url, base)
+      // StaticRouter expects a full path including the basename, exactly as the browser
+      // would see it. Passing a base-relative path renders an empty tree when the site
+      // is served from a subdirectory (e.g. /portfolio/) -- silently, with no error.
+      html = render(base.replace(/\/$/, '') + r.url, base)
     } catch (e) {
       failures.push(`${r.url}: ${e.message}`)
+      continue
+    }
+
+    // An unmatched route renders an empty tree rather than throwing, so assert real
+    // output. Without this the build "succeeds" and ships a site with no prerendered
+    // content at all.
+    if (!html.includes('class="main"') || html.length < 800) {
+      failures.push(`${r.url}: rendered ${html.length} bytes with no <main> — route did not match`)
       continue
     }
 
@@ -107,13 +118,41 @@ async function main() {
     written++
   }
 
+  let redirects = 0
+  // Retired URLs get a real page that redirects, rather than falling through to 404.html.
+  // A static host can't issue a 301, so this is a meta refresh plus a canonical link so
+  // search engines follow it.
+  for (const [from, to] of Object.entries(content.taxonomy.redirects ?? {})) {
+    const target = `${base.replace(/\/$/, '')}${to}`
+    const page = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=${esc(target)}" />
+    <link rel="canonical" href="${esc(target)}" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>This page moved to <a href="${esc(target)}">${esc(target)}</a>.</p>
+    <script>location.replace(${JSON.stringify(target)})</script>
+  </body>
+</html>
+`
+    const dir = path.join(DIST, from)
+    fs.mkdirSync(dir, { recursive: true })
+    fs.writeFileSync(path.join(dir, 'index.html'), page)
+    fs.writeFileSync(path.join(DIST, `${from}.html`), page)
+    redirects++
+  }
+
   // Unknown paths: GitHub Pages serves 404.html, and the SPA router takes it from there.
   const shell = template.replace('<!--app-html-->', '')
   fs.writeFileSync(path.join(DIST, '404.html'), shell)
   // Stop Pages running the output through Jekyll.
   fs.writeFileSync(path.join(DIST, '.nojekyll'), '')
 
-  console.log(`prerendered ${written}/${routes.length} routes -> dist/`)
+  console.log(`prerendered ${written}/${routes.length} routes (+${redirects} redirects) -> dist/`)
   if (failures.length) {
     console.error(`\nFAILED (${failures.length}):`)
     failures.forEach((f) => console.error('  ' + f))
