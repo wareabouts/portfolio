@@ -8,7 +8,7 @@ source: adobe-portfolio
 
 :::column
 
-::figure{asset="9b927fa2-d193-49dc-a338-27168d09cb08"}
+::figure{asset="9b927fa2-d193-49dc-a338-27168d09cb08" invert="dark"}
 
 :::
 

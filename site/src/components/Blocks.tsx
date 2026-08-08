@@ -9,12 +9,15 @@ const EMAIL = 'alex@alexfiel.com'
 /** Every zoomable image on the page, in document order, so the lightbox can page through. */
 function collectZoomable(blocks: Block[], out: LightboxItem[] = []): LightboxItem[] {
   for (const b of blocks) {
-    if (b.type === 'figure') out.push({ asset: b.asset, caption: b.caption })
+    if (b.type === 'figure') out.push({ asset: b.asset, caption: b.caption, invert: b.invert })
     else if (b.type === 'gallery') out.push(...b.items)
     else if (b.type === 'columns') b.columns.forEach((c) => collectZoomable(c, out))
   }
   return out
 }
+
+/** Class marking art that should flip in dark mode. */
+const invertClass = (invert?: string) => (invert === 'dark' ? 'invert-dark' : undefined)
 
 export default function Blocks({ blocks }: { blocks: Block[] }) {
   const [zoom, setZoom] = useState<number | null>(null)
@@ -48,7 +51,7 @@ function BlockView({ block, onZoom }: { block: Block; onZoom: (id: string) => vo
       const img = imageSrc(block.asset, '(max-width: 820px) 100vw, 806px')
       const a = asset(block.asset)
       return (
-        <figure>
+        <figure className={invertClass(block.invert)}>
           <button className="figure-btn" onClick={() => onZoom(block.asset)} aria-label="Enlarge image">
             <img
               src={img.src}
@@ -75,7 +78,7 @@ function BlockView({ block, onZoom }: { block: Block; onZoom: (id: string) => vo
             return (
               // flex-grow by aspect ratio → rows fill the width, proportions preserved
               <figure
-                className="gallery-item"
+                className={['gallery-item', invertClass(it.invert)].filter(Boolean).join(' ')}
                 key={it.asset}
                 style={{ flexGrow: ar * 100, flexBasis: `${ar * 180}px`, aspectRatio: ar }}
               >

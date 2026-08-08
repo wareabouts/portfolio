@@ -57,6 +57,13 @@ EXTRA_CATEGORIES = {
 # Reachable only from the 3d-design category page -- the home grid never linked it.
 UNLISTED_PROJECTS = {"photogrammetry-tests"}
 
+# Line art drawn for a light background: black strokes on white (or on transparency).
+# Marked so the site can invert them in dark mode. Add a UUID here and re-extract, or
+# write `invert="dark"` on a ::figure by hand.
+INVERT_ON_DARK = {
+    "9b927fa2-d193-49dc-a338-27168d09cb08",  # about-page self-portrait
+}
+
 # ccv id -> the local file rescued by rescue_videos.py
 CCV_TO_FILE = {
     "TdnBcMxRy6B": "atlas-virtual-graduation.mp4",
@@ -347,7 +354,10 @@ def render_module(el, page, depth=0):
             alt_url = best_image_url(img)
             if alt_url:
                 register(alt_url, page, role="figure")
-        return [f'::figure{{asset="{uuid}"}}'] if uuid else []
+        if not uuid:
+            return []
+        invert = ' invert="dark"' if uuid in INVERT_ON_DARK else ""
+        return [f'::figure{{asset="{uuid}"{invert}}}']
 
     if kind == "media_collection":
         items = []

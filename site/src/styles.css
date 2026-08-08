@@ -75,6 +75,20 @@ video {
   display: block;
 }
 
+/* Line art drawn against a light ground (the logo, the about-page portrait) reads as a
+   bright slab in dark mode. Inverting turns black strokes white; `screen` then drops the
+   now-black ground so the art sits on the page colour instead of a near-black rectangle.
+   Transparent sources are unaffected by the blend, so one rule covers both.
+
+   Opt in with `invert="dark"` on a ::figure, or add the asset UUID to INVERT_ON_DARK in
+   tools/extract.py so re-extraction keeps the flag. */
+:root:not([data-theme='light']) .invert-dark img,
+:root:not([data-theme='light']) img.invert-dark,
+:root:not([data-theme='light']) .logo img {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
 a {
   color: inherit;
 }

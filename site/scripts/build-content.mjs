@@ -92,7 +92,11 @@ function parseBlocks(lines, i = 0, closeAt = null) {
     i = next
     if (name === 'gallery') {
       blocks.push({ type: 'gallery', items: children.filter((c) => c.type === 'item')
-        .map(({ asset, caption }) => (caption ? { asset, caption } : { asset })) })
+        .map(({ asset, caption, invert }) => ({
+          asset,
+          ...(caption ? { caption } : {}),
+          ...(invert ? { invert } : {}),
+        })) })
     } else if (name === 'columns') {
       blocks.push({ type: 'columns', columns: children.filter((c) => c.type === 'column')
         .map((c) => c.blocks) })
@@ -110,9 +114,19 @@ function parseBlocks(lines, i = 0, closeAt = null) {
 function leaf(name, a) {
   switch (name) {
     case 'figure':
-      return { type: 'figure', asset: a.asset, ...(a.caption ? { caption: a.caption } : {}) }
+      return {
+        type: 'figure',
+        asset: a.asset,
+        ...(a.caption ? { caption: a.caption } : {}),
+        ...(a.invert ? { invert: a.invert } : {}),
+      }
     case 'item':
-      return { type: 'item', asset: a.asset, ...(a.caption ? { caption: a.caption } : {}) }
+      return {
+        type: 'item',
+        asset: a.asset,
+        ...(a.caption ? { caption: a.caption } : {}),
+        ...(a.invert ? { invert: a.invert } : {}),
+      }
     case 'embed':
       return a.provider === 'iframe'
         ? { type: 'embed', provider: 'iframe', src: a.src }

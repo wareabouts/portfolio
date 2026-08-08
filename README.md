@@ -75,6 +75,20 @@ Normal Markdown prose, **bold**, [links](https://example.com), lists.
 Block types: `figure`, `gallery`/`item`, `embed`, `video`, `button`, `form`, `columns`,
 `## heading` (section), `### heading` (sub-section).
 
+**Line art in dark mode.** Black-on-white artwork reads as a bright slab against a dark
+page. Mark it and the site flips it:
+
+```markdown
+::figure{asset="9b927fa2-..." invert="dark"}
+```
+
+Inverting turns the strokes white; a `screen` blend then drops the now-black ground so the
+art sits directly on the page colour instead of in a near-black rectangle. Transparent
+sources (the logo) are unaffected by the blend, so one rule covers both cases.
+
+Because `content/` is regenerated from `raw/`, a hand-added flag would be lost on the next
+extraction — add the asset UUID to `INVERT_ON_DARK` in `tools/extract.py` to make it stick.
+
 The build compiles this to typed JSON (`site/src/generated/content.json`) — **the app
 never parses Markdown at runtime.** You get comfortable authoring and type safety.
 

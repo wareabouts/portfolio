@@ -4,6 +4,8 @@ import { imageSrc } from '../content'
 export interface LightboxItem {
   asset: string
   caption?: string
+  /** 'dark' marks line art drawn for a light ground. */
+  invert?: string
 }
 
 interface Props {
@@ -49,6 +51,7 @@ export default function Lightbox({ items, index, onClose, onIndex }: Props) {
       onClick={onClose}
     >
       <img
+        className={item.invert === 'dark' ? 'invert-dark' : undefined}
         src={img.src}
         srcSet={img.srcSet}
         sizes="94vw"

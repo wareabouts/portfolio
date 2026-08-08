@@ -1,8 +1,9 @@
 export type Block =
   | { type: 'heading'; text: string }
   | { type: 'prose'; html: string }
-  | { type: 'figure'; asset: string; caption?: string }
-  | { type: 'gallery'; items: { asset: string; caption?: string }[] }
+  /** `invert: 'dark'` marks line art drawn for a light ground — flipped in dark mode. */
+  | { type: 'figure'; asset: string; caption?: string; invert?: string }
+  | { type: 'gallery'; items: { asset: string; caption?: string; invert?: string }[] }
   | { type: 'embed'; provider: 'youtube' | 'vimeo'; id: string }
   | { type: 'embed'; provider: 'iframe'; src: string }
   | { type: 'video'; src: string }
