@@ -12,6 +12,39 @@ const SOCIAL = [
   { href: 'mailto:alex@alexfiel.com', label: 'Email', path: 'M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 4.76-8-4.76V6l8 4.75L20 6z' },
 ]
 
+/**
+ * Flips `data-theme` on <html> and remembers the choice.
+ *
+ * Deliberately stateless: the rendered markup is identical in both themes and CSS picks
+ * the glyph off the root attribute. Reading the theme during render would make the
+ * server and client disagree and break hydration.
+ */
+function ThemeToggle() {
+  const toggle = () => {
+    const root = document.documentElement
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light'
+    root.dataset.theme = next
+    document.querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', next === 'light' ? '#ffffff' : '#131316')
+    try {
+      localStorage.setItem('theme', next)
+    } catch {
+      /* private mode; the toggle still works for this page view */
+    }
+  }
+
+  return (
+    <button className="theme-toggle" onClick={toggle} aria-label="Toggle light and dark mode">
+      <svg className="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-13a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1zm0 16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM4 12a1 1 0 0 1-1 1H1a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zm19 0a1 1 0 0 1-1 1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1zM5.6 5.6a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4L7 5.6a1 1 0 0 1-1.4 0zm11.4 11.4a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4L17 18.4a1 1 0 0 1 0-1.4zm1.4-12.8a1 1 0 0 1 1.4 1.4L18.4 7A1 1 0 0 1 17 5.6zM5.6 18.4a1 1 0 0 1 1.4-1.4l1.4 1.4a1 1 0 1 1-1.4 1.4z" />
+      </svg>
+      <svg className="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+      </svg>
+    </button>
+  )
+}
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
@@ -63,6 +96,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </svg>
             </a>
           ))}
+          <ThemeToggle />
         </div>
       </header>
 

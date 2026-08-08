@@ -25,8 +25,11 @@ const COVER = 600
 const QUALITY = 80
 // Animated frames multiply file size, so they get tighter limits than stills.
 const ANIM_INLINE_W = 700
-const ANIM_COVER = 400
 const ANIM_QUALITY = 65
+// Grid covers autoplay, so their cost is paid on the landing page. They render at ~193px
+// CSS, so 360px still covers a 2x display while keeping the whole grid affordable.
+const ANIM_COVER = 360
+const ANIM_COVER_QUALITY = 45
 const CONCURRENCY = 6
 
 const force = process.argv.includes('--force')
@@ -88,7 +91,7 @@ async function processAsset(a, stats) {
         if (force || !fs.existsSync(anim)) {
           await sharp(src, { animated: true })
             .resize(ANIM_COVER, ANIM_COVER, { fit: 'cover', position: 'centre' })
-            .webp({ quality: ANIM_QUALITY, effort: 4 })
+            .webp({ quality: ANIM_COVER_QUALITY, effort: 6 })
             .toFile(anim)
         }
         stats.covers++

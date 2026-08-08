@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import type { Doc } from '../types'
 import { coverSrc } from '../content'
@@ -16,25 +16,40 @@ export default function CoverGrid({ items }: { items: Doc[] }) {
 function Cover({ project }: { project: Doc }) {
   const img = project.cover ? coverSrc(project.cover) : null
   const ref = useRef<HTMLImageElement>(null)
+  const animSrc = img?.animSrc
 
-  // The grid ships static posters; the animation loads only when a cover is hovered,
-  // which keeps the landing page light without losing the animated covers entirely.
-  const play = () => {
-    if (img?.animSrc && ref.current) ref.current.src = img.animSrc
-  }
-  const stop = () => {
-    if (img?.animSrc && ref.current) ref.current.src = img.src
-  }
+  /**
+   * Animated covers play on their own, but only once the tile is near the viewport.
+   *
+   * Loading all 43 animations up front costs ~5 MB; this ships static posters and swaps
+   * in the animation as you scroll, so the landing page stays light while every cover
+   * still animates without interaction.
+   */
+  useEffect(() => {
+    const el = ref.current
+    if (!animSrc || !el) return
+
+    if (typeof IntersectionObserver === 'undefined') {
+      el.src = animSrc
+      return
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue
+          el.src = animSrc
+          io.disconnect() // one-way: never swap back to the poster
+        }
+      },
+      { rootMargin: '200px' },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [animSrc])
 
   return (
-    <Link
-      className="cover"
-      to={`/${project.slug}`}
-      onMouseEnter={play}
-      onMouseLeave={stop}
-      onFocus={play}
-      onBlur={stop}
-    >
+    <Link className="cover" to={`/${project.slug}`}>
       <div className="cover-img">
         {img && (
           <img
