@@ -136,6 +136,12 @@ dropped copy versus source.
 
 ## Deliberate differences from the original
 
+- **Dark by default, with a toggle.** An inline script in `<head>` stamps `data-theme` on
+  `<html>` before first paint, so there's no flash. The React tree never reads the theme
+  during render — that would desync server and client markup — so the toggle's markup is
+  identical in both themes and CSS picks the glyph off the root attribute. The choice
+  persists to `localStorage`. The accent lightens to `#a396ff` on dark to hold contrast;
+  light mode keeps the original `#9282ff`.
 - **Fonts.** The original set type in Gibson, licensed through Adobe Fonts — unusable once
   the subscription lapses. Source Sans 3 stands in: same humanist-sans family, self-hosted,
   OFL licensed. (The site also loaded Adelle, Proxima Nova and Acier BAT, none of which
@@ -143,8 +149,10 @@ dropped copy versus source.
 - **Contact form.** The original posted to Adobe. The rebuild shows a mailto link instead.
   Set `VITE_CONTACT_ENDPOINT` to a form backend (Formspree, Basin, a Worker — anything
   that accepts a POST) and a real form renders in its place.
-- **Animated covers.** 43 animated covers on the home page cost 5.3 MB. The grid now ships
-  static posters and swaps in the animation on hover — 1.2 MB, same effect.
+- **Animated covers autoplay**, but load as each tile nears the viewport rather than all at
+  once. The landing page starts at 1.2 MB of static posters; the 17 animations add 2.6 MB
+  as you scroll. Loading them all up front would have been 5.3 MB before the page settled.
+- **Rounded tiles.** 6px radius on covers, figures, embeds and inputs (`--radius`).
 - **`/instalation` → `/installation`.** The original URL was missing an `l`. The old path
   redirects.
 - **Footer year** tracks the current year instead of being frozen at 2024.
