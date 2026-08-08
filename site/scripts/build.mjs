@@ -56,6 +56,9 @@ console.log(`base path: ${base}`)
 stageVideos()
 run('content', [path.join(HERE, 'build-content.mjs')])
 run('images', [path.join(HERE, 'build-images.mjs')])
+// Typecheck *after* generation: src/generated/*.json is gitignored, so on a fresh
+// checkout (CI) it does not exist yet and content.ts would fail to resolve it.
+run('typecheck', [path.join(SITE, 'node_modules/typescript/bin/tsc'), '-b', '--noEmit'])
 run('client', [vite, 'build'])
 run('ssr', [vite, 'build', '--ssr', 'src/entry-server.tsx', '--outDir', 'dist-ssr'])
 run('prerender', [path.join(HERE, 'prerender.mjs')])
