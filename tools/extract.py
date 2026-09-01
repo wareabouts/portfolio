@@ -64,6 +64,22 @@ INVERT_ON_DARK = {
     "9b927fa2-d193-49dc-a338-27168d09cb08",  # about-page self-portrait
 }
 
+# Outbound links whose host has since changed. The GitHub account behind these was
+# renamed scealux -> wareabouts; old gist URLs 404 rather than redirect. Applied to
+# every href the extractor emits, so the archived HTML in raw/ stays untouched.
+LINK_REWRITES = {
+    "https://gist.github.com/scealux/": "https://gist.github.com/wareabouts/",
+    "https://github.com/scealux": "https://github.com/wareabouts",
+}
+
+
+def fix_href(href):
+    for old, new in LINK_REWRITES.items():
+        if href.startswith(old):
+            return new + href[len(old):]
+    return href
+
+
 # ccv id -> the local file rescued by rescue_videos.py
 CCV_TO_FILE = {
     "TdnBcMxRy6B": "atlas-virtual-graduation.mp4",
@@ -221,7 +237,7 @@ def html_to_md(node):
             out.append(f"{mark}{inner}{mark}" if inner else "")
         elif name == "a":
             inner = html_to_md(child).strip()
-            href = child.get("href", "")
+            href = fix_href(child.get("href", ""))
             out.append(f"[{inner}]({href})" if href else inner)
         elif name in ("ul", "ol"):
             items = []
@@ -415,7 +431,7 @@ def render_module(el, page, depth=0):
         a = el.find("a")
         if not a:
             return []
-        return [f'::button{{href="{attr(a.get("href"))}" '
+        return [f'::button{{href="{attr(fix_href(a.get("href") or ""))}" '
                 f'label="{attr(a.get_text(" ", strip=True))}"}}']
 
     if kind == "form":

@@ -13,7 +13,7 @@ source: adobe-portfolio
 
 Chartreuse is a motion-tracking face made as the final project for ATLS 3300: Object. She was inspired by "[Albert](https://www.exploratorium.edu/exhibits/albert)"at the Exploratorium in San Francisco, California.
 
-She was a joint project with [Anna Lynton](https://www.linkedin.com/in/anna-lynton-62a276179/) who edited and assembled the mask using Slicer for Autodesk Fusion 360. I worked on the electronics / design and [code](https://gist.github.com/scealux/136b90b354d1a31f203b4f4105bf7b94?fbclid=IwAR0_ZKMIEB0m4yTNhF6hlXD4e15cC9rFM0m8GRBGALyUnYse5ArOxjVZRo8).
+She was a joint project with [Anna Lynton](https://www.linkedin.com/in/anna-lynton-62a276179/) who edited and assembled the mask using Slicer for Autodesk Fusion 360. I worked on the electronics / design and [code](https://gist.github.com/wareabouts/136b90b354d1a31f203b4f4105bf7b94?fbclid=IwAR0_ZKMIEB0m4yTNhF6hlXD4e15cC9rFM0m8GRBGALyUnYse5ArOxjVZRo8).
 
 ## process
 

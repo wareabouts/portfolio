@@ -27,7 +27,7 @@ The housing was made with laser cut MDF panels spray-painted and glued together.
 
 My first attempt at the joints was misguided; I didn't think through the side to side motion the joints would need to reproduce. After buying a ceramic beaded bracelet from Michael's and remodeling the ball joints, it worked as planned.
 
-Later, to expand on the project, the Arduino was made to transfer information about it's state through serial to a p5 sketch that helped guide players toward the correct color. Code is on [GitHub Gists](https://gist.github.com/scealux/115b604e47940e1e74c91dbc83b07e5b).
+Later, to expand on the project, the Arduino was made to transfer information about it's state through serial to a p5 sketch that helped guide players toward the correct color. Code is on [GitHub Gists](https://gist.github.com/wareabouts/115b604e47940e1e74c91dbc83b07e5b).
 
 ::embed{provider="youtube" id="ym3WRqgNeP4"}
 
