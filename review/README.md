@@ -37,6 +37,34 @@ content/*.md  <-  apply.mjs  <-  decisions/<date>.json  <-  read_db "decisions" 
    revised suggestion gets a new id, so the old decision does not carry over to new wording;
    everything else keeps its decision.
 
+## Where things stand (2026-09-02)
+
+Round 1 is published at
+https://claude.ai/code/artifact/ed7eabd5-a15e-4240-a438-b3532bb7706f (private to the
+wareabouts account). 89 suggestions across 32 pages; nothing applied to `content/` yet. The
+heading-rendering fix in `tools/extract.py` is already live and changed no words.
+
+Next: Alex reviews, then read the decisions back (`read_db`, collection `decisions`) into
+`review/decisions/<date>.json`, `node review/apply.mjs` that file, `npm --prefix site run
+build`, commit `content/`, push. Then round 2: prose passes on the remaining pages under
+whichever rules survived round 1.
+
+Open questions for Alex: lowercase vs Title Case titles; whether the about page wants a
+fuller bio; whether to do a captions pass.
+
+### On a fresh machine
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/wareabouts/portfolio.git
+cd portfolio/site && npm ci && cd ..
+node review/build.mjs     # regenerates proposals.json and dist/
+node review/serve.mjs     # http://localhost:4180/copy-desk.html
+```
+
+`GIT_LFS_SKIP_SMUDGE=1` skips the 754 MB of archive originals; the site and the review loop
+both work from the committed web-sized images. Needs git, git-lfs and Node 24. Python 3 is
+only for `tools/` (re-extraction and validation).
+
 ## Anchoring
 
 A suggestion's `old` is a whole line of the Markdown file (the extractor writes one
