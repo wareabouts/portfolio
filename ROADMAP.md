@@ -109,15 +109,17 @@ The flow from there:
 Sources for new work. The Adobe-era originals live in LFS because they could not be fetched
 again once the subscription lapsed. New work is different, Alex holds the sources. GitHub's
 free LFS tier is about 1 GB and the originals already take 754 MB of it, so committing new
-sources means paying for LFS within a year. Proposed: for new pages the repo commits
-derivatives only, web-sized images, the encoded mp4, posters, and the sources stay in Alex's own
-storage. To decide.
+sources means paying for LFS within a year. Decided 2026-09-02: for new pages the repo commits
+derivatives only, web-sized WebP at the widths the build already makes, plus posters. Sources
+stay in Alex's own storage (Google Drive holds copies of the Adobe-era photos too). Any format
+goes into the pile; the import converts.
 
-Video. `::video{src="name.mp4"}` already renders a player from `assets/video/`, which the build
-copies into the site. Show intros want a poster frame, and an animated cover on the grid would
-suit them; the image build already makes animated covers from animated sources. There is no
-motion category in the nav. The intros could sit in graphic-design or get a new category. To
-decide.
+Video. Decided 2026-09-02: the show intros are unlisted YouTube videos, embedded with the
+existing `::embed{provider="youtube"}` directive, the same as the sixteen pages that already do
+this. The YouTube link goes in `notes.md`. A still or a short clip still goes in the pile, so the
+import can make the grid cover, animated if the clip allows. `::video` and `assets/video/`
+remain for the six rescued files. There is no motion category in the nav. The intros could sit
+in graphic-design or get a new category. To decide.
 
 Content-model cleanup that should land before the new pages, all small:
 
@@ -240,8 +242,8 @@ Neither is planned.
 6. Budgets per shape. The numbers above are starting points.
 7. Whether the artifact desk stays as a text-only channel or is retired outright.
 8. The about page and the captions pass, when.
-9. Sources for new work. Derivatives only in the repo, or sources in LFS with paid storage.
-   Recommended derivatives only.
+9. Sources for new work. Decided 2026-09-02: derivatives only in the repo, sources stay with
+   Alex. Streaming video is YouTube, unlisted.
 10. A category for the show intros. graphic-design, or a new motion category.
 
 ## Not doing
