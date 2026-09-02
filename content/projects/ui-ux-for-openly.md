@@ -5,6 +5,7 @@ year: 2018
 categories: [graphic-design]
 cover: b479d1ae-89d0-4416-bf82-795449c531d3
 source: adobe-portfolio
+unlisted: true
 ---
 
 ::figure{asset="e904073b-8324-4d45-9a08-6490c0cbc366" caption="Profile Page"}
