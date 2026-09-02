@@ -52,6 +52,7 @@ them back (`read_db`, collection `decisions`) into `review/decisions/<date>.json
 
 Still open for Alex: whether the about page wants a fuller bio; whether to do a captions
 pass; which other pages to unlist.
+
 ### On a fresh machine
 
 ```bash
