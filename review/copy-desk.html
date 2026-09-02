@@ -353,7 +353,8 @@
 
   // ---------------------------------------------------------------- keyboard
   document.addEventListener('keydown', (e) => {
-    if (e.target.matches('textarea, input')) return
+    const t = e.target
+    if (t && typeof t.matches === 'function' && t.matches('textarea, input')) return
     if (view === 'guide') return
     const cards = [...document.querySelectorAll('.card')]
     if (!cards.length) return

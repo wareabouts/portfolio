@@ -18,6 +18,12 @@
         "4173"
       ],
       "port": 4173
+    },
+    {
+      "name": "copy-desk",
+      "runtimeExecutable": "C:\\Users\\alexd\\AppData\\Local\\Programs\\nodejs\\node.exe",
+      "runtimeArgs": ["review/serve.mjs"],
+      "port": 4180
     }
   ]
 }
