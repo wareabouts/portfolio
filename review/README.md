@@ -39,19 +39,19 @@ content/*.md  <-  apply.mjs  <-  decisions/<date>.json  <-  read_db "decisions" 
 
 ## Where things stand (2026-09-02)
 
-Round 1 is published at
-https://claude.ai/code/artifact/ed7eabd5-a15e-4240-a438-b3532bb7706f (private to the
-wareabouts account). 89 suggestions across 32 pages; nothing applied to `content/` yet. The
-heading-rendering fix in `tools/extract.py` is already live and changed no words.
+Round 1 (89 suggestions across 32 pages) was accepted in full on 2026-09-02 and applied;
+the record is `review/decisions/2026-09-02.json`. Lowercase titles are settled. The desk
+stays published at https://claude.ai/code/artifact/ed7eabd5-a15e-4240-a438-b3532bb7706f
+(private to the wareabouts account).
 
-Next: Alex reviews, then read the decisions back (`read_db`, collection `decisions`) into
-`review/decisions/<date>.json`, `node review/apply.mjs` that file, `npm --prefix site run
-build`, commit `content/`, push. Then round 2: prose passes on the remaining pages under
-whichever rules survived round 1.
+Next: round 2, prose passes on the pages round 1 did not touch, under the same rules. Skip
+anything marked `unlisted: true`. Regenerate proposals (`node review/build.mjs`), republish
+the same file path from a session that owns the artifact, wait for decisions, then read
+them back (`read_db`, collection `decisions`) into `review/decisions/<date>.json`,
+`node review/apply.mjs` that file, `npm --prefix site run build`, commit `content/`, push.
 
-Open questions for Alex: lowercase vs Title Case titles; whether the about page wants a
-fuller bio; whether to do a captions pass.
-
+Still open for Alex: whether the about page wants a fuller bio; whether to do a captions
+pass; which other pages to unlist.
 ### On a fresh machine
 
 ```bash
