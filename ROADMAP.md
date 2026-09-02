@@ -118,8 +118,8 @@ Video. Decided 2026-09-02: the show intros are unlisted YouTube videos, embedded
 existing `::embed{provider="youtube"}` directive, the same as the sixteen pages that already do
 this. The YouTube link goes in `notes.md`. A still or a short clip still goes in the pile, so the
 import can make the grid cover, animated if the clip allows. `::video` and `assets/video/`
-remain for the six rescued files. There is no motion category in the nav. The intros could sit
-in graphic-design or get a new category. To decide.
+remain for the six rescued files. Decided 2026-09-02: a new `animations` category. It enters the
+nav with the first page that uses it, so the nav never shows an empty category.
 
 Content-model cleanup that should land before the new pages, all small:
 
@@ -222,8 +222,8 @@ Neither is planned.
 
 ## Sequence
 
-- Phase 0, done 2026-09-02. Decisions 2 to 4 below, the five candidates unlisted, the drafts
-  folder and its notes template.
+- Phase 0, done 2026-09-02. Decisions 2 to 4 and 9 to 10 below, the five candidates unlisted,
+  the drafts folder with its notes template, and the three waiting pages started.
 - Phase 1, page workflow. Categories from front matter, the shape field, the import command, the
   shared content library. Then the Open Sauce intros, OS26 Viewer, and LED Panel studio through
   it.
@@ -244,7 +244,8 @@ Neither is planned.
 8. The about page and the captions pass, when.
 9. Sources for new work. Decided 2026-09-02: derivatives only in the repo, sources stay with
    Alex. Streaming video is YouTube, unlisted.
-10. A category for the show intros. graphic-design, or a new motion category.
+10. A category for the show intros. Decided 2026-09-02: a new `animations` category, added to
+    the nav with the first page that uses it.
 
 ## Not doing
 

@@ -1,4 +1,4 @@
-# (working title)
+# open sauce show intros (working title)
 
 Answer in any order, in fragments or paragraphs, as much or as little as you want. Delete
 questions that do not apply. Everything here is raw material, not copy.
@@ -6,12 +6,12 @@ questions that do not apply. Everything here is raw material, not copy.
 ## The basics
 
 - Year:
-- Category (virtual-reality, 3d-design, microcontrollers, installation, web-dev, photography,
-  graphic-design, animations, or a new one):
-- Shape (project for most things, feature for a big one, collection for several small things):
-- Links (repo, live site, press, the thing it was made for):
-- Video (YouTube links, unlisted is fine; the page embeds them):
-- Credits (who else worked on it, and which parts were yours):
+- Category: animations
+- Shape: project, one page with a section per show. Say if you would rather each show have
+  its own page.
+- Links (Open Sauce, the shows themselves, press, the thing it was made for):
+- Video (one unlisted YouTube link per intro, with the show's name next to it):
+- Credits (who else worked on them, and which parts were yours):
 
 ## What is it?
 
@@ -33,8 +33,8 @@ The part you would show first if someone had thirty seconds.
 
 ## Notes on the media
 
-- The hero, the image or clip that should be the cover (for a video page, put a still or a
-  short clip in media/ so the grid cover can be made from it):
+- The hero, the intro that should be the cover (put a still or a short clip of it in media/
+  so the grid cover can be made from it):
 - Anything that must be in, or must stay out:
 - Captions you already know:
-- Anything that needs context to make sense (a screenshot of what, a clip from where):
+- Anything that needs context to make sense (a frame from which show, a clip from where):

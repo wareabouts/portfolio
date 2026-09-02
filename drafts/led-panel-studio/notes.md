@@ -1,4 +1,4 @@
-# (working title)
+# LED panel studio (working title)
 
 Answer in any order, in fragments or paragraphs, as much or as little as you want. Delete
 questions that do not apply. Everything here is raw material, not copy.
