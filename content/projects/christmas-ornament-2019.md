@@ -1,5 +1,5 @@
 ---
-title: "Christmas Ornament 2019"
+title: "christmas ornament 2019"
 slug: christmas-ornament-2019
 year: 2019
 categories: [3d-design]
@@ -9,11 +9,11 @@ source: adobe-portfolio
 
 ::figure{asset="446d24a9-e306-4c45-9102-2915743f6912"}
 
-## CONCEPT
+## concept
 
 As Christmas approached, my girlfriend and I had to figure out what to get for our parents. Having just purchased an Elegoo Mars MSLA 3D-Printer, I was eager to use it in making the gifts. I decided to make a customized Christmas ornament for our parents based on a scan of my girlfriend and I.
 
-## PROCESS
+## process
 
 After having a friend complete the scan using Skanect by Occipital with an old Kinect V1, I cleaned it up in Autodesk Meshmixer. There I also added the base and hanging loop (on our inner shoulders). I exported the model, set up supports in ChiTuBox, and sent it off to the printer.
 
@@ -28,6 +28,6 @@ After the first print came off looking great, I printed the rest two at a time. 
 
 After double checking I had the right can, I applied a clear coat and we were able to bring all the ornaments to our family gatherings in time.
 
-## RESULTS
+## results
 
 Our families loved them, despite the spooky faces. The only problem now is topping it... annually.

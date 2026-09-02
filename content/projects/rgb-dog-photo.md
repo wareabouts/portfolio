@@ -9,11 +9,11 @@ source: adobe-portfolio
 
 ::figure{asset="f0b18ba2-110c-48cd-a9a2-c0cbc854e7da"}
 
-## Concept
+## concept
 
 I needed to make a birthday present for my dad, and what better subject than his favorite dog? I'd wanted to do a project messing with RGB color channels and used needing a gift as an excuse to do so!
 
-## PROCESS
+## process
 
 I found a picture of my Dad's dog, used Adobe Photoshop to split it into red, green and blue channels and etched each inverted on pieces of acrylic. I made an MDF base that would fit the panels and a strip of addressable LED's beneath them.
 

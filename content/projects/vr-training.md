@@ -1,5 +1,5 @@
 ---
-title: "ellumen: vr training"
+title: "ellumen: VR training"
 slug: vr-training
 year: 2022
 categories: [virtual-reality]

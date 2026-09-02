@@ -17,7 +17,7 @@ source: adobe-portfolio
 
 The Integrated Teaching and Learning Laboratory (ITLL) at CU Boulder was updating their logo and put out a call to students to propose new designs. Though I wasn't a student at the time, it sounded like a fun challenge and I ended up submitting 5 different designs. Ultimately I got second place in the competition, the winning logo can be seen on the [ITLL's website](https://itll.colorado.edu/). Below are my two favorites.
 
-## Submission 1: Hand
+## submission 1: hand
 
 :::gallery
   ::item{asset="44908c75-83d9-4e27-b2b2-0ad850c008ab" caption="Vector Logo."}
@@ -26,7 +26,7 @@ The Integrated Teaching and Learning Laboratory (ITLL) at CU Boulder was updatin
 
 This logo was made to directly call to the hands-on approach the ITLL takes to learning. For all of these logos, I started with the letters and distorted them to different extents. This was also my first time trying to make an animated logo, and I was really happy with the result.
 
-## Submission 2: Dimension
+## submission 2: dimension
 
 :::gallery
   ::item{asset="4b7d78e7-d7d2-4a62-8a73-b52a3e198b70" caption="Vector logo."}

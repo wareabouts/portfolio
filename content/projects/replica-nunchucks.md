@@ -1,5 +1,5 @@
 ---
-title: "Replica Nunchucks"
+title: "replica nunchucks"
 slug: replica-nunchucks
 year: 2019
 categories: [3d-design]
@@ -9,13 +9,13 @@ source: adobe-portfolio
 
 ::figure{asset="fdc41e6c-ccac-4299-b417-976add84bf96"}
 
-## CONCEPT
+## concept
 
 My neighbor's son does Martial Arts including using nunchucks. He's also a big Call of Duty fan. He asked if I could recreate this pair of Nunchucks from Call of Duty: Ghosts.
 
 ::figure{asset="6468e3a3-1f51-4e9d-bf95-86bb08b78f72" caption="The in-game model of the nunchucks my neighbor's son wanted."}
 
-## PROCESS
+## process
 
 I didn't have a way to get the model for the nunchucks and so I resorted to making my own. I first tried roughly sculpting the dragon in clay and using Autodesk ReMake to turn it into a mesh I could edit in Autodesk Meshmixer. When that didn't work, I started with one of Meshmixer's default animal heads and eventually got to my final model.
 
@@ -32,7 +32,7 @@ I had a chain from an old clock that looked like it'd fit the model well. I heat
   ::item{asset="d8fa0a50-b45b-43e9-ad9d-7827cf42b54a" caption="After dry-brushing."}
 :::
 
-## OUTCOME
+## results
 
 I'm really happy with how they turned out. Meshmixer is definitely not the best way to do digital sculpting, but worked well enough to get the dragon head defined. It was also a great test of smoothing and post-processing 3D-prints! Though he doesn't actually use them to practice, my neighbor's son still has them hanging on his wall.
 

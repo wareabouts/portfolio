@@ -9,7 +9,7 @@ source: adobe-portfolio
 
 ::figure{asset="d6f77904-8a35-481a-b7ea-f4f7bee13fd0"}
 
-## CONCEPT
+## concept
 
 Inspired by unique movements of Delta-style 3D-Printers, I wanted to use what I'd learned about potentiometers, 3D-Printing and addressable LED's to create an interactive game.
 
@@ -21,7 +21,7 @@ Inspired by unique movements of Delta-style 3D-Printers, I wanted to use what I'
   ::item{asset="6f9722a7-b9c0-495f-9a85-7f6699814710" caption="Wiring diagram."}
 :::
 
-## PROCESS
+## process
 
 The housing was made with laser cut MDF panels spray-painted and glued together. This hid the Arduino in the center surrounded by a couple addressable LED's. The goal of the game is to manipulate the top triangle piece and match its color to that of the base. Each arm represents the intensity of each color of light. For example, if the triangle is pulled all the way to the top, it should be white, and all the way down should be black, any tilt off center increases the value of the light opposite the motion.
 

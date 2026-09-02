@@ -20,7 +20,7 @@ I love projects. I love tools.
 
 I want to create delightful experiences.
 
-Lets talk?
+Let's talk?
 
 :::
 

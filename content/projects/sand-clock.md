@@ -1,5 +1,5 @@
 ---
-title: "Sandy Clock"
+title: "sandy clock"
 slug: sand-clock
 year: 2019
 categories: [web-dev]
@@ -9,6 +9,6 @@ source: adobe-portfolio
 
 ::figure{asset="bc45d936-b04c-44e5-b9b0-6c82eb13a094"}
 
-This project was my answer to an assignment to prototype a new experience with time. The idea came from those clocks where the colon separating the hours and minutes blinks to count off seconds. I meshed the idea with that of a traditional hourglass and had the blinked colons become grains of sand, adding to a pile that grows over time.
+This was my answer to an assignment to prototype a new experience of time. The idea came from clocks where the colon between the hours and minutes blinks off the seconds. I crossed that with an hourglass, so each blink of the colon drops a grain of sand onto a pile that grows over time.
 
 ::button{href="https://editor.p5js.org/scealux/sketches/dHT9zb9H2" label="View on p5js.org"}

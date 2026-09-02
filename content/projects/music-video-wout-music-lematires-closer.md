@@ -1,5 +1,5 @@
 ---
-title: "Music Video w/out Music"
+title: "music video w/out music"
 slug: music-video-wout-music-lematires-closer
 year: 2020
 categories: [photography]

@@ -1,5 +1,5 @@
 ---
-title: "Camera Viewfinder"
+title: "camera viewfinder"
 slug: camera-viewfinder
 year: 2018
 categories: [3d-design]

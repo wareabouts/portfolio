@@ -9,11 +9,11 @@ source: adobe-portfolio
 
 I joined Ellumen at the end of a brand refresh. I created a new logo and accompanying animations, and successfully pitched the change to executives!
 
-## Connect, Secure, Optimize Animation
+## connect, secure, optimize animation
 
 ::figure{asset="c3cf3e71-e6cd-4831-accc-d1da3517cb14" caption="The new logo acting out the tagline: \"Connect, Secure, Optimize\". Created in Adobe After Effects."}
 
-## Old to New
+## old to new
 
 ::::columns
 

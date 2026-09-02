@@ -1,5 +1,5 @@
 ---
-title: "CSS Zen Garden"
+title: "CSS zen garden"
 slug: css-zen-garden
 year: 2017
 categories: [web-dev]

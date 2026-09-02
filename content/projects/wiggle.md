@@ -1,5 +1,5 @@
 ---
-title: "Wigglegram Lens"
+title: "wigglegram lens"
 slug: wiggle
 year: 2022
 categories: [3d-design]
@@ -9,11 +9,11 @@ source: adobe-portfolio
 
 ::figure{asset="df5bb61e-0bdc-49fe-a3ee-de545332bfb8"}
 
-## Concept
+## concept
 
 Having seen multi-lens Film cameras from the 80's, I wanted to see if it was possible to get a similar effect with a custom lens on my mirrorless camera. The original cameras simultaneously exposed multiple frames at the same time, capturing a moment from slightly different perspectives. Edited together into a GIF, by bouncing between the frames you can get a really interesting "moment-in-time" effect.
 
-## Process
+## process
 
 I forked the Sony E-Mount lens off an old prototype I had from a few years ago and rather than print it with a fixed distance focus I added a helicoid / focus ring.
 
@@ -25,7 +25,7 @@ I needed lenses and a local film development shop was kind enough to let me scav
 
 A couple of tests later I was able to mostly separate each lens light into its own portion of the sensor.
 
-## Outcome
+## results
 
 I finished the lens just in time for a trip to London. It was a great time to test it in a variety of situations!
 

@@ -9,11 +9,17 @@ source: adobe-portfolio
 
 ::figure{asset="6ae14c01-2545-47da-b680-fb3f340de0c3"}
 
-Model of one of the first footprints on the moon for Fiske Planetariums celebration of the 50th Anniversary of the moon landing. Based off a model made from a [simple photogrametry scan](https://www.myminifactory.com/object/3d-print-one-small-step-30746)of the boot-print. I used a CNC to create a life-size replica out of foam, spray-paint and gravel.
+## concept
 
-Started by \*attempting to\* laser cut the initial blocks out of foam before ultimately cutting the blocks with a hobby knife and using spray adhesive to make a stock block. From this, an Inventables X-Carve roughed out the print before I sanded over all the edges.
+A model of one of the first footprints on the Moon, made for Fiske Planetarium's celebration of the 50th anniversary of the landing. I started from a [photogrammetry scan](https://www.myminifactory.com/object/3d-print-one-small-step-30746) of the boot print and used a CNC to carve a life-size replica out of foam, then finished it with spray paint and gravel.
 
-A coat of primer ate away at the foam some, but left a granulated texture that actually contributed to the final look. A few more coats of primer, spray adhesive, a sprinkling of gravel and more spray-paint and I had a model of one of the first steps on the Moon!
+## process
+
+I started by *attempting to* laser cut the blocks out of foam, then gave up and cut them with a hobby knife and glued them into one stock block with spray adhesive. An Inventables X-Carve roughed out the print from there, and I sanded the edges smooth.
+
+## results
+
+A coat of primer ate away at the foam a little, but the granulated texture it left behind ended up adding to the final look. A few more coats of primer, spray adhesive, a sprinkling of gravel and more spray paint, and I had a model of one of the first steps on the Moon!
 
 :::gallery
   ::item{asset="a6f8a822-acac-41b4-9144-84ff76c1cc35" caption="Stock foam block divided before being glued together."}

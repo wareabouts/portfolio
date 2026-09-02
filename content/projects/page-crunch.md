@@ -1,5 +1,5 @@
 ---
-title: "Page Crunch"
+title: "page crunch"
 slug: page-crunch
 year: 2017
 categories: [web-dev]

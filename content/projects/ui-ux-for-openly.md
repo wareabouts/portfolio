@@ -1,5 +1,5 @@
 ---
-title: "UI for Openly.one"
+title: "UI for openly.one"
 slug: ui-ux-for-openly
 year: 2018
 categories: [graphic-design]

@@ -1,5 +1,5 @@
 ---
-title: "OpenAI ImageGen Camera Case"
+title: "OpenAI ImageGen camera case"
 slug: openai-case
 year: 2026
 categories: [3d-design]
@@ -7,9 +7,9 @@ cover: ab109214-a970-48e4-bb5e-42f4ff00a20e
 source: adobe-portfolio
 ---
 
-## overview
+OpenAI released an open-source, build-it-yourself AI camera, and I designed the 3D-printed enclosure for it. My case files ship in their [public repository](https://github.com/openai/imagegencam/tree/main).
 
-Designed the 3D-printed enclosure for OpenAI’s open-source build-it-yourself AI camera. Engineered a case that prints completely flat with zero support material and folds around the pre-assembled electronics using only the four screws that ship with the parts; print-in-place mechanisms and a smooth-bed outer finish and custom designed snap-together assembly make it robust and barely recognizable as a 3D print. My case files ship in OpenAI’s [public repository](https://github.com/openai/imagegencam/tree/main).
+The case prints completely flat with no support material, then folds around the pre-assembled electronics. It closes with the four screws that already ship with the parts and nothing else. Print-in-place mechanisms, a smooth-bed outer finish and snap-together assembly make it sturdy and hard to recognize as a 3D print.
 
 :::gallery
   ::item{asset="2b25f188-3a7e-4d19-b140-70e026eb81a7"}

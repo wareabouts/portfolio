@@ -1,5 +1,5 @@
 ---
-title: "severance vr"
+title: "severance VR"
 slug: severance-vr
 year: 2023
 categories: [virtual-reality]
@@ -11,9 +11,9 @@ source: adobe-portfolio
 
 ## concept
 
-I fell in love with Apple TV's Severance after watching it in March of 2023. I'd been following leaks and rumors around the as-yet-unnanounced Apple Vision Pro. 
+I fell in love with Apple TV's Severance after watching it in March of 2023. I'd been following leaks and rumors around the as-yet-unannounced Apple Vision Pro. 
 
-I feel like the show's concept is perfect for the VR platform and set our to make a demo of what that could look like!
+I feel like the show's concept is perfect for the VR platform and set out to make a demo of what that could look like!
 
 ## process
 

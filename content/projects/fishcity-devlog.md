@@ -13,13 +13,13 @@ This page was used to document project progress over the course of ATLS 4010: Ca
 
 ### Related Links: fishcity.co (not yet published) | Project Proposal
 
-## Project Overview
+## project overview
 
-### Elevator Pitch:
+### Elevator pitch
 
 An online education platform centered around connecting existing educational resources into a navigable “city” visualization.
 
-### Description:
+### Description
 
 fishcity is an online education platform built around the idea of connection and navigation of existing content. Typical online education platforms center around the creation of exclusive content. Locked behind a paywall, the website supports itself with paid memberships. I believe this model is flawed and leads to the creation of redundant and restricted content.
 
@@ -33,7 +33,7 @@ Development Progress:
 
 [Live Test Site Link](https://codesandbox.io/s/fishcity-tmfim)
 
-## Dev Notes
+## dev notes
 
 ### Pandemic Weeks: 3/10 -> 4/28
 
@@ -74,7 +74,7 @@ In truth, the algorithm doesn't work 100%. Some chunks, for whatever reason stil
 
 The big step now is getting these plots to display in THREEjs. The plan was to have plots generate dynamically as the city grows, but I think that might be too much optimization for now. The plan is to "bake" in all these plots, and have the city grow from there. Depending on the placement algorithm, the city could need expanding very soon. I figure if the dynamic placement is going to stop me from creating the rest of the placement algorithm and all in time, it's best to focus on getting something workable right now.
 
-That being said, once I get the city to display with THREEjs, there's two layers to connect before buildings are placeable: The resource placer (takes in information about a resource and spits out an X, Y coordinate) and the 3D map (Using Delaunay Triangulation, and the library's "delunay.find()" method, the map can use the coordinate from the placer to identify a plot to home the resource at.). I've tested delunay on plots to confirm it works how I expect:
+That being said, once I get the city to display with THREEjs, there's two layers to connect before buildings are placeable: The resource placer (takes in information about a resource and spits out an X, Y coordinate) and the 3D map (Using Delaunay Triangulation, and the library's "delaunay.find()" method, the map can use the coordinate from the placer to identify a plot to home the resource at.). I've tested delaunay on plots to confirm it works how I expect:
 
 ::figure{asset="f813e650-5644-4c21-8c3b-671c294530c4"}
 
@@ -86,9 +86,9 @@ I posted for this week but I'm not sure where it went?...
 
 ### Week 7: 2/18 -> 2/25
 
-This week involved getting back into procedural generation and tackling d3-delauany all over again. Last time I stopped working on the Voronoi pattern after I ran into issues being able to iterate through cells. I began this week by tackling that again, but instead of laying out sites randomly, I used a seeded random number generator so when I found an issue I could reproduce the same circumstances it occurred under.
+This week involved getting back into procedural generation and tackling d3-delaunay all over again. Last time I stopped working on the Voronoi pattern after I ran into issues being able to iterate through cells. I began this week by tackling that again, but instead of laying out sites randomly, I used a seeded random number generator so when I found an issue I could reproduce the same circumstances it occurred under.
 
-::figure{asset="002fe25b-e940-4cdf-9e71-163c6b7ab779" caption="White cells in in the photo above are not being iterated over by the included methods..."}
+::figure{asset="002fe25b-e940-4cdf-9e71-163c6b7ab779" caption="White cells in the photo above are not being iterated over by the included methods..."}
 
 I still had issues iterating through every cell, but created a new project using the available methods to determine and separate infinite cells from the rest. This way, when generating the city, I can select the infinite cells and their neighbors as variable cells and not generate building plots there.
 
@@ -100,7 +100,7 @@ I didn't quite make it to the end of that goal, but got to the beginning of the 
 
 Overall, I'm very happy with the results, this week involved learning some basic linear algebra, converting formulas to code and testing everything over and over again. As the weeks go on, I'm loving diving deeper into web development and coding in general.
 
-Week 6: 2/11 -> 2/18
+### Week 6: 2/11 -> 2/18
 
 Firebase and Project Restructuring
 
@@ -108,7 +108,7 @@ This week, I continued working on the placement algorithm but kept running into 
 
 The problem I think I've been running into these last few weeks is trying to complete pieces of the project out of sequence. I went through and broke down larger pieces into their component parts to reassess my position. Laid out, it's clear to see why the "Place New Building" element was so difficult: it relies on elements easiest completed independently. That's all to say, before tackling that I have many smaller sub-tasks to finish.
 
-Though I don't feel great about the confusion of the last two weeks, having this new format for looking at the the remaining tasks makes the project feel more manageable. After setting up the chart below, I began work on Firebase, completing [Login and Read / Write](https://codesandbox.io/s/friendly-yonath-rj7ij?fontsize=14&hidenavigation=1&theme=dark)in a couple of hours. Off to a good start.
+Though I don't feel great about the confusion of the last two weeks, having this new format for looking at the remaining tasks makes the project feel more manageable. After setting up the chart below, I began work on Firebase, completing [Login and Read / Write](https://codesandbox.io/s/friendly-yonath-rj7ij?fontsize=14&hidenavigation=1&theme=dark)in a couple of hours. Off to a good start.
 
 Link to [Process Presentation](https://docs.google.com/presentation/d/1rhwnKlu7u2YF5qihKP9dmIq7EuRa4w8HaF7EQqCG4Pc/edit?usp=sharing).
 
@@ -120,7 +120,7 @@ Link to [Process Presentation](https://docs.google.com/presentation/d/1rhwnKlu7u
 
 Mentor Review & Placement Algorithm
 
-This week, I worked on creating and implementing an extensible solution for placing new buildings in the city. Coming in from last week, I was pretty sure I could get it done, but ran into more issues than I'd imagined. My original plan involved creating a Delauany Triangulation from a random scattering of points. From there, I'd create a Voronoi pattern, the cells of which being neighborhoods / places for new buildings to spawn. I got wrapped up in the idea and made it pretty far down that track before realizing some critical problems. The edge cells of a Vornoi pattern are infinite. This isn't a huge problem, there are other algorithms for limiting the edges to a specific canvas. However, the larger issue was that new cells can change the shape of existing cells. you can see how that works in my [demo on CodeSandbox](https://codesandbox.io/s/d3-voronoi-bkzgp?fontsize=14&hidenavigation=1&theme=dark) (doubleclick to place a new Voronoi "site") .
+This week, I worked on creating and implementing an extensible solution for placing new buildings in the city. Coming in from last week, I was pretty sure I could get it done, but ran into more issues than I'd imagined. My original plan involved creating a Delaunay Triangulation from a random scattering of points. From there, I'd create a Voronoi pattern, the cells of which being neighborhoods / places for new buildings to spawn. I got wrapped up in the idea and made it pretty far down that track before realizing some critical problems. The edge cells of a Vornoi pattern are infinite. This isn't a huge problem, there are other algorithms for limiting the edges to a specific canvas. However, the larger issue was that new cells can change the shape of existing cells. you can see how that works in my [demo on CodeSandbox](https://codesandbox.io/s/d3-voronoi-bkzgp?fontsize=14&hidenavigation=1&theme=dark) (doubleclick to place a new Voronoi "site") .
 
 ::figure{asset="72677675-4a03-4f5c-a7ef-b41c4aaf31d0"}
 
@@ -197,7 +197,7 @@ From there, the goal was to prototype ways that the city might expand, and how t
 
 To keep things simple, I'm assuming each new node will have three referential pieces of information to inform its placement (3 tags, 2 tags + tool, category + tool + topic, etc.) My initial thought was having "tag capitals" (locations for certain tags), be anchor points, create circles of various radii around the points and find where the intersected to place the new point. It was along the lines of triangulation but felt a little over-complicated. Next, I looked into simple spring functions, where each could anchor to a "tag capital" and the rigidity / rest length of the spring could further weight placement. I didn't end up getting that to work (though I'm still looking to try it), but moved on to centroid and weighted centroid placement. They're easy to calculate and implement for triangles. For the weighted version, I'd assign weights to each of the informing pieces of data and, after the centroid is found, the weights pull the point off the centroid and toward them proportionally. The demo of that is also on [Code Sandbox.](https://codesandbox.io/s/city-generation-influences-test-vouhl)
 
-Week 3: 1/21 -> 1/28
+### Week 3: 1/21 -> 1/28
 
 City generation cont. + Firebase Login
 

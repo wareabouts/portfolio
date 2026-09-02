@@ -1,5 +1,5 @@
 ---
-title: "Fiske Gravity Demonstration"
+title: "fiske gravity demonstration"
 slug: fiske-planetarium-gravity-demonstration
 year: 2020
 categories: [installation]
@@ -23,7 +23,7 @@ source: adobe-portfolio
 
 ::::
 
-## CONCEPT
+## concept
 
 Fiske Planetarium had been using a piece of stretchy fabric clipped to the outside of a hula-hoop to demonstrate how gravity warps space.
 

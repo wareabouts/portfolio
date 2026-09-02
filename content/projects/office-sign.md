@@ -9,7 +9,7 @@ source: adobe-portfolio
 
 With Ellumen's new logo, the physical sign in the office needed an update. 
 
-I used a laser cutter to create a large wood version of the logo, and used the offcuts to create templates to align the sign perfectly for instalation. 
+I used a laser cutter to create a large wood version of the logo, and used the offcuts to create templates to align the sign perfectly for installation. 
 
 I also 3D printed some tabs that would go in the holes where the letters would hang, to press into the drywall and mark locations for screw holes.
 

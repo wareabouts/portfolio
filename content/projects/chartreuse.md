@@ -21,7 +21,7 @@ We wanted the project to be low cost and so we settled on MDF construction with 
 
 Anna drafted and sliced the mask in Autodesk Fusion 360 while I tested out various methods for motion tracking. From what we gathered, the original Albert tracks by flashing his eyes and using photodetectors to align the face toward the brightest nearby object. We were planning on having the eyes be reactive, and weren't interested in blinding the people who interacted with her. Additionally, Albert works best in a darker area and we wanted Chartreuse to work in other environments. After a few different tests, we decided an ultrasonic sensor rotating on a servo worked best for our application.
 
-The system could really only track objects coming in from the left, detecting an object within a range would cause the servo it was mounted on to rotate counter-clockwise. When the ultrasonic sensor no longer detected something it would clockwise until the the start position or until it found another object in range.
+The system could really only track objects coming in from the left, detecting an object within a range would cause the servo it was mounted on to rotate counter-clockwise. When the ultrasonic sensor no longer detected something it would clockwise until the start position or until it found another object in range.
 
 To make Chartreuse expressive, I designed and 3D-Printed an adapter to make a normal 180deg servo into a linear one. The eyes were lit from behind and the linear servo would raise or lower cardboard "eyelids" to change the shadow projected onto semi-opaque acrylic. From the front, these appeared as different emotions!
 

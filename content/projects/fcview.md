@@ -15,11 +15,11 @@ source: adobe-portfolio
   ::item{asset="c3ac0d65-5154-463f-885d-bb3ce71aba07" caption="Reviewing Lecture"}
 :::
 
-## CONCEPT
+## concept
 
 At the end of every semester, CU students are asked to fill out FCQ's (Faculty Course Questionnaires). Though well-meaning, the data that comes back from these is hard to react to. Having a couple numbers that sum up an entire semester of work just doesn't paint anything close to a complete picture of the course. That's why I came up with the idea for FCView, an effort to make insights more immediate and actionable for students and teachers alike.
 
-## PROCESS
+## process
 
 For this class, we spent the first half of the semester learning how to create effective interfaces, including paper prototyping and user testing. Then the second half applying what we learned toward designing an app that addressed a real issue.
 

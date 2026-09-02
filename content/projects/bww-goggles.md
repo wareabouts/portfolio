@@ -1,5 +1,5 @@
 ---
-title: "B-Dubs Vision Goggles"
+title: "B-Dubs vision goggles"
 slug: bww-goggles
 year: 2025
 categories: [3d-design]
@@ -7,9 +7,9 @@ cover: 5e31c287-88d3-4a4d-b215-ec8004e5442b
 source: adobe-portfolio
 ---
 
-## overview
+BWW ran a national March Madness campaign around a novelty pair of goggles, and I designed the 3D-printed parts for them.
 
-Designed 3D-printed parts for a national March Madness campaign novelty. Designed and tested an adjustable mounting system that attaches a mix of salvaged mirrors securely yet with play for use. Also designed a lightweight printable clamshell mirror with a molded-in BWW logo after off-the-shelf ones proved too heavy. BWW wanted to make a few dozen pairs of these for sale so I had to engineer every part for minimal print, build and post-processing time.
+The mount had to hold a mix of salvaged mirrors securely while still letting them adjust, so I designed and tested it with a little play on purpose. Off-the-shelf mirrors turned out too heavy, so I also designed a lightweight printable clamshell mirror with the BWW logo molded in. BWW wanted a few dozen pairs to sell, which meant every part had to be quick to print, assemble and finish.
 
 ::::columns
 

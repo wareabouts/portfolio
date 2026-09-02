@@ -33,7 +33,7 @@ We began with an MDF prototype before iterating on subsequent 3D-prints. We star
   ::item{asset="484ba56b-3468-4d9d-ae24-7af81396ca5a" caption="Assembling the final case."}
 :::
 
-## result
+## results
 
 After enough tweaking, it all works as we'd hoped! The tape looks great mounted on the wall and works immediately on being plugged in. The tape homes, then extends out to the current time in inches. The RTC keeps time even when it's not plugged in so it catches up as soon as it's plugged in.
 

@@ -9,7 +9,7 @@ source: adobe-portfolio
 
 ::figure{asset="c6878fcb-153e-4f3a-9d58-712c79126716"}
 
-## CONCEPT
+## concept
 
 I'm not the only one frustrated with the state of higher education and lackluster online alternatives. In thinking about a solution to the issues there I came up with the idea for fishcity. The idea is to build an online education platform built around the idea of connection and navigation of existing content. Typical the online education business model centers around the creation of exclusive content. Locked behind a paywall, the website supports itself with paid memberships. I believe this model is flawed and leads to the creation of redundant and restricted content.
 
@@ -21,11 +21,11 @@ I've had the idea for a while, but worked on developing an MVP for around 3 mont
 
 Currently in the process of cleaning up the code and experimenting with the UI/UX around navigating the visualization.
 
-## PROCESS
+## process
 
 ( This process is kind of a TLDR, more complete [process blog here](/fishcity-devlog) )
 
-Because there wasn't really a platform to test out the user experience of navigating non-location content through a a city visualization, I spent most of capstone creating that. I wanted the city to develop procedurally, but had no experience creating something like that before. Much of the first month was spent creating a [Seeded Voronoi-Based Object Oriented Bounding Box Subdivision](https://codesandbox.io/s/dark-tree-l7eeu) process to create building plots.
+Because there wasn't really a platform to test out the user experience of navigating non-location content through a city visualization, I spent most of capstone creating that. I wanted the city to develop procedurally, but had no experience creating something like that before. Much of the first month was spent creating a [Seeded Voronoi-Based Object Oriented Bounding Box Subdivision](https://codesandbox.io/s/dark-tree-l7eeu) process to create building plots.
 
 :::gallery
   ::item{asset="f5bb4605-a119-4a32-96f4-2c3b946dfc18"}
@@ -37,7 +37,7 @@ Because there wasn't really a platform to test out the user experience of naviga
   ::item{asset="c14ec0a0-3eed-4b57-b494-016593fb33b2"}
 :::
 
-[Applied on a larger scale](https://codesandbox.io/s/d3-delunay-plotified-yntqr?file=/src/mapGen.js), it spits out a few thousand building plots in a fairly organic layout.
+[Applied on a larger scale](https://codesandbox.io/s/d3-delaunay-plotified-yntqr?file=/src/mapGen.js), it spits out a few thousand building plots in a fairly organic layout.
 
 ::figure{asset="012987b8-46c4-4efc-b245-d87d1145b4a2"}
 
@@ -45,7 +45,7 @@ In the future, I want the city to be able to expand procedurally as well. For th
 
 I spent a long time laying out the structure of the data in Cloud Firestore. It wasn't a process I'm familiar with, and involved watching and rewatching the guides to Firestore that Google has on Youtube. Eventually I had it all settled and was able to hook everything together.
 
-## RESULTS
+## results
 
 The final product allows users to sign in, add and browse links. When a link is added, tags are used to place it in the city in a relevant neighborhood.
 
@@ -55,7 +55,7 @@ With the buildings for resources working, I spent the last couple of weeks exper
 
 ::figure{asset="967c3f61-c0af-4a7b-8b56-641f91d98814"}
 
-## EXTENSIONS
+## extensions
 
 I'm continuing to work on this project. Overall, the whole process was a little more rushed than I'd have liked. I learned a lot through the process, and I'm thinking about starting over using what I've learned.
 

@@ -1,5 +1,5 @@
 ---
-title: "Expressive Booklet"
+title: "expressive booklet"
 slug: expressive-booklet
 year: 2020
 categories: [graphic-design]

@@ -1,12 +1,12 @@
 ---
-title: "Photogrammetry Tests"
+title: "photogrammetry tests"
 slug: photogrammetry-tests
 categories: [3d-design]
 cover: bde3c931-ae42-42fa-a0cb-18c3888d69f0
 source: adobe-portfolio
 ---
 
-## TREVOR STATUE
+## trevor statue
 
 One of my first tests with photogrammetry (Autodesk Re-cap, 2017). I had just purchased a 3D printer and wanted to try printing a high detail model. My friend volunteered to be the test subject and stayed as still as he could while I took upwards of 150 photos. I cleaned up the model in Autodesk Meshmixer and sent it to the printer!
 
@@ -24,7 +24,7 @@ One of my first tests with photogrammetry (Autodesk Re-cap, 2017). I had just pu
 
 ::figure{asset="4684c806-03cf-4a29-8085-28e2022aaa01" caption="Rendered in Blender with obligatory donut."}
 
-## UTAH PETROGLYPHS
+## utah petroglyphs
 
 I used my DJI Mavic Mini to take some photos of petroglyphs on the other side of a canyon. Put together with Reality capture, the scale of the drawings is staggering.
 
@@ -39,7 +39,7 @@ I used my DJI Mavic Mini to take some photos of petroglyphs on the other side of
 
 ::figure{asset="fbc3ab22-5822-4daa-9565-7fdfea0f2e2b" caption="Close up of the petroglyphs."}
 
-## Virtual Graduation: Visual Arts Center
+## virtual graduation: visual arts center
 
 To create the scene for my virtual Graduation Event, I did my first tests with Drone Photogrammetry before taking more than 500 Photos for the final space.
 
@@ -53,11 +53,11 @@ To create the scene for my virtual Graduation Event, I did my first tests with D
 
 I took the above model and retopologized it with Blender. The final model is optimized (1gb -> 14mb) to be used in the browser as it was for the [virtual graduation ceremony](https://alexfiel.com/atlas-virtual-graduation). The 3D map is [playable Mozilla Hubs](https://hubs.mozilla.com/scenes/XrE9YBs/cu-boulder-visual-arts-center).
 
-## Photogramet-me
+## photogramet-me
 
 On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Pose), I've done some tests with photogrammetry. I'm not happy with the results yet but this is just a selection of some of what I've tried!
 
-### 1. Worst-Case Test: bad quality camera, dim lighting, Few Source Photos ( Reality Capture )
+### 1. Worst-case test: bad camera, dim lighting, few source photos (Reality Capture)
 
 :::gallery
   ::item{asset="753df2c6-ecc6-4212-9714-e7d16bc47651"}
@@ -65,7 +65,7 @@ On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Po
   ::item{asset="1b8b3ce6-7fa0-49a8-820d-bbc4033d38ea"}
 :::
 
-### 2. Nose REference for Ghenghis Khan Costume
+### 2. Nose reference for Genghis Khan costume
 
 :::gallery
   ::item{asset="cf6fa6ed-d363-480c-b53f-7090a43e8db4"}
@@ -73,7 +73,7 @@ On a quest to find the best way to (cheaply) get a 3D model of a person (in T-Po
   ::item{asset="7c31be32-bcb6-4bf9-b018-9b81da42d509"}
 :::
 
-### 3. Ghenghis Khan COstume
+### 3. Genghis Khan costume
 
 :::gallery
   ::item{asset="49112349-a379-47c0-ba19-d0712ffb386b"}
