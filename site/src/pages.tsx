@@ -5,8 +5,8 @@ import {
   categoryLabel,
   categoryProjects,
   pageBySlug,
+  listedProjects,
   projectBySlug,
-  projects,
   taxonomy,
 } from './content'
 import { useDocumentMeta } from './meta'
@@ -15,7 +15,7 @@ const SITE = 'Alex Fiel - Creative Technologist'
 
 export function Home() {
   useDocumentMeta(SITE, 'Projects by Alex Fiel, a Creative Technologist based in Seattle.')
-  return <CoverGrid items={projects} />
+  return <CoverGrid items={listedProjects} />
 }
 
 export function Category() {

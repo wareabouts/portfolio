@@ -17,6 +17,11 @@ export interface Doc {
   year?: number
   categories?: string[]
   cover?: string
+  /**
+   * Kept in the repo and still built at its URL, but left out of the home and category
+   * grids and marked noindex. For work that is out of date or not representative.
+   */
+  unlisted?: boolean
   blocks: Block[]
 }
 

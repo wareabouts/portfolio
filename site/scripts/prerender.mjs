@@ -44,6 +44,7 @@ async function main() {
       title: `${SITE_NAME} - ${p.title}`,
       desc: firstProse(p) || DESC,
       image: p.cover ? `${base}media/${p.cover}-cover.webp` : undefined,
+      noindex: Boolean(p.unlisted),
     })),
   ]
 
@@ -99,6 +100,11 @@ async function main() {
 
     if (hoisted.length) {
       page = page.replace('</head>', `  ${hoisted.join('\n    ')}\n  </head>`)
+    }
+
+    // Unlisted work stays reachable by link but should not turn up in search.
+    if (r.noindex) {
+      page = page.replace('</head>', '  <meta name="robots" content="noindex" />' + String.fromCharCode(10) + '  </head>')
     }
 
     if (r.url === '/') {

@@ -75,6 +75,12 @@ Normal Markdown prose, **bold**, [links](https://example.com), lists.
 Block types: `figure`, `gallery`/`item`, `embed`, `video`, `button`, `form`, `columns`,
 `## heading` (section), `### heading` (sub-section).
 
+**Keeping a page without showing it.** Add `unlisted: true` to a project's front matter and
+it stays in the repo and still builds at its URL, but drops out of the home grid and its
+category pages and gets a `noindex` tag. Use it for work that is out of date or not
+representative; delete the line to bring the page back. `content/` is hand-edited now (copy
+rounds, this flag), so re-running `tools/extract.py` would overwrite those edits.
+
 **Line art in dark mode.** Black-on-white artwork reads as a bright slab against a dark
 page. Mark it and the site flips it:
 

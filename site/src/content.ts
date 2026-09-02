@@ -7,6 +7,9 @@ const media = mediaRaw as unknown as Record<string, Media>
 
 export const { projects, pages, taxonomy, assets } = content
 
+/** What the public grids show. `projects` keeps unlisted work so direct links still resolve. */
+export const listedProjects = projects.filter((p) => !p.unlisted)
+
 export const BASE = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 export const projectBySlug = new Map(projects.map((p) => [p.slug, p]))
@@ -14,7 +17,7 @@ export const pageBySlug = new Map(pages.map((p) => [p.slug, p]))
 
 export function categoryProjects(slug: string): Doc[] {
   const members = new Set(taxonomy.categories[slug] ?? [])
-  return projects.filter((p) => members.has(p.slug))
+  return listedProjects.filter((p) => members.has(p.slug))
 }
 
 export function categoryLabel(slug: string): string | undefined {
