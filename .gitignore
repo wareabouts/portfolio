@@ -17,3 +17,7 @@ site/public/video/
 # NOTE: site/public/media/ is intentionally committed. It's generated from
 # assets/originals, but committing it lets CI deploy without pulling ~754 MB of LFS
 # objects on every build. Regenerate with: npm --prefix site run images
+
+# Copy-desk review: generated from review/rewrites.mjs; decisions/ is the record and IS committed.
+review/dist/
+review/proposals.json

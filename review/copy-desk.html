@@ -1,0 +1,384 @@
+<title>alexfiel.com copy desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  /* Violet-biased neutrals so they read as chosen; the accent is the site's own
+     periwinkle, deepened on light. Deletion/insertion are semantic, kept off the accent. */
+  :root {
+    --bg: #f6f5f8; --surface: #ffffff; --surface-2: #efedf4;
+    --ink: #1c1b22; --ink-2: #4b4856; --muted: #7a768a; --line: #e1dee9;
+    --accent: #6a58f2; --accent-ink: #ffffff; --accent-soft: #ece9ff;
+    --del: #b42318; --del-bg: #fdecea; --ins: #1a7f4b; --ins-bg: #e6f4ec;
+    --shadow: 0 1px 2px rgba(28,27,34,.06), 0 10px 28px -14px rgba(28,27,34,.22);
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141318; --surface: #1c1b22; --surface-2: #24222c;
+      --ink: #ebe9f0; --ink-2: #b9b5c6; --muted: #8f8b9a; --line: #2b2933;
+      --accent: #a396ff; --accent-ink: #141318; --accent-soft: #2a2740;
+      --del: #ff8f86; --del-bg: rgba(255,143,134,.13); --ins: #7fd99a; --ins-bg: rgba(127,217,154,.13);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.6);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141318; --surface: #1c1b22; --surface-2: #24222c;
+    --ink: #ebe9f0; --ink-2: #b9b5c6; --muted: #8f8b9a; --line: #2b2933;
+    --accent: #a396ff; --accent-ink: #141318; --accent-soft: #2a2740;
+    --del: #ff8f86; --del-bg: rgba(255,143,134,.13); --ins: #7fd99a; --ins-bg: rgba(127,217,154,.13);
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 14px; line-height: 1.5; }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; }
+  button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .app { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+
+  /* ---- rail ---- */
+  .rail { position: sticky; top: 0; height: 100vh; overflow-y: auto; border-right: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
+  .brand { padding: 20px 20px 14px; border-bottom: 1px solid var(--line); }
+  .brand h1 { margin: 0; font: 600 15px/1.2 var(--sans); letter-spacing: .01em; }
+  .brand p { margin: 4px 0 0; color: var(--muted); font-size: 12.5px; }
+  .progress { padding: 14px 20px; border-bottom: 1px solid var(--line); }
+  .progress .n { font: 600 22px/1 var(--sans); font-variant-numeric: tabular-nums; }
+  .progress .of { color: var(--muted); font-size: 12.5px; }
+  .bar { height: 4px; background: var(--surface-2); border-radius: 2px; margin-top: 8px; overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .25s ease; }
+  .nav { padding: 8px 10px; flex: 1; }
+  .nav h2 { margin: 12px 10px 6px; font: 600 11px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .nav button { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 7px 10px; border: 0; border-radius: 6px; background: none; color: var(--ink-2); }
+  .nav button:hover { background: var(--surface-2); color: var(--ink); }
+  .nav button[aria-current="true"] { background: var(--accent-soft); color: var(--ink); }
+  .nav .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .nav .c { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .nav .done .c { color: var(--ins); }
+  .nav .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); flex: none; }
+  .nav .done .dot { background: var(--ins); }
+  .nav .part .dot { background: var(--accent); }
+  .railfoot { padding: 14px 20px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); }
+  .railfoot .sync { display: flex; gap: 8px; align-items: flex-start; }
+  .railfoot .sync i { width: 8px; height: 8px; border-radius: 50%; margin-top: 5px; flex: none; background: var(--muted); }
+  .railfoot .sync.ok i { background: var(--ins); }
+  .railfoot .sync.local i { background: #d59a1a; }
+  .railfoot button { margin-top: 10px; width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink-2); font-size: 12.5px; }
+  .railfoot button:hover { border-color: var(--accent); color: var(--ink); }
+
+  /* ---- desk ---- */
+  .desk { padding: 0 40px 80px; }
+  .deskhead { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 22px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
+  .deskhead .row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .deskhead h2 { margin: 0; font: 600 22px/1.15 var(--sans); text-wrap: balance; }
+  .deskhead .live { font-size: 13px; }
+  .deskhead .spacer { flex: 1; }
+  .filters { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; align-items: center; }
+  .chip { padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font-size: 12.5px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .chip .k { color: inherit; opacity: .6; margin-left: 4px; font-variant-numeric: tabular-nums; }
+  .filters .spacer { flex: 1; }
+  .acceptall { padding: 5px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); font-size: 12.5px; }
+  .acceptall:hover { border-color: var(--ins); color: var(--ins); }
+  .hint { color: var(--muted); font-size: 12px; margin: 0 0 16px; }
+  .hint kbd { font: 11px/1 var(--sans); padding: 2px 5px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; background: var(--surface); color: var(--ink-2); }
+
+  .cards { display: flex; flex-direction: column; gap: 14px; max-width: 760px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 16px 20px 14px; }
+  .card:focus-within, .card.focus { border-color: var(--accent); }
+  .eyebrow { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+  .kind { font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: 10.5px; color: var(--ink-2); padding: 2px 7px; border-radius: 4px; background: var(--surface-2); }
+  .why::before { content: '·'; margin-right: 8px; opacity: .6; }
+
+  /* The manuscript: reviewed copy in serif, big enough to actually read. */
+  .copy { font-family: var(--serif); font-size: 17.5px; line-height: 1.6; color: var(--ink); overflow-wrap: anywhere; }
+  .copy .blk + .blk { margin-top: 12px; }
+  .copy .blk.h { font-weight: 600; font-size: 15px; letter-spacing: .01em; font-family: var(--sans); color: var(--accent); text-transform: none; }
+  .copy .blk.h3 { font-weight: 600; font-size: 16px; }
+  .copy .blk.title { font-size: 24px; font-weight: 600; line-height: 1.25; }
+  del { color: var(--del); background: var(--del-bg); text-decoration: line-through; text-decoration-thickness: 1.5px; border-radius: 2px; padding: 0 1px; }
+  ins { color: var(--ins); background: var(--ins-bg); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; border-radius: 2px; padding: 0 1px; }
+  .blk.allins { border-left: 3px solid var(--ins); padding-left: 10px; }
+  .blk.alldel { border-left: 3px solid var(--del); padding-left: 10px; }
+  .removed-note { font-family: var(--sans); font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+
+  .actions { display: flex; gap: 8px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+  .btn { padding: 7px 14px; border-radius: 7px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; font-size: 13px; }
+  .btn:hover { border-color: var(--ink-2); }
+  .btn.accept { background: var(--ins); border-color: var(--ins); color: #fff; }
+  .btn.accept:hover { filter: brightness(1.08); }
+  .btn.reject:hover { border-color: var(--del); color: var(--del); }
+  .btn.quiet { border-color: transparent; color: var(--muted); font-weight: 400; }
+  .btn.quiet:hover { color: var(--ink); border-color: var(--line); }
+  .note { width: 100%; margin-top: 10px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); color: var(--ink); font: inherit; font-size: 13.5px; min-height: 38px; resize: vertical; }
+  .note::placeholder { color: var(--muted); }
+
+  /* decided: compact */
+  .card.decided { padding: 12px 20px; }
+  .card.decided .copy { font-size: 14.5px; color: var(--ink-2); max-height: 4.8em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+  .card.decided .copy.open { max-height: none; mask-image: none; -webkit-mask-image: none; }
+  .status { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 12px; padding: 3px 9px; border-radius: 999px; }
+  .status.accepted { background: var(--ins-bg); color: var(--ins); }
+  .status.rejected { background: var(--del-bg); color: var(--del); }
+  .status.commented { background: var(--accent-soft); color: var(--accent); }
+  .savednote { font-size: 13px; color: var(--ink-2); margin-top: 8px; padding-left: 10px; border-left: 2px solid var(--line); white-space: pre-wrap; }
+
+  /* ---- style guide view ---- */
+  .guide { max-width: 720px; }
+  .guide .lede { font-family: var(--serif); font-size: 18px; line-height: 1.55; color: var(--ink-2); margin: 0 0 26px; }
+  .rule { padding: 18px 0; border-top: 1px solid var(--line); }
+  .rule h3 { margin: 0 0 6px; font: 600 16px/1.3 var(--sans); }
+  .rule p { margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.55; }
+  .rule .alt { margin-top: 8px; color: var(--muted); font-size: 14.5px; }
+  .guide .cta { margin-top: 26px; }
+  .guide .cta .btn { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+
+  @media (max-width: 900px) {
+    .app { grid-template-columns: 1fr; }
+    .rail { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
+    .nav { display: none; }
+    .rail.open .nav { display: block; }
+    .desk { padding: 0 18px 60px; }
+    .menu { display: inline-block; }
+  }
+  .menu { display: none; margin-top: 8px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink-2); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="app">
+  <aside class="rail" id="rail">
+    <div class="brand">
+      <h1>alexfiel.com copy desk</h1>
+      <p id="brand-sub">round 1</p>
+      <button class="menu" id="menu" aria-expanded="false">Pages</button>
+    </div>
+    <div class="progress">
+      <span class="n" id="p-n">0</span> <span class="of" id="p-of">of 0 decided</span>
+      <div class="bar"><i id="p-bar"></i></div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Pages"></nav>
+    <div class="railfoot">
+      <div class="sync" id="sync"><i></i><span>Connecting to the review database…</span></div>
+      <button id="export">Copy decisions as JSON</button>
+    </div>
+  </aside>
+  <main class="desk" id="desk"></main>
+</div>
+
+<script id="proposals" type="application/json">/*__PROPOSALS__*/</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById('proposals').textContent)
+  const LS_KEY = 'copy-desk:' + DATA.round
+  const $ = (s, r = document) => r.querySelector(s)
+
+  // ---------------------------------------------------------------- state + persistence
+  let decisions = {}            // id -> {status, note, at, slug, kind}
+  let db = null, dbLive = false
+  try { decisions = JSON.parse(localStorage.getItem(LS_KEY) || '{}') } catch {}
+
+  const setSync = (cls, text) => { const el = $('#sync'); el.className = 'sync ' + cls; el.querySelector('span').textContent = text }
+
+  function cache() { try { localStorage.setItem(LS_KEY, JSON.stringify(decisions)) } catch {} }
+
+  async function persist(id, body) {
+    if (body) decisions[id] = body; else delete decisions[id]
+    cache(); render()
+    if (!db) return
+    try {
+      if (body) await db.doc('decisions/' + id).set(body)
+      else await db.doc('decisions/' + id).delete()
+    } catch (e) {
+      setSync('local', 'Could not save to the review database (' + (e && e.code || 'error') + '). Decisions are kept on this device; use "Copy decisions as JSON".')
+    }
+  }
+
+  // Light the database up when the viewer grants it; the page already works without it.
+  ;(async () => {
+    try { db = window.claude && window.claude.use ? await window.claude.use('db') : null } catch { db = null }
+    if (!db) { setSync('local', 'Saved on this device only. When you are done, click "Copy decisions as JSON" and paste it to me.'); return }
+    db.collection('decisions').onSnapshot((snap) => {
+      const next = {}
+      for (const d of snap.docs) if (d.exists) next[d.id] = d.data()
+      // The database is the source of truth once it answers; merge in anything local it lacks.
+      for (const [id, v] of Object.entries(decisions)) if (!next[id]) { next[id] = v; db.doc('decisions/' + id).set(v).catch(() => {}) }
+      decisions = next; cache(); dbLive = true
+      setSync('ok', 'Saving to the review database. Decisions here are what get applied.')
+      render()
+    }, (e) => setSync('local', 'Review database unavailable (' + (e && e.code || 'error') + '). Decisions are kept on this device.'))
+  })()
+
+  // ---------------------------------------------------------------- diff (word-level LCS)
+  const tok = (s) => s.split(/(\s+)/).filter(Boolean)
+  function diffWords(a, b) {
+    const A = tok(a), B = tok(b), n = A.length, m = B.length
+    const dp = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1))
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+      dp[i][j] = A[i] === B[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1])
+    const out = []; let i = 0, j = 0
+    const push = (t, s) => { const l = out[out.length - 1]; if (l && l.t === t) l.s += s; else out.push({ t, s }) }
+    while (i < n && j < m) {
+      if (A[i] === B[j]) { push('eq', A[i]); i++; j++ }
+      else if (dp[i + 1][j] >= dp[i][j + 1]) { push('del', A[i]); i++ }
+      else { push('ins', B[j]); j++ }
+    }
+    while (i < n) push('del', A[i++]); while (j < m) push('ins', B[j++])
+    // whitespace-only runs between two changes read better attached to the change
+    return out
+  }
+  const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  const strip = (s) => s.replace(/^#{2,3}\s+/, '')
+  const level = (s) => /^###\s/.test(s) ? 'h3' : /^##\s/.test(s) ? 'h' : ''
+  const similarity = (a, b) => { const d = diffWords(a, b); const eq = d.filter((x) => x.t === 'eq').reduce((n, x) => n + x.s.length, 0); return eq / Math.max(a.length, b.length, 1) }
+
+  /** Render old->new as one flowing marked-up manuscript. */
+  function renderDiff(s) {
+    // A caption fix replaces the whole directive line; show the reader only the caption.
+    if (s.display) return `<div class="blk">${inline(diffWords(s.display.old, s.display.new))}</div>`
+    if (s.kind === 'title') return `<div class="blk title">${inline(diffWords(s.old, s.new))}</div>`
+    if (s.new === '') return `<div class="blk alldel ${level(s.old)}"><del>${esc(strip(s.old))}</del></div><div class="removed-note">This line is removed.</div>`
+    const newBlocks = s.new.split(/\n\n+/)
+    if (newBlocks.length === 1) return `<div class="blk ${level(s.new) || level(s.old)}">${inline(diffWords(strip(s.old), strip(s.new)))}</div>`
+    // multi-block: the block most like the old line gets the inline diff; the rest are insertions
+    let best = 0, bestScore = -1
+    newBlocks.forEach((b, i) => { const sc = similarity(strip(s.old), strip(b)); if (sc > bestScore) { bestScore = sc; best = i } })
+    return newBlocks.map((b, i) => i === best
+      ? `<div class="blk ${level(b)}">${inline(diffWords(strip(s.old), strip(b)))}</div>`
+      : `<div class="blk allins ${level(b)}"><ins>${esc(strip(b))}</ins></div>`).join('')
+  }
+  const inline = (d) => d.map((x) => x.t === 'eq' ? esc(x.s) : x.t === 'del' ? `<del>${esc(x.s)}</del>` : `<ins>${esc(x.s)}</ins>`).join('')
+
+  const KIND = { title: 'page title', heading: 'heading', paragraph: 'paragraph', structure: 'structure', delete: 'remove', caption: 'image caption' }
+  const kindLabel = (s) => s.kind === 'heading' ? (/^###/.test(s.old) ? 'sub-heading' : 'section heading') : KIND[s.kind] || s.kind
+
+  // ---------------------------------------------------------------- views
+  let view = 'guide', filter = 'all', focusId = null
+  const all = DATA.pages.flatMap((p) => p.suggestions.map((s) => ({ ...s, slug: p.slug })))
+  const decidedCount = () => all.filter((s) => decisions[s.id] && decisions[s.id].status !== 'commented').length
+
+  function render() {
+    // progress
+    const n = decidedCount(); $('#p-n').textContent = n; $('#p-of').textContent = `of ${DATA.total} decided`
+    $('#p-bar').style.width = (100 * n / Math.max(DATA.total, 1)) + '%'
+    $('#brand-sub').textContent = `round ${DATA.round} · ${DATA.pages.length} pages · generated ${new Date(DATA.generated).toLocaleDateString()}`
+    // rail
+    const nav = $('#nav')
+    nav.innerHTML = `<button aria-current="${view === 'guide'}" data-view="guide"><span class="dot" style="background:var(--accent)"></span><span class="t">Style guide</span><span class="c">read first</span></button>
+      <h2>Pages</h2>` + DATA.pages.map((p) => {
+        const d = p.suggestions.filter((s) => decisions[s.id] && decisions[s.id].status !== 'commented').length
+        const cls = d === p.suggestions.length ? 'done' : d ? 'part' : ''
+        return `<button class="${cls}" aria-current="${view === p.slug}" data-view="${p.slug}"><span class="dot"></span><span class="t">${esc(p.title)}</span><span class="c">${d}/${p.suggestions.length}</span></button>`
+      }).join('')
+    nav.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => { view = b.dataset.view; focusId = null; render(); window.scrollTo(0, 0); $('#rail').classList.remove('open') }))
+
+    const desk = $('#desk')
+    if (view === 'guide') { desk.innerHTML = renderGuide(); $('#start')?.addEventListener('click', () => { view = DATA.pages[0].slug; render(); window.scrollTo(0, 0) }); return }
+
+    const page = DATA.pages.find((p) => p.slug === view)
+    if (!page) { view = 'guide'; return render() }
+    const st = (s) => (decisions[s.id] || {}).status || 'undecided'
+    const counts = { all: page.suggestions.length, undecided: 0, accepted: 0, rejected: 0 }
+    page.suggestions.forEach((s) => { const k = st(s); if (k === 'commented') counts.undecided++; else counts[k]++ })
+    const shown = page.suggestions.filter((s) => filter === 'all' || (filter === 'undecided' ? (st(s) === 'undecided' || st(s) === 'commented') : st(s) === filter))
+
+    desk.innerHTML = `
+      <div class="deskhead">
+        <div class="row"><h2>${esc(page.title)}</h2><a class="live" href="${esc(page.url)}" target="_blank" rel="noopener">view live page ↗</a><span class="spacer"></span></div>
+        <div class="filters">
+          ${['all', 'undecided', 'accepted', 'rejected'].map((f) => `<button class="chip" aria-pressed="${filter === f}" data-f="${f}">${f}<span class="k">${counts[f]}</span></button>`).join('')}
+          <span class="spacer"></span>
+          ${counts.undecided ? `<button class="acceptall" id="acceptall">Accept all ${counts.undecided} remaining here</button>` : ''}
+        </div>
+      </div>
+      <p class="hint"><kbd>j</kbd> <kbd>k</kbd> move · <kbd>a</kbd> accept · <kbd>r</kbd> reject · <kbd>u</kbd> undo. Notes are saved with your decision, or on their own with "Save note".</p>
+      <div class="cards">${shown.length ? shown.map(renderCard).join('') : '<div class="empty">Nothing here under this filter.</div>'}</div>`
+
+    desk.querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => { filter = b.dataset.f; render() }))
+    $('#acceptall')?.addEventListener('click', () => { for (const s of page.suggestions) if (st(s) === 'undecided' || st(s) === 'commented') decide(s, 'accepted', (decisions[s.id] || {}).note) })
+    desk.querySelectorAll('.card').forEach((card) => {
+      const s = all.find((x) => x.id === card.dataset.id)
+      const note = () => card.querySelector('.note')?.value.trim() || ''
+      card.querySelector('.accept')?.addEventListener('click', () => decide(s, 'accepted', note()))
+      card.querySelector('.reject')?.addEventListener('click', () => decide(s, 'rejected', note()))
+      card.querySelector('.savenote')?.addEventListener('click', () => decide(s, 'commented', note()))
+      card.querySelector('.undo')?.addEventListener('click', () => persist(s.id, null))
+      card.querySelector('.expand')?.addEventListener('click', () => card.querySelector('.copy').classList.toggle('open'))
+      card.addEventListener('focusin', () => { focusId = s.id; desk.querySelectorAll('.card.focus').forEach((c) => c.classList.remove('focus')); card.classList.add('focus') })
+    })
+    if (focusId) desk.querySelector(`.card[data-id="${focusId}"]`)?.classList.add('focus')
+  }
+
+  function renderCard(s) {
+    const d = decisions[s.id]
+    const decided = d && d.status !== 'commented'
+    const head = `<div class="eyebrow"><span class="kind">${kindLabel(s)}</span><span class="why">${esc(s.why || '')}</span></div>`
+    if (decided) {
+      return `<div class="card decided" data-id="${s.id}" tabindex="0">
+        <div class="eyebrow"><span class="status ${d.status}">${d.status}</span><span class="kind">${kindLabel(s)}</span><span class="why">${esc(s.why || '')}</span></div>
+        <div class="copy">${renderDiff(s)}</div>
+        ${d.note ? `<div class="savednote">${esc(d.note)}</div>` : ''}
+        <div class="actions"><button class="btn quiet expand">show full</button><button class="btn quiet undo">undo</button></div>
+      </div>`
+    }
+    return `<div class="card" data-id="${s.id}" tabindex="0">
+      ${head}
+      <div class="copy">${renderDiff(s)}</div>
+      <textarea class="note" rows="1" placeholder="Note (optional): what to change, or why not">${esc(d && d.note || '')}</textarea>
+      <div class="actions">
+        <button class="btn accept">Accept</button>
+        <button class="btn reject">Reject</button>
+        <button class="btn quiet savenote">Save note</button>
+        ${d && d.status === 'commented' ? '<span class="status commented">note saved</span>' : ''}
+      </div>
+    </div>`
+  }
+
+  function renderGuide() {
+    return `<div class="deskhead"><div class="row"><h2>Style guide</h2></div></div>
+      <div class="guide">
+        <p class="lede">These are the rules the suggestions follow. Read them first; if a rule is wrong, tell me and I'll regenerate the batch rather than have you reject fifty cards one at a time.</p>
+        ${DATA.styleGuide.map((r) => `<div class="rule"><h3>${esc(r.title)}</h3><p>${esc(r.body)}</p>${r.alt ? `<p class="alt">${esc(r.alt)}</p>` : ''}</div>`).join('')}
+        <div class="cta"><button class="btn" id="start">Start with the first page →</button></div>
+      </div>`
+  }
+
+  function decide(s, status, note) {
+    persist(s.id, { status, note: note || '', at: new Date().toISOString(), slug: s.slug, kind: s.kind })
+  }
+
+  // ---------------------------------------------------------------- keyboard
+  document.addEventListener('keydown', (e) => {
+    if (e.target.matches('textarea, input')) return
+    if (view === 'guide') return
+    const cards = [...document.querySelectorAll('.card')]
+    if (!cards.length) return
+    let i = cards.findIndex((c) => c.dataset.id === focusId)
+    if (e.key === 'j' || e.key === 'k') {
+      i = e.key === 'j' ? Math.min(i + 1, cards.length - 1) : Math.max(i - 1, 0)
+      cards[i].focus({ preventScroll: true }); cards[i].scrollIntoView({ block: 'center', behavior: 'smooth' }); e.preventDefault(); return
+    }
+    if (i < 0) return
+    const s = all.find((x) => x.id === focusId)
+    const note = cards[i].querySelector('.note')?.value.trim() || (decisions[s.id] || {}).note || ''
+    if (e.key === 'a') { decide(s, 'accepted', note); e.preventDefault() }
+    if (e.key === 'r') { decide(s, 'rejected', note); e.preventDefault() }
+    if (e.key === 'u') { persist(s.id, null); e.preventDefault() }
+  })
+
+  // ---------------------------------------------------------------- export + mobile menu
+  $('#export').addEventListener('click', async () => {
+    const text = JSON.stringify(decisions, null, 1)
+    try { await navigator.clipboard.writeText(text); $('#export').textContent = 'Copied ' + Object.keys(decisions).length + ' decisions'; }
+    catch { prompt('Copy this:', text) }
+    setTimeout(() => { $('#export').textContent = 'Copy decisions as JSON' }, 2500)
+  })
+  $('#menu').addEventListener('click', () => { const r = $('#rail'); r.classList.toggle('open'); $('#menu').setAttribute('aria-expanded', r.classList.contains('open')) })
+
+  render()
+})()
+</script>
