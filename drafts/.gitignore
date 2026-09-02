@@ -1,0 +1,7 @@
+# Only Markdown is committed from the pile. Source photos and video stay out of git history;
+# the import step writes web-sized derivatives elsewhere, and those are committed.
+*
+!*/
+!*.md
+!.gitignore
+!.gitkeep

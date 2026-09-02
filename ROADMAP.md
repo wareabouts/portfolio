@@ -34,7 +34,9 @@ acronyms kept, the concept / process / results section labels, sentence-case sub
 first person past tense throughout. The record is `review/decisions/2026-09-02.json`.
 
 `unlisted: true` in a project's front matter keeps the page built at its URL with a noindex tag
-but off the home and category grids. `photogrammetry-tests` uses it.
+but off the home and category grids. Six pages use it: photogrammetry-tests, css-zen-garden,
+page-crunch, sand-clock, music-video-wout-music-lematires-closer, ui-ux-for-openly. The home
+grid shows 37.
 
 Rough edges, in the order they hurt:
 
@@ -77,32 +79,56 @@ once the local desk has a review view.
 
 ## Adding a page
 
-The two pages waiting, OS26 Viewer and LED Panel studio, are the test of this workflow. They are
-new writing rather than edits, so they also test whether the house style holds for fresh copy.
+Three pages are waiting: the animated show intros made for Open Sauce, OS26 Viewer, and LED
+Panel studio. They are new writing rather than edits, so they also test whether the house style
+holds for fresh copy.
 
-Proposed flow:
+The interface Alex described is a pile. Notes, media, and the year go in one place, prompted by
+a few questions, the pile goes to Claude, and Claude comes back with a proposed page to approve
+or comment on in context. Built in that order, the pile comes first and the screen that fills it
+comes last, because that screen is a form over a folder. The folder exists now:
 
-1. Alex drops a folder in `drafts/<slug>/` with a `notes.md` brain dump, photos, video, links.
-2. One command imports the folder. It assigns UUIDs, writes manifest entries, generates
-   derivatives, creates alt-text placeholders, and writes a front-matter stub with the section
-   headings for the page's shape.
-3. Claude drafts the page from the notes in the house style, and proposes the cover, image order,
-   and any gallery culls. This goes through review like any other change.
-4. Alex previews in the dev server and publishes with a push.
+- `drafts/<slug>/notes.md`, a template of questions. What is it, what was the goal, what did you
+  do, what are you proudest of, what surprised you, notes on the media. Answer what is useful and
+  delete the rest.
+- `drafts/<slug>/media/`, everything related, in any state. Git ignores everything under
+  `drafts/` except Markdown, so source video cannot land in ordinary history by accident.
 
-What a new page needs from Alex: the notes, the media, the year, the category, and whether it
-is a project or a feature (see shapes below).
+The flow from there:
+
+1. Alex fills the pile.
+2. One command imports the media. It assigns UUIDs, writes manifest entries, generates
+   derivatives, makes a poster and an optional animated cover from video, and writes a
+   front-matter stub with the section headings for the page's shape. Not written yet.
+3. Claude drafts the page from the notes in the house style and proposes the cover, the image
+   order, and any gallery culls. The draft is committed with `unlisted: true`, so it renders in
+   the dev server and can be pushed to be viewed on a phone without appearing on the grid.
+4. Alex reviews it rendered and says what to move. Until the desk has a review view, that is
+   chat. Claude revises, the unlisted line comes off, push.
+
+Sources for new work. The Adobe-era originals live in LFS because they could not be fetched
+again once the subscription lapsed. New work is different, Alex holds the sources. GitHub's
+free LFS tier is about 1 GB and the originals already take 754 MB of it, so committing new
+sources means paying for LFS within a year. Proposed: for new pages the repo commits
+derivatives only, web-sized images, the encoded mp4, posters, and the sources stay in Alex's own
+storage. To decide.
+
+Video. `::video{src="name.mp4"}` already renders a player from `assets/video/`, which the build
+copies into the site. Show intros want a poster frame, and an animated cover on the grid would
+suit them; the image build already makes animated covers from animated sources. There is no
+motion category in the nav. The intros could sit in graphic-design or get a new category. To
+decide.
 
 Content-model cleanup that should land before the new pages, all small:
 
 - Front matter becomes the only place categories live. The build derives the category lists.
-  To decide.
+  Decided 2026-09-02, not built yet.
 - `project_order` stays in `taxonomy.json` for now. A 3D layout may replace it with something
   spatial, so it is not worth redesigning yet. To decide.
 - A separate `draft` flag is probably unnecessary. `unlisted` already means "built but not shown",
   which is what a draft needs. To decide.
-- Whether a page's shape is an explicit front-matter field or implied by its structure. Explicit
-  lets the desk show a copy budget per page. To decide.
+- A page's shape is an explicit front-matter field, so the desk can show a copy budget per page.
+  Decided 2026-09-02, not built yet.
 
 ## Pages that read alike
 
@@ -135,9 +161,9 @@ medium and a collection page should sit in exactly one category.
 Retired URLs get redirect pages through `taxonomy.redirects`, which already exists. The old files
 are deleted once merged; history keeps them.
 
-Sequence: unlist the candidates now, one line each and reversible. Combine later, through
-review, because choosing which images survive a merge is exactly the kind of decision the
-review view should show properly.
+The five candidates were unlisted on 2026-09-02. Combining comes later, through review, because
+choosing which images survive a merge is exactly the kind of decision the review view should
+show properly.
 
 Still open from round 1: whether the about page (23 words) gets a fuller bio, and a captions
 pass (about 30 percent of images have one, unevenly).
@@ -194,9 +220,11 @@ Neither is planned.
 
 ## Sequence
 
-- Phase 0, now. Decide the items below. Unlist the five candidates.
-- Phase 1, page workflow. Content library, categories from front matter, the import command, the
-  drafts intake. Then OS26 Viewer and LED Panel studio through it.
+- Phase 0, done 2026-09-02. Decisions 2 to 4 below, the five candidates unlisted, the drafts
+  folder and its notes template.
+- Phase 1, page workflow. Categories from front matter, the shape field, the import command, the
+  shared content library. Then the Open Sauce intros, OS26 Viewer, and LED Panel studio through
+  it.
 - Phase 2, desk v1.
 - Phase 3, review v2 inside the desk. Retire the artifact desk.
 - Phase 4, consolidation round with redirects, the captions pass, the about page.
@@ -205,13 +233,16 @@ Neither is planned.
 ## Decisions needed
 
 1. Same repo, public, `desk/` package. Recommended yes.
-2. Categories move to front matter only. Recommended yes.
-3. Shape as an explicit front-matter field. Recommended yes, so budgets are visible.
-4. Unlist the five candidates now. Recommended yes.
+2. Categories move to front matter only. Decided yes, 2026-09-02.
+3. Shape as an explicit front-matter field. Decided yes, 2026-09-02.
+4. Unlist the five candidates now. Done, 2026-09-02.
 5. The groupings for collections, and whether fishcity-devlog leaves the grid.
 6. Budgets per shape. The numbers above are starting points.
 7. Whether the artifact desk stays as a text-only channel or is retired outright.
 8. The about page and the captions pass, when.
+9. Sources for new work. Derivatives only in the repo, or sources in LFS with paid storage.
+   Recommended derivatives only.
+10. A category for the show intros. graphic-design, or a new motion category.
 
 ## Not doing
 
