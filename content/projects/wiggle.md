@@ -21,7 +21,9 @@ The design fits in 3 parts, the mount, focus ring, and slider. The mount interfa
 
 The last piece, the slider, interfaces with the threads on the focus ring but this notch and matching tab here stop it from rotating. That keeps the orientation of the lenses in line with the camera’s sensor!
 
-### I needed lenses and a local film development shop was kind enough to let me scavenge them from used disposable cameras. I collected a few of the same and plucked the lenses. The image is surprisingly clear and definitely looks more... filmic? A couple of tests later I was able to mostly separate each lens light into its own portion of the sensor.
+I needed lenses and a local film development shop was kind enough to let me scavenge them from used disposable cameras. I collected a few of the same and plucked the lenses. The image is surprisingly clear and definitely looks more... filmic?
+
+A couple of tests later I was able to mostly separate each lens light into its own portion of the sensor.
 
 ## Outcome
 

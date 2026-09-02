@@ -306,6 +306,29 @@ def embed_ref(src):
     return "iframe", src
 
 
+# Adobe let body paragraphs be styled with the "title" text style. Faithfully turning
+# those into headings renders a 300-character paragraph as a 30px purple heading, so a
+# title element is only a heading if it is short and has no sentence break inside it.
+SECTION_WORDS = {"concept", "process", "results", "result", "outcome", "overview",
+                 "reception", "extensions"}
+
+
+def title_or_prose(text):
+    """Return (heading, prose): either may be None.
+
+    A short label is a heading. A paragraph is prose. "concept I fell in love with..."
+    -- a section label that ran straight into its body -- is split into both.
+    """
+    # Ignore a leading list label ("1. ") so "1. Optimizations" isn't read as a sentence.
+    unlabelled = re.sub(r"^\d+\.\s*", "", text)
+    if len(text) <= 120 and not re.search(r"[.!?]\s+[A-Z]", unlabelled):
+        return text, None
+    m = re.match(r"^(\w+)\s+(.+)$", text, re.S)
+    if m and m.group(1).lower() in SECTION_WORDS:
+        return m.group(1), m.group(2)
+    return None, text
+
+
 def render_module(el, page, depth=0):
     """Turn one Adobe module into directive/Markdown text. Returns list of block strings."""
     kind = module_type(el)
@@ -337,18 +360,22 @@ def render_module(el, page, depth=0):
 
             for child in children:
                 cls = child.get("class") or []
-                if "title" in cls:
-                    flush()
-                    t = clean_text(child.get_text(" ", strip=True))
-                    if t:
-                        blocks.append(f"## {t}")
-                elif "sub-title" in cls:
-                    flush()
-                    t = clean_text(child.get_text(" ", strip=True))
-                    if t:
-                        blocks.append(f"### {t}")
-                else:
+                level = "## " if "title" in cls else "### " if "sub-title" in cls else None
+                if level is None:
                     buf.append(child)
+                    continue
+                flush()
+                heading, prose = title_or_prose(clean_text(child.get_text(" ", strip=True)))
+                if heading:
+                    blocks.append(f"{level}{heading}")
+                if prose:
+                    # Render through html_to_md so links and emphasis inside survive,
+                    # then drop the leading label if one was split off above.
+                    md = html_to_md(BeautifulSoup(str(child), "html.parser"))
+                    if heading and md.lower().startswith(heading.lower()):
+                        md = md[len(heading):].lstrip()
+                    if md:
+                        blocks.append(md)
             flush()
         return blocks
 
