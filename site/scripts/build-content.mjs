@@ -166,6 +166,18 @@ function main() {
     return (ia < 0 ? 1e9 : ia) - (ib < 0 ? 1e9 : ib)
   })
 
+  // Category membership comes from each page's front matter; taxonomy.json only orders the
+  // nav. Every nav category gets a key even when empty, so its route always exists.
+  const pageSlugs = new Set(pages.map((p) => p.slug))
+  const categories = {}
+  for (const n of taxonomy.nav) {
+    if (n.slug !== 'all-the-things' && !pageSlugs.has(n.slug)) categories[n.slug] = []
+  }
+  for (const p of projects) {
+    for (const c of p.categories ?? []) (categories[c] ??= []).push(p.slug)
+  }
+  taxonomy.categories = categories
+
   // Only ship the asset fields the app actually needs.
   const assets = {}
   for (const a of manifest.assets) {

@@ -13702,6 +13702,125 @@
         "height": 1000,
         "frames": 4
       }
+    },
+    {
+      "uuid": "f27da898-9390-49d1-9d12-a6a988c2c768",
+      "ext": "jpg",
+      "source": "drafts/os26-viewer/media/Interface View Modifiers.jpg",
+      "is_original": true,
+      "best_width": 3014,
+      "intrinsic_width": 3014,
+      "intrinsic_height": 1634,
+      "alt": null,
+      "roles": [
+        "cover"
+      ],
+      "used_by": [
+        "os26-viewer"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 644256,
+        "sha256": "75ea65816047c6b49e057f57bd6c7478cbe9117b5e6ff31f90141170bfabdb19",
+        "width": 3014,
+        "height": 1634,
+        "frames": 1
+      }
+    },
+    {
+      "uuid": "eb53e701-0dee-4519-8c3e-1e77f09ecaae",
+      "ext": "png",
+      "source": "drafts/os26-viewer/media/Mobile - Viewer Role.png",
+      "is_original": true,
+      "best_width": 960,
+      "intrinsic_width": 960,
+      "intrinsic_height": 2142,
+      "alt": null,
+      "roles": [],
+      "used_by": [
+        "os26-viewer"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 645407,
+        "sha256": "043ef6e04dfbe7389844d12f34882aeff0410d6d070920fe76126a99abe097bd",
+        "width": 960,
+        "height": 2142,
+        "frames": 1
+      }
+    },
+    {
+      "uuid": "bd6ebdd1-cfbf-4a95-909f-a2a536870abe",
+      "ext": "jpg",
+      "source": "drafts/os26-viewer/media/Overall Interface.jpg",
+      "is_original": true,
+      "best_width": 3012,
+      "intrinsic_width": 3012,
+      "intrinsic_height": 1648,
+      "alt": null,
+      "roles": [],
+      "used_by": [
+        "os26-viewer"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 681088,
+        "sha256": "8c6c8a14c135baf98004a6b1ea3b40a9b166a6b4870b90ab874cfd8b3ac025f0",
+        "width": 3012,
+        "height": 1648,
+        "frames": 1
+      }
+    },
+    {
+      "uuid": "143f03e8-a18d-413d-b2bf-ed882b82dc48",
+      "ext": "jpg",
+      "source": "drafts/os26-viewer/media/Sign Detail.jpg",
+      "is_original": true,
+      "best_width": 3016,
+      "intrinsic_width": 3016,
+      "intrinsic_height": 1634,
+      "alt": null,
+      "roles": [],
+      "used_by": [
+        "os26-viewer"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 549674,
+        "sha256": "3315c8ca14889833c7ad159989adb80dab5eb51f644144646a8a9d2d7a2cb5fa",
+        "width": 3016,
+        "height": 1634,
+        "frames": 1
+      }
+    },
+    {
+      "uuid": "9a28b648-cc9c-42c5-b32b-049e81f299d2",
+      "ext": "jpg",
+      "source": "drafts/led-panel-studio/media/Interface Overall.jpg",
+      "is_original": true,
+      "best_width": 2994,
+      "intrinsic_width": 2994,
+      "intrinsic_height": 1648,
+      "alt": null,
+      "roles": [
+        "cover"
+      ],
+      "used_by": [
+        "led-panel-studio"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 507141,
+        "sha256": "0481161884c188c106a3d03d40a5d8c63956f39c44b498105d55116389aa2225",
+        "width": 2994,
+        "height": 1648,
+        "frames": 1
+      }
     }
   ]
 }
