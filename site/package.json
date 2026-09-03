@@ -10,7 +10,8 @@
     "images": "node scripts/build-images.mjs",
     "typecheck": "tsc -b --noEmit",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "import": "node scripts/import-draft.mjs"
   },
   "dependencies": {
     "@fontsource-variable/source-sans-3": "^5.3.0",

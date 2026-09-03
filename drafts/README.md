@@ -32,5 +32,19 @@ just stay pointers, and nothing here needs the originals.
     GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/wareabouts/portfolio.git
 
 Fill in `notes.md`, drop files into `media/`, commit, push. The notes travel with git. The
-media stays on the machine you put it on, so the import step runs there too, from a Claude
-Code session in that clone, or copy the `media/` folder across first.
+media stays on the machine you put it on, so the import runs there too. Once per machine:
+
+    npm --prefix site ci
+
+Then, per page:
+
+    npm --prefix site run import -- <slug>
+    npm --prefix site run import -- <slug> --cover IMG_0042.jpg
+
+The second form picks the cover; otherwise it is a file named `cover.*`, or the first image
+by name. The import gives every photo an id, builds the web-sized WebP set, writes `media.md`
+next to the notes (file name to id, this one travels with git), and sets the page's cover if
+the page exists and has none. It ends by printing the `git add` line for what it produced;
+commit that and push. Re-running is safe, photos are matched by content. Files it cannot
+read, HEIC straight from a phone and video, are listed at the bottom of `media.md`; export
+those as JPG first.

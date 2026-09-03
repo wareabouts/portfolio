@@ -54,8 +54,12 @@ function parseCrop(crop, w, h) {
   return null
 }
 
-async function processAsset(a, stats) {
-  const src = path.join(SRC, `${a.uuid}.${a.ext}`)
+/**
+ * Build every derivative for one asset. `srcPath` overrides the archive location, which
+ * is how import-draft.mjs builds from a file that will never be copied into originals.
+ */
+export async function processAsset(a, stats, srcPath) {
+  const src = srcPath ?? path.join(SRC, `${a.uuid}.${a.ext}`)
   if (!fs.existsSync(src)) { stats.missing.push(a.uuid); return }
 
   const meta = await sharp(src, { animated: true }).metadata()
@@ -252,6 +256,15 @@ async function main() {
   })
   await Promise.all(workers)
 
+  // New work commits derivatives only (ROADMAP.md), so an asset with no original here
+  // is served from what is already in public/media, the same way CI serves everything.
+  const built = new Set(results.map((r) => r.uuid))
+  const fromDerivatives = indexExisting(assets).filter((r) => !built.has(r.uuid))
+  results.push(...fromDerivatives)
+  const served = new Set(fromDerivatives.map((r) => r.uuid))
+  stats.missing = stats.missing.filter((u) => !served.has(u))
+  if (fromDerivatives.length) console.log(`derivatives-only assets: ${fromDerivatives.length}`)
+
   const files = fs.readdirSync(OUT)
   const bytes = files.reduce((s, f) => s + fs.statSync(path.join(OUT, f)).size, 0)
   const srcBytes = fs.readdirSync(SRC).reduce((s, f) => s + fs.statSync(path.join(SRC, f)).size, 0)
@@ -267,4 +280,7 @@ async function main() {
     JSON.stringify(Object.fromEntries(results.map((r) => [r.uuid, r]))))
 }
 
-main()
+// Only run the full build when invoked directly; import-draft.mjs imports processAsset.
+// Compared case-insensitively on Windows, where the drive letter's case varies by caller.
+const norm = (p) => (process.platform === 'win32' ? path.resolve(p).toLowerCase() : path.resolve(p))
+if (process.argv[1] && norm(process.argv[1]) === norm(fileURLToPath(import.meta.url))) main()

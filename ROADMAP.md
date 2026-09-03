@@ -97,9 +97,11 @@ comes last, because that screen is a form over a folder. The folder exists now:
 The flow from there:
 
 1. Alex fills the pile.
-2. One command imports the media. It assigns UUIDs, writes manifest entries, generates
-   derivatives, makes a poster and an optional animated cover from video, and writes a
-   front-matter stub with the section headings for the page's shape. Not written yet.
+2. `npm --prefix site run import -- <slug>` imports the photos: UUIDs, manifest entries,
+   derivatives, a `media.md` table that travels with git, and the page's cover. Written
+   2026-09-02. Not in it yet: posters from video, and a front-matter stub with the section
+   headings for the page's shape. The first three pages were drafted by hand from the notes
+   before their photos arrived, so the stub was not needed.
 3. Claude drafts the page from the notes in the house style and proposes the cover, the image
    order, and any gallery culls. The draft is committed with `unlisted: true`, so it renders in
    the dev server and can be pushed to be viewed on a phone without appearing on the grid.
