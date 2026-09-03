@@ -77,6 +77,39 @@ text-only review channel for when Alex is away from a computer.
 Recommendation: do the first now and build the second deliberately. Retire the artifact desk
 once the local desk has a review view.
 
+### Firebase instead of git
+
+Raised 2026-09-03, after the drafts folder, the ignore rule, and the import command added up
+to a process that felt convoluted for "add a page with photos". The alternative: host the
+site on Firebase, keep content in Firestore, originals in Storage, a hosted editor behind
+Google sign-in, uploads from any device.
+
+What actually hurts today is one thing. Photos live on whichever machine they were dropped
+on, so the import has to run there, and that machine may not be the one with a Claude
+session. Everything else already works from any machine: notes, pages, review, deploy.
+
+What Firebase would change. Upload and edit from anywhere, including a phone. Originals in
+one place with no LFS budget. A real editor. The price is an app to build and own: a
+Firestore schema that still has to stay presentation-agnostic, security rules, auth, a
+derivative pipeline in a function or extension, and a publish pipeline that builds the site
+from Firestore instead of from files. Content in a database has no diffs and no history
+unless the app builds them, which is what makes review cheap today. Every operation Claude
+does now with file tools would need a custom command. Dollar cost is near zero either way;
+git is exactly zero and needs no billing account.
+
+The smaller fix. Put the pile's media in a synced folder (Google Drive desktop on both
+machines, or a Storage bucket) and point the import at it. Then photos are visible from
+every machine and from Claude, and the process from Alex's side is two steps: fill the pile,
+say "build the page". No commands. Half a day of change to the import.
+
+The middle path, if phone uploads matter. A small hosted intake form on Firebase (Storage
+plus Google sign-in) that the import pulls from. The site and content stay in git. This is
+the desk's intake screen, hosted, and a weekend of work.
+
+Recommendation: the synced folder now. The hosted intake form if uploading from a phone
+turns out to matter. Full Firebase only if the goal becomes a hosted editor and owning that
+app is acceptable, which is the Squarespace rebuild this document argues against.
+
 ## Adding a page
 
 Three pages are waiting: the animated show intros made for Open Sauce, OS26 Viewer, and LED
@@ -248,6 +281,9 @@ Neither is planned.
    Alex. Streaming video is YouTube, unlisted.
 10. A category for the show intros. Decided 2026-09-02: a new `animations` category, added to
     the nav with the first page that uses it.
+11. Where the pile's media lives. A synced folder on both machines, a Storage bucket, or a
+    hosted intake form. Recommended: the synced folder, then reconsider Firebase only if a
+    hosted editor becomes the goal.
 
 ## Not doing
 
