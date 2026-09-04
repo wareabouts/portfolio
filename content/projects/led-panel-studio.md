@@ -1,6 +1,7 @@
 ---
 title: "LED panel studio"
 slug: led-panel-studio
+cover: 9a28b648-cc9c-42c5-b32b-049e81f299d2
 year: 2026
 categories: [microcontrollers, web-dev]
 shape: project

@@ -1,6 +1,7 @@
 ---
 title: "OS26 viewer"
 slug: os26-viewer
+cover: f27da898-9390-49d1-9d12-a6a988c2c768
 year: 2026
 categories: [web-dev, 3d-design]
 shape: project
