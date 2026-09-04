@@ -35,12 +35,17 @@
     {
       "slug": "graphic-design",
       "label": "graphic design"
+    },
+    {
+      "slug": "animations",
+      "label": "animations"
     }
   ],
   "project_order": [
     "os26-viewer",
     "led-panel-studio",
     "openai-case",
+    "open-sauce-intros",
     "bww-goggles",
     "stanchions",
     "snowglobes",

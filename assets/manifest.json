@@ -13712,9 +13712,7 @@
       "intrinsic_width": 3014,
       "intrinsic_height": 1634,
       "alt": null,
-      "roles": [
-        "cover"
-      ],
+      "roles": [],
       "used_by": [
         "os26-viewer"
       ],
@@ -13744,9 +13742,8 @@
       "download": {
         "status": "derivatives-only",
         "file": null,
-        "bytes": 539683,
-        "sha256": "00538371dd3ab48e053d833e9a440004e06865b175fc0e425f78d2457cac8788",
-
+        "bytes": 645407,
+        "sha256": "043ef6e04dfbe7389844d12f34882aeff0410d6d070920fe76126a99abe097bd",
         "width": 960,
         "height": 2142,
         "frames": 1
@@ -13791,9 +13788,8 @@
       "download": {
         "status": "derivatives-only",
         "file": null,
-        "bytes": 577348,
-        "sha256": "fe763fa8f74a57166f17d9010819c09192558b166ba5e542c9cb0989271e1db8",
-
+        "bytes": 549674,
+        "sha256": "3315c8ca14889833c7ad159989adb80dab5eb51f644144646a8a9d2d7a2cb5fa",
         "width": 3016,
         "height": 1634,
         "frames": 1
@@ -13808,9 +13804,7 @@
       "intrinsic_width": 2994,
       "intrinsic_height": 1648,
       "alt": null,
-      "roles": [
-        "cover"
-      ],
+      "roles": [],
       "used_by": [
         "led-panel-studio"
       ],
@@ -13822,6 +13816,81 @@
         "width": 2994,
         "height": 1648,
         "frames": 1
+      }
+    },
+    {
+      "uuid": "6c572e9b-bba6-44b7-9338-8d5e81a90ee6",
+      "ext": "gif",
+      "source": "drafts/open-sauce-intros/media/intros.gif",
+      "is_original": true,
+      "best_width": 550,
+      "intrinsic_width": 550,
+      "intrinsic_height": 550,
+      "alt": null,
+      "roles": [
+        "cover"
+      ],
+      "used_by": [
+        "open-sauce-intros"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 4017524,
+        "sha256": "e9dc232048ab2385147ffd8273fe432b4ea1a1d599039f58680a44215fa41df0",
+        "width": 550,
+        "height": 550,
+        "frames": 61
+      }
+    },
+    {
+      "uuid": "b352e2cd-b2db-419d-b461-3182b5f2228b",
+      "ext": "gif",
+      "source": "drafts/os26-viewer/media/OSViewer.gif",
+      "is_original": true,
+      "best_width": 800,
+      "intrinsic_width": 800,
+      "intrinsic_height": 800,
+      "alt": null,
+      "roles": [
+        "cover"
+      ],
+      "used_by": [
+        "os26-viewer"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 1836659,
+        "sha256": "ce6428bf81d84d8bfc7ac5c326185cd2e3dd725dd48d6c6d32263e51cb0d0aba",
+        "width": 800,
+        "height": 800,
+        "frames": 48
+      }
+    },
+    {
+      "uuid": "823feced-9bb3-4700-8841-a51af7f9f5fc",
+      "ext": "gif",
+      "source": "drafts/led-panel-studio/media/ledpanel.gif",
+      "is_original": true,
+      "best_width": 800,
+      "intrinsic_width": 800,
+      "intrinsic_height": 800,
+      "alt": null,
+      "roles": [
+        "cover"
+      ],
+      "used_by": [
+        "led-panel-studio"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 2845785,
+        "sha256": "bc2f8fa0e961e252a64e48993c3e65ba8001a33564be244241de028195c550da",
+        "width": 800,
+        "height": 800,
+        "frames": 68
       }
     }
   ]

@@ -1,4 +1,4 @@
-# media for led-panel-studio
+# media for open-sauce-intros
 
 Imported 2026-09-04 by import-draft.mjs. Paste an id into
 `::figure{asset="..."}` or a gallery `::item{asset="..."}`. The cover is set in the
@@ -6,5 +6,4 @@ page's front matter.
 
 | file | id | size | notes |
 |---|---|---|---|
-| Interface Overall.jpg | 9a28b648-cc9c-42c5-b32b-049e81f299d2 | 2994x1648 |  |
-| ledpanel.gif | 823feced-9bb3-4700-8841-a51af7f9f5fc | 800x800 | cover, animated |
+| intros.gif | 6c572e9b-bba6-44b7-9338-8d5e81a90ee6 | 550x550 | cover, animated |

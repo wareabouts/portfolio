@@ -1,10 +1,10 @@
 ---
 title: "open sauce show intros"
 slug: open-sauce-intros
+cover: 6c572e9b-bba6-44b7-9338-8d5e81a90ee6
 year: 2025
 categories: [animations]
 shape: project
-unlisted: true
 ---
 
 Animated intros for three Sauce+ shows, made in Blender on absurd timelines. Each one had to look like a different physical craft, and each one was me alone: modeling, texturing, animating, and picking the music and cutting it to fit.
