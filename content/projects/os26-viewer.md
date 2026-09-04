@@ -21,15 +21,15 @@ I built it solo over about a month, pair programming with Claude Code. The team 
 
 ## process
 
-React Three Fiber and Firebase. Figma pulled double duty as the CAD file AND the art source. The venue page is drawn at one pixel to one foot, so the barricades, fences, tents, and ~3000 chairs all came in from the file the ops team was already using. A little Figma plugin makes an art frame for each placed sign, and the viewer pulls the finished art back down onto it.
+React Three Fiber and Firebase. Figma pulled double duty as the CAD file AND the art source: the venue page is drawn at one pixel to one foot, so the barricades, fences, tents, and ~3000 chairs all came in from the file the ops team was already using.
 
 The order math was the hard part. Hardware gets reused across days, so you buy for the busiest day. Prints count per design. Signs we already owned get subtracted once... subtracting them per venue double counted them, which I found out the hard way. All pure functions, with 28 tests that run before every deploy.
 
 ::figure{asset="f27da898-9390-49d1-9d12-a6a988c2c768" caption="The install layer on. Every sign gets a dot: the fill is its install status, the ring is its zone. On the right, the order sheet the real b2Sign order was placed from."}
 
-With the team in it every day, every change to the data happened live. Renames only touch the name field so nobody could clobber a teammate's edit, and deletes save before they remove, so a sign could get duplicated but never lost. The print export went PDF, then JPEG, then back to PDF after I learned Figma tops out at 32,768 pixels... a 159 foot window cling just can't come out of the API at print size.
+With the team in it every day, every change to the data happened live, so renames only touch the name field and deletes save before they remove. A sign could get duplicated, but never lost. The print export went PDF, then JPEG, then back to PDF after I learned Figma tops out at 32,768 pixels... a 159 foot window cling just can't come out of the API at print size.
 
-Install week got its own features, mostly written on site: a dot over every sign colored by status with a ring for its zone, a running percentage, box select for assigning zones in bulk, and a touch joystick so it all works one-thumbed on a phone.
+Install week got its own features, written mostly on site: a dot over every sign colored by status with a ring for its zone, box select for assigning zones in bulk, and a touch joystick so it all works one-thumbed on a phone.
 
 :::gallery
   ::item{asset="143f03e8-a18d-413d-b2bf-ed882b82dc48" caption="One sign selected: zone, position, product, the Figma frame it pulls art from, install status, and design approval."}
