@@ -3,14 +3,20 @@
  *
  *   npm --prefix site run import -- <slug> [--cover <file>] [--force]
  *
- * Reads drafts/<slug>/media/, gives each image a UUID, adds it to assets/manifest.json,
+ * Reads the page's media folder, gives each image a UUID, adds it to assets/manifest.json,
  * builds the web derivatives into site/public/media, and writes drafts/<slug>/media.md, a
  * table of file name to asset id that travels with git. If content/projects/<slug>.md exists
  * and has no cover, the cover's id is written into its front matter.
  *
- * Sources are not copied anywhere. New work commits derivatives only (ROADMAP.md), so the
- * import runs on the machine that has the photos and the derivatives are what get pushed.
- * Re-running is safe: files are matched by content hash, so nothing is imported twice.
+ * Where the photos come from, in order: --media <dir>; drafts/<slug>/media if it holds any
+ * image; else <root>/<slug>/media where <root> is the path in drafts/.media-root, a
+ * per-machine, git-ignored pointer at the synced folder (Google Drive). Files whose name
+ * starts with "_" are left alone, which is how a source is kept next to an edited copy.
+ *
+ * Sources are not copied anywhere. New work commits derivatives only (ROADMAP.md).
+ * Re-running is safe: files are matched by content hash, so nothing is imported twice. A
+ * media.md already next to the photos, or in drafts/<slug>, seeds ids by file name, so an
+ * import on a second machine gives the same photo the same id.
  *
  * The cover is --cover <file>, else a file named cover.*, else the first image by name.
  */
@@ -28,18 +34,49 @@ const MANIFEST = path.join(ROOT, 'assets/manifest.json')
 const IMAGE_EXT = new Set(['jpg', 'jpeg', 'png', 'webp', 'gif', 'tif', 'tiff', 'avif'])
 
 const args = process.argv.slice(2)
-const slug = args.find((a) => !a.startsWith('--') && args[args.indexOf(a) - 1] !== '--cover')
-const coverArg = args.includes('--cover') ? args[args.indexOf('--cover') + 1] : null
+const VALUE_FLAGS = new Set(['--cover', '--media'])
+const slug = args.find((a, i) => !a.startsWith('--') && !VALUE_FLAGS.has(args[i - 1]))
+const flag = (name) => (args.includes(name) ? args[args.indexOf(name) + 1] : null)
+const coverArg = flag('--cover')
+const mediaArg = flag('--media')
 if (!slug) {
-  console.error('usage: npm --prefix site run import -- <slug> [--cover <file>] [--force]')
+  console.error('usage: npm --prefix site run import -- <slug> [--cover <file>] [--media <dir>] [--force]')
   process.exit(2)
 }
 
-const dir = path.join(ROOT, 'drafts', slug, 'media')
+const isImageName = (f) => IMAGE_EXT.has(path.extname(f).slice(1).toLowerCase())
+
+function resolveMediaDir() {
+  if (mediaArg) return path.resolve(mediaArg)
+  const local = path.join(ROOT, 'drafts', slug, 'media')
+  if (fs.existsSync(local) && fs.readdirSync(local).some(isImageName)) return local
+  const pointer = path.join(ROOT, 'drafts', '.media-root')
+  if (fs.existsSync(pointer)) {
+    const synced = path.join(fs.readFileSync(pointer, 'utf8').trim(), slug, 'media')
+    if (fs.existsSync(synced)) return synced
+  }
+  return local
+}
+
+const dir = resolveMediaDir()
 if (!fs.existsSync(dir)) {
-  console.error(`no folder at drafts/${slug}/media`)
+  console.error(`no media folder for ${slug} (looked in drafts/${slug}/media and the .media-root folder)`)
   process.exit(1)
 }
+
+/** Ids already given to these file names, by an earlier import here or on another machine. */
+function seedIds() {
+  const seeds = new Map()
+  for (const p of [path.join(dir, '..', 'media.md'), path.join(ROOT, 'drafts', slug, 'media.md')]) {
+    if (!fs.existsSync(p)) continue
+    for (const line of fs.readFileSync(p, 'utf8').split(/\r?\n/)) {
+      const m = /^\|\s*(.+?)\s*\|\s*([0-9a-f-]{36})\s*\|/.exec(line)
+      if (m && !seeds.has(m[1])) seeds.set(m[1], m[2])
+    }
+  }
+  return seeds
+}
+const seeds = seedIds()
 
 const manifestText = fs.readFileSync(MANIFEST, 'utf8')
 const manifest = JSON.parse(manifestText)
@@ -47,18 +84,15 @@ const indent = (/^\{\r?\n( +)"/.exec(manifestText) || [, '  '])[1]
 const bySha = new Map(
   manifest.assets.filter((a) => a.download?.sha256).map((a) => [a.download.sha256, a]),
 )
+const knownIds = new Set(manifest.assets.map((a) => a.uuid))
 
 const files = fs.readdirSync(dir)
-  .filter((f) => !f.startsWith('.'))
+  .filter((f) => !f.startsWith('.') && !f.startsWith('_') && fs.statSync(path.join(dir, f)).isFile())
   .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
-const images = []
-const skipped = []
-for (const f of files) {
-  const ext = path.extname(f).slice(1).toLowerCase()
-  ;(IMAGE_EXT.has(ext) ? images : skipped).push(f)
-}
+const images = files.filter(isImageName)
+const skipped = files.filter((f) => !isImageName(f))
 if (!images.length) {
-  console.error(`no images in drafts/${slug}/media (${skipped.length} other files)`)
+  console.error(`no images in ${dir} (${skipped.length} other files)`)
   process.exit(1)
 }
 
@@ -84,8 +118,9 @@ for (const f of images) {
     const meta = await sharp(src, { animated: true }).metadata()
     const w = meta.width ?? 0
     const h = meta.pageHeight ?? meta.height ?? 0
+    const seeded = seeds.get(f)
     a = {
-      uuid: crypto.randomUUID(),
+      uuid: seeded && !knownIds.has(seeded) ? seeded : crypto.randomUUID(),
       ext,
       source: `drafts/${slug}/media/${f}`,
       is_original: true,
@@ -107,6 +142,7 @@ for (const f of images) {
     }
     manifest.assets.push(a)
     bySha.set(sha256, a)
+    knownIds.add(a.uuid)
     added++
   }
   if (!a.used_by.includes(slug)) a.used_by.push(slug)
@@ -159,7 +195,7 @@ if (fs.existsSync(page)) {
   }
 }
 
-console.log(`imported ${rows.length} image(s), ${added} new, from drafts/${slug}/media`)
+console.log(`imported ${rows.length} image(s), ${added} new, from ${dir}`)
 console.log(`derivatives: still=${stats.still} animated=${stats.animated} covers=${stats.covers}`)
 if (stats.copiedAnimated.length) console.log(`copied through unconverted: ${stats.copiedAnimated.join(', ')}`)
 if (skipped.length) console.log(`skipped: ${skipped.join(', ')}`)

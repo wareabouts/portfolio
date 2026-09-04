@@ -5,27 +5,37 @@ cover: f27da898-9390-49d1-9d12-a6a988c2c768
 year: 2026
 categories: [web-dev, 3d-design]
 shape: project
-unlisted: true
 ---
 
-A browser-based 3D planner for event signage. You fly around a model of the real venue, place every sign, pull the actual artwork from Figma onto the 3D models, and the tool turns the plan into a priced order sheet and then a live install checklist for volunteers walking the venue with their phones. I built it for Open Sauce 2026, solo, pair-programming heavily with Claude Code.
+A browser tool for planning event signage in 3D. I built it for Open Sauce 2026, where a few hundred signs had to be planned, ordered, and installed across two venues at once. You fly around a model of the real venue, place each sign, pull its artwork from Figma onto the model, and the same plan becomes the purchase order and then the checklist volunteers used on their phones during install.
+
+::figure{asset="bd6ebdd1-cfbf-4a95-909f-a2a536870abe" caption="The San Mateo County Event Center in fly mode. Every building, tree, fence run and chair comes from the same Figma page the ops team draws in, one pixel to one foot. The rail at the bottom switches between event days, which all sit on one shared base layout."}
 
 ## concept
 
-Open Sauce 2026 needed a few hundred signs planned, ordered, and installed across two venues running at the same time, the San Mateo County Event Center and a hotel. Before this, that meant spreadsheets, a Figma file, and pointing at things. I wanted one tool that carried a sign from "should go about here" through design review, the b2Sign purchase order, and a volunteer confirming it was physically up. Editors got the full 3D planner. Volunteers got a read-only viewer whose one control is the install status dropdown.
+Before this, sign planning was a spreadsheet, a Figma file, and a lot of pointing at things. I wanted one place where a sign could go from "somewhere around here" to reviewed, ordered, and confirmed on the ground, without anyone re-entering it along the way. Editors got the full planner. Volunteers got a read-only viewer with one control, the install status of whatever sign they were standing in front of.
+
+I built it solo over about a month, pair programming with Claude Code, and the team started using it for real while it was maybe 60% done.
 
 ## process
 
-React Three Fiber and Firebase, with Figma as both the CAD source and the art source. The venue page in Figma maps one pixel to one foot, so barricade lines, fence runs, tents, and about 3,000 chairs come in from the same file the ops team already draws in, rendered as instanced meshes. A small Figma plugin generates art frames on request from the placed signs. A day-layout timeline sits over a persistent base layer, so the base signage exists once and each event day stores only its own additions. Two editors see each other's moves in about a second, with presence avatars, a shared laser pointer, persistent markup, and per-sign comment threads.
+It runs on React Three Fiber and Firebase. Figma does double duty as the CAD file and the art source. The venue page there maps one pixel to one foot, so the barricades, fence runs, tents, and roughly 3,000 chairs all come from the file the ops team had already drawn, rendered as instanced meshes. A small Figma plugin makes an art frame for each placed sign, and the viewer pulls the finished artwork back down onto it.
 
-The order math took the most design. Hardware is reused across days, so you buy the peak day. Prints are per-design peaks, summed. Owned inventory is subtracted once (subtracting it per venue double-counted it, which was a bug). Frame and print bundles split when buying the parts separately is cheaper. All of it is pure functions with a 28-test harness that runs before every deploy.
+The order math was the hard part. Hardware gets reused across days, so you buy for the busiest day. Prints are counted per design. Signs we already owned get subtracted once (subtracting them once per venue double counted them, which I found the hard way). Bundles get split when the parts are cheaper on their own. It is all pure functions, with 28 tests that run before every deploy.
 
-The team started using it for real data when it was maybe 60% built, and every schema decision after that was live surgery. Renames became name-only writes so they could not clobber a teammate's concurrent edit. Deletes got a verified-save-then-delete order, so a sign could be duplicated but never lost. The art export for the print order went PDF, then JPEG, then back to PDF, after Figma's 32,768-pixel export ceiling turned out to mean a 159-foot window cling cannot leave Figma's API at 150 DPI. The final code is the simplest of the three tries.
+::figure{asset="f27da898-9390-49d1-9d12-a6a988c2c768" caption="The install layer turned on. Every sign gets a dot: the fill is its install status, the ring is its zone. On the right, the order sheet the real b2Sign order was placed from."}
 
-Install week was built mostly on site while it was happening: status dots above every sign, colored by install state with a zone-colored ring, an always-visible install percentage, box select for bulk zone assignment, and a touch joystick so the viewer works one-thumbed on a phone.
+Because the team was in it every day, every change to the data model happened around live data. Renames only write the name field, so they cannot overwrite a teammate's edit. Deletes save first and remove second, so a sign can end up duplicated but never lost. The print export went from PDF to JPEG and back to PDF after I hit Figma's 32,768 pixel export limit, which meant a 159 foot window cling could not come out of the API at print resolution at all.
+
+Install week got its own features, mostly written on site: a dot above every sign coloured by status with a ring for its zone, a running install percentage, box select for assigning zones in bulk, and a touch joystick so the viewer works one-handed on a phone.
+
+:::gallery
+  ::item{asset="143f03e8-a18d-413d-b2bf-ed882b82dc48" caption="One sign selected: zone, position, product, the Figma frame it pulls art from, install status, and design approval."}
+  ::item{asset="eb53e701-0dee-4519-8c3e-1e77f09ecaae" caption="The volunteer view on a phone. A joystick, a sprint button, and one control: the install status of the sign in front of you."}
+:::
 
 ## results
 
-It was load-bearing. The team placed and reviewed every sign in it, the actual b2Sign order was placed off its order sheet, and volunteers checked signs off in it while standing in the venue. One Figma file drives the venue geometry, the sign artwork, and the purchase order, and nothing gets re-entered anywhere. The thirty-second demo is the install-dot view over the whole site, green filling in zone by zone.
+The team placed and reviewed every sign in it, the real b2Sign order came straight off its order sheet, and volunteers checked signs off in it while walking the venue. One Figma file ended up driving the venue model, the artwork, and the purchase order.
 
-Next time I would start with per-sign Firestore documents from day one instead of migrating to them, and build the volunteer work list before install week instead of sketching it after. The [code is on GitHub](https://github.com/wareabouts/os26-viewer).
+If I did it again I would start with one Firestore document per sign instead of migrating to that mid-project, and I would build the volunteer checklist before install week rather than sketching it during. The [code is on GitHub](https://github.com/wareabouts/os26-viewer).

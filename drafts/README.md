@@ -24,6 +24,19 @@ you look at it rendered and say what to move, then the unlisted line comes off a
 
 Each has a `notes.md` started and an empty `media/`.
 
+## The synced folder
+
+Photos live in Google Drive, not in the repo:
+
+    G:\My Drive\Projects\1 - Portfolio\Live Site Assets\Live Pages\<slug>\media\
+
+The import finds it through `drafts/.media-root`, a one-line file holding that path. The
+file is per machine and ignored by git, so write it once on each computer (the drive letter
+may differ). `drafts/<slug>/media/` still works and wins when it holds any image.
+
+A file whose name starts with `_` is skipped. That is how an untouched source sits next to
+an edited copy, for example a screenshot with a name blurred out.
+
 ## Working from the laptop
 
 Clone without the archive originals. git-lfs is optional for this; without it the pointers

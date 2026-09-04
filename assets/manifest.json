@@ -13746,6 +13746,7 @@
         "file": null,
         "bytes": 539683,
         "sha256": "00538371dd3ab48e053d833e9a440004e06865b175fc0e425f78d2457cac8788",
+
         "width": 960,
         "height": 2142,
         "frames": 1
@@ -13792,6 +13793,7 @@
         "file": null,
         "bytes": 577348,
         "sha256": "fe763fa8f74a57166f17d9010819c09192558b166ba5e542c9cb0989271e1db8",
+
         "width": 3016,
         "height": 1634,
         "frames": 1

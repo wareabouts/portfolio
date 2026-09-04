@@ -10,6 +10,8 @@ import {
   taxonomy,
 } from './content'
 import { useDocumentMeta } from './meta'
+import { navIcon } from './icons'
+import Icon from './components/Icon'
 
 const SITE = 'Alex Fiel - Creative Technologist'
 
@@ -27,8 +29,9 @@ export function Category() {
   if (!taxonomy.categories[slug]) return <Navigate to="/404" replace />
   return (
     <>
-      <h1 className="project-title" style={{ fontSize: 34, marginBottom: 24 }}>
-        {label ?? slug}
+      <h1 className="page-title">
+        <Icon icon={navIcon(slug)} />
+        <span>{label ?? slug}</span>
       </h1>
       {items.length ? <CoverGrid items={items} /> : <p>Nothing here yet.</p>}
     </>
@@ -42,9 +45,7 @@ export function Page() {
   if (!doc) return <Navigate to="/404" replace />
   return (
     <>
-      <h1 className="project-title" style={{ fontSize: 34, marginBottom: 28 }}>
-        {doc.title}
-      </h1>
+      <h1 className="page-title">{doc.title}</h1>
       <Blocks blocks={doc.blocks} />
     </>
   )
@@ -63,7 +64,8 @@ export function Project() {
         {doc.year && <span>{doc.year}</span>}
         {doc.categories?.map((c) => (
           <Link key={c} to={`/${c}`}>
-            {categoryLabel(c) ?? c}
+            <Icon icon={navIcon(c)} />
+            <span>{categoryLabel(c) ?? c}</span>
           </Link>
         ))}
       </div>
@@ -75,12 +77,10 @@ export function Project() {
 export function NotFound() {
   useDocumentMeta(`${SITE} - Not found`)
   return (
-    <div style={{ textAlign: 'center', padding: '60px 0' }}>
-      <h1 className="project-title" style={{ fontSize: 34 }}>
-        Page not found
-      </h1>
-      <p style={{ color: 'var(--muted)' }}>
-        That page doesn't exist. <Link to="/" style={{ color: 'var(--accent)' }}>Back to all the things →</Link>
+    <div className="notfound">
+      <h1 className="page-title">Page not found</h1>
+      <p>
+        That page doesn't exist. <Link to="/">Back to all the things</Link>
       </p>
     </div>
   )

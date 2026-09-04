@@ -2,42 +2,44 @@
   "nav": [
     {
       "slug": "about",
-      "label": "\ud83d\udc4b about me"
+      "label": "about me"
     },
     {
       "slug": "all-the-things",
-      "label": "~ all the things ~"
+      "label": "all the things"
     },
     {
       "slug": "virtual-reality",
-      "label": "\ud83e\udd7d virtual reality"
+      "label": "virtual reality"
     },
     {
       "slug": "3d-design",
-      "label": "\ud83c\udf10 3d design"
+      "label": "3d design"
     },
     {
       "slug": "microcontrollers",
-      "label": "\ud83d\udd0c microcontrollers"
+      "label": "microcontrollers"
     },
     {
       "slug": "installation",
-      "label": "\ud83d\uddbc\ufe0f installation"
+      "label": "installation"
     },
     {
       "slug": "web-dev",
-      "label": "\ud83d\udcbb web development"
+      "label": "web development"
     },
     {
       "slug": "photography",
-      "label": "\ud83d\udcf8 photography"
+      "label": "photography"
     },
     {
       "slug": "graphic-design",
-      "label": "\ud83d\udd20 graphic design"
+      "label": "graphic design"
     }
   ],
   "project_order": [
+    "os26-viewer",
+    "led-panel-studio",
     "openai-case",
     "bww-goggles",
     "stanchions",
@@ -82,77 +84,6 @@
     "css-zen-garden",
     "photogrammetry-tests"
   ],
-  "categories": {
-    "virtual-reality": [
-      "severance-vr",
-      "vr-training",
-      "atlas-virtual-graduation",
-      "lor-axe-vr",
-      "proears"
-    ],
-    "3d-design": [
-      "atlas-virtual-graduation",
-      "bww-goggles",
-      "stanchions",
-      "snowglobes",
-      "insta360-mouth-mount",
-      "open-sauce-for-ants",
-      "wiggle2",
-      "wiggle",
-      "maxwell",
-      "christmas-ornament-2019",
-      "glowforge-3d-demo",
-      "replica-nunchucks",
-      "mavic-pro-leg",
-      "photogrammetry-tests",
-      "msla-printed-wax-stamps",
-      "camera-viewfinder",
-      "openai-case",
-      "borzoi-vacuum",
-      "office-sign"
-    ],
-    "microcontrollers": [
-      "open-sauce-for-ants",
-      "real-minecraft-phantom",
-      "chartreuse",
-      "measuring-time",
-      "delta-rgb-game"
-    ],
-    "installation": [
-      "stanchions",
-      "open-sauce-for-ants",
-      "real-minecraft-phantom",
-      "chartreuse",
-      "measuring-time",
-      "solar-magnetism-exhibit",
-      "apollo-print",
-      "rgb-dog-photo",
-      "dominos-pizza-elevator",
-      "fiske-planetarium-gravity-demonstration",
-      "office-sign"
-    ],
-    "web-dev": [
-      "atlas-virtual-graduation",
-      "glowforge-3d-demo",
-      "fishcityco",
-      "fishcity-devlog",
-      "sand-clock",
-      "page-crunch",
-      "css-zen-garden"
-    ],
-    "photography": [
-      "insta360-mouth-mount",
-      "music-video-wout-music-lematires-closer"
-    ],
-    "graphic-design": [
-      "fishcityco",
-      "ellumen-logo-update",
-      "itll-logo",
-      "expressive-booklet",
-      "ui-ux-for-openly",
-      "fcview"
-    ]
-  },
   "redirects": {
     "/instalation": "/installation"
   }

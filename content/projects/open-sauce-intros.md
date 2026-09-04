@@ -11,7 +11,7 @@ Animated intros for three Sauce+ shows, made in Blender on absurd timelines. Eac
 
 ## concept
 
-The brief was high-quality animation, by myself, in days rather than weeks. So every intro leans on a look that reads instantly, a tabletop diorama, a claymation set, a paper collage, and puts the time into the few things that sell that look.
+The job was to give each show its own intro, by myself, on deadlines measured in days. So each one borrows a craft that reads instantly, a tabletop diorama, a claymation set, a collage of cut-up public domain art, and spends the time on the few details that sell it.
 
 ## process
 
