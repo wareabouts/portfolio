@@ -13719,8 +13719,8 @@
       "download": {
         "status": "derivatives-only",
         "file": null,
-        "bytes": 644256,
-        "sha256": "75ea65816047c6b49e057f57bd6c7478cbe9117b5e6ff31f90141170bfabdb19",
+        "bytes": 614215,
+        "sha256": "1807df67a6963e52ed883d86463cee96cc6050db6ccd7af1296d4085b6e1c93b",
         "width": 3014,
         "height": 1634,
         "frames": 1

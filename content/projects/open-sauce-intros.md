@@ -7,11 +7,11 @@ categories: [animations]
 shape: project
 ---
 
-Animated intros for three Sauce+ shows, made in Blender on absurd timelines. Each one had to look like a different physical craft, and each one was me alone: modeling, texturing, animating, and picking the music and cutting it to fit.
+Animated intros for three Sauce+ shows, made in Blender on absurd timelines. Each one was me alone: modeling, texturing, animating, and picking the music and cutting it to fit.
 
 ## concept
 
-The job was to give each show its own intro, by myself, on deadlines measured in days. So each one borrows a craft that reads instantly, a tabletop diorama, a claymation set, a collage of cut-up public domain art, and spends the time on the few details that sell it.
+Open Sauce and Sauce+ are built around makers, so the intros are too. The core style across all three is visible materials: a tabletop diorama, a claymation set, cut-up pieces of public domain art. Each one had to look like something built by hand, even though all three were made in Blender.
 
 ## process
 
@@ -19,7 +19,7 @@ The job was to give each show its own intro, by myself, on deadlines measured in
 
 ::embed{provider="youtube" id="MqoXiwML1Rw"}
 
-Made in a few days, and built to look like a tabletop diorama. The part I keep coming back to is the string lights in the background of the camping scene.
+Made in a few days, and built to look like a tabletop diorama. In particular, I enjoyed tweaking the lighting of the string lights in the campfire scene to get the glow I wanted, even as the scene rotates quickly past the camera.
 
 ### The Road Trip Show
 
@@ -32,7 +32,3 @@ Made in 24 hours as a claymation scene, pulling from events and moments in the s
 ::embed{provider="youtube" id="Oqu63lVUPW8"}
 
 Cut-up pieces of public domain art, animated digitally. Finding art that would style together was its own search, and so were music that fit and planning the beats of the story. This one started as sketches before any animation, and its pacing and art style are what I am proudest of across the three.
-
-## results
-
-With all of these I would have loved more time. But I am proud of what came out of the time there was.

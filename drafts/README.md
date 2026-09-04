@@ -37,6 +37,13 @@ may differ). `drafts/<slug>/media/` still works and wins when it holds any image
 A file whose name starts with `_` is skipped. That is how an untouched source sits next to
 an edited copy, for example a screenshot with a name blurred out.
 
+## Pull before you import
+
+If the same folder was already imported on another machine and pushed, pull first. The second
+import then reuses those ids and does nothing twice. Importing first and merging later can
+leave git holding two versions of the same derivative with no way to choose, which is how a
+screenshot briefly went live unblurred on 2026-09-03.
+
 ## Working from the laptop
 
 Clone without the archive originals. git-lfs is optional for this; without it the pointers
