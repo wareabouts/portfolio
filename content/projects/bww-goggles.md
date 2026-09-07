@@ -11,36 +11,17 @@ BWW ran a national March Madness campaign around a novelty pair of goggles, and 
 
 The mount had to hold a mix of salvaged mirrors securely while still letting them adjust, so I designed and tested it with a little play on purpose. Off-the-shelf mirrors turned out too heavy, so I also designed a lightweight printable clamshell mirror with the BWW logo molded in. BWW wanted a few dozen pairs to sell, which meant every part had to be quick to print, assemble and finish.
 
-::::columns
-
-:::column
-
-::figure{asset="59b27475-ede9-403c-b9ae-a5a37b272129"}
-
+:::gallery
+  ::item{asset="59b27475-ede9-403c-b9ae-a5a37b272129"}
+  ::item{asset="2e939af0-74f5-43bf-827f-0f792e59e171"}
 :::
-
-:::column
-
-::figure{asset="2e939af0-74f5-43bf-827f-0f792e59e171"}
-
-:::
-
-::::
 
 :::gallery
   ::item{asset="4f0d6a69-0387-4be6-9ac3-10401ff00200"}
   ::item{asset="09215de2-d765-4dc1-9dd1-de398d736535"}
 :::
 
-::::columns
-
-:::column
-
 ::video{src="bww-goggles.mp4" source="adobe-ccv:438gLSxIkv2"}
-
-:::
-
-:::column
 
 :::gallery
   ::item{asset="9836fe8c-3d36-465c-91cf-b40417ec9542"}
@@ -50,7 +31,3 @@ The mount had to hold a mix of salvaged mirrors securely while still letting the
   ::item{asset="0d7db275-937b-4bf2-bcd3-329882802aa1"}
   ::item{asset="7eee942d-7fe8-47a6-9740-c29f05ccd3be"}
 :::
-
-:::
-
-::::

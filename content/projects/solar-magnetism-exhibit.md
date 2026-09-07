@@ -19,10 +19,6 @@ The basis for the summer project was a prototype called the "Solar Arcade". At t
 
 The summer consisted of a couple weeks of prototyping, testing LED grids with different diffusion layers before settling on 1" thick HDPE to protect and support patrons walking on it. After that, we began planning and constructing five 2ft x 6ft panels that could be connected together to form a large LED screen. The panels use laser-cut MDF to evenly space addressable LED strips. A processing sketch written by another teammate is run on a Raspberry pi and displayed on the panels. Multiple Adafruit Fadecandy's instruct the LED strips how to function.
 
-::::columns
-
-:::column
-
 :::gallery
   ::item{asset="6d7d2504-3c28-4c4e-a556-16b05443018a" caption="Pete's cat helping us test LED diffusion."}
   ::item{asset="baf66e1a-30ed-4c8f-a62e-6bddf7aad7dc" caption="Wiring the LED strips."}
@@ -33,15 +29,7 @@ The summer consisted of a couple weeks of prototyping, testing LED grids with di
   ::item{asset="f26eb812-8818-48b0-befb-215654c40c81" caption="Completed panels before installing under the loops."}
 :::
 
-:::
-
-:::column
-
 ::video{src="solar-magnetism-exhibit.mp4" source="adobe-ccv:CiyFi5F63UE"}
-
-:::
-
-::::
 
 After getting to that point, one of my main tasks for the later build was creating a way for the loops to securely attach to the panels, but still be removable. After going through many iterations, I decided on a bolted piece of CNC'd HDPE. (Process left to right)
 

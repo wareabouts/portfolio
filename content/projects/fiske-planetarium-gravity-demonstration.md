@@ -7,21 +7,10 @@ cover: cac1df65-3a73-4d91-bc71-5442fcea25c9
 source: adobe-portfolio
 ---
 
-::::columns
-
-:::column
-
-::figure{asset="36299b85-be4e-4a56-9f09-c8886ffb8509"}
-
+:::gallery
+  ::item{asset="36299b85-be4e-4a56-9f09-c8886ffb8509"}
+  ::item{asset="08485b76-934c-4d00-bf86-56a1e35888e3"}
 :::
-
-:::column
-
-::figure{asset="08485b76-934c-4d00-bf86-56a1e35888e3"}
-
-:::
-
-::::
 
 ## concept
 

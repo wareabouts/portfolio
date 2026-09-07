@@ -15,9 +15,6 @@ One of my first tests with photogrammetry (Autodesk Re-cap, 2017). I had just pu
   ::item{asset="ec673068-2149-4749-b0cc-9b495944b7a9"}
   ::item{asset="062d6827-ee3e-4700-b4c8-40a7740ca9a0"}
   ::item{asset="d538a9f6-1e90-4bcf-8d61-0469044752c3"}
-:::
-
-:::gallery
   ::item{asset="ce7bc7eb-1d76-43d0-aa5c-63aa0ccf19d5"}
   ::item{asset="8f437690-1853-4722-9732-0a6ee622242c"}
   ::item{asset="0e835d1f-1a89-44d8-a544-9d4290f8fab6"}

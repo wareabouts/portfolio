@@ -1,10 +1,10 @@
 /* One type scale, one spacing scale, one set of controls.
 
-   Type: Source Sans 3 Variable (self-hosted, OFL). Sizes step 13 / 14 / 15 / 17 / 19 / 24 /
+   Type: Gabarito Variable (self-hosted, OFL), 400 for text, 700 to 800 for display. Sizes step 13 / 14 / 15 / 17 / 19 / 24 /
    32 / 40. Body is 17px on a 1.6 line, text measures at most 660px (about 75 characters);
    images run the full 806px column.
 
-   Spacing: 4px base. Blocks sit 24px apart; a section heading gets 48px above and 14px
+   Spacing: 4px base. Blocks sit 24px apart; a section heading gets 48px above and 8px
    below, so a heading belongs to what follows it rather than floating between.
 
    Colour: ink for reading, muted for secondary, the accent for anything interactive
@@ -59,7 +59,11 @@
   --radius: 6px;
   --radius-lg: 8px;
 
-  --font: 'Source Sans 3 Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Gabarito everywhere, one family. To pair it with a text face instead, point --font-body
+     at 'Source Sans 3 Variable', which is still bundled. */
+  --font-display: 'Gabarito Variable', 'Source Sans 3 Variable', system-ui, sans-serif;
+  --font-body: 'Gabarito Variable', 'Source Sans 3 Variable', system-ui, sans-serif;
+  --font: var(--font-body);
 }
 
 *,
@@ -180,6 +184,7 @@ button {
 }
 
 .nav a {
+  font-family: var(--font-display);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -312,6 +317,7 @@ button {
 }
 
 .cover-title {
+  font-family: var(--font-display);
   font-size: 15px;
   font-weight: 600;
   line-height: 1.3;
@@ -336,6 +342,7 @@ button {
 
 .project-title,
 .page-title {
+  font-family: var(--font-display);
   font-size: 40px;
   font-weight: 800;
   line-height: 1.1;
@@ -359,6 +366,7 @@ button {
 }
 
 .project-meta {
+  font-family: var(--font-display);
   display: flex;
   gap: 16px;
   align-items: center;
@@ -395,10 +403,11 @@ button {
 }
 
 .blocks > .block-heading + * {
-  margin-top: 14px;
+  margin-top: 8px;
 }
 
 .block-heading {
+  font-family: var(--font-display);
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
@@ -445,6 +454,7 @@ button {
 }
 
 .prose h3 {
+  font-family: var(--font-display);
   font-size: 19px;
   font-weight: 700;
   line-height: 1.3;
@@ -467,18 +477,25 @@ figcaption {
   max-width: var(--text-w);
 }
 
-/* Justified rows: each item's flex-grow is its aspect ratio, so a row fills the
-   width while every image keeps its proportions. */
+/* Justified rows. Each item declares its aspect ratio as --ar; its flex-basis is the width
+   it would have at the target row height, and flex-grow is proportional to --ar, so every
+   item in a row ends up the same height and the row fills the column. A sparse last row
+   is held to --row-max tall instead of stretching to fill. */
 .gallery {
+  --row-h: 200px;
+  --row-max: 340px;
   display: flex;
   flex-wrap: wrap;
   gap: var(--gutter);
 }
 
 .gallery-item {
+  --ar: 1;
   position: relative;
   margin: 0;
-  min-width: 140px;
+  flex: calc(var(--ar) * 100) 1 calc(var(--ar) * var(--row-h));
+  max-width: calc(var(--ar) * var(--row-max));
+  aspect-ratio: var(--ar);
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--surface);
@@ -529,6 +546,18 @@ figcaption {
   width: 100%;
 }
 
+/* An image narrower than the column sits centred at its own size. A portrait image is capped
+   at 720px tall and letterboxed inside its box, so it never runs taller than the screen. The
+   width and height attributes are left in charge of the box, so an unloaded image still
+   reserves the right space and nothing jumps as it arrives. */
+.figure-btn img {
+  max-width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 .figure-btn img,
 .embed-static video {
   border-radius: var(--radius-lg);
@@ -551,10 +580,13 @@ figcaption {
   border: 0;
 }
 
+/* Same rule as figures: a portrait video is capped in height and centred. */
 .embed-static video {
   position: static;
   width: 100%;
   height: auto;
+  max-height: 720px;
+  object-fit: contain;
 }
 
 .columns {
@@ -576,6 +608,7 @@ figcaption {
 /* ---------------------------------------------------------------- controls */
 
 .btn {
+  font-family: var(--font-display);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -679,6 +712,7 @@ figcaption {
 /* ------------------------------------------------------------------ footer */
 
 .to-top {
+  font-family: var(--font-display);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -906,6 +940,11 @@ figcaption {
 
   .gallery-caption {
     opacity: 1;
+  }
+
+  .gallery {
+    --row-h: 130px;
+    --row-max: 260px;
   }
 }
 

@@ -7,21 +7,9 @@ cover: 299e9694-c668-4bbc-99de-d3fe2e2a013b
 source: adobe-portfolio
 ---
 
-::::columns
-
-:::column
-
 ::figure{asset="21a6146e-10a6-4d7e-a9db-83621c844e8e"}
 
-:::
-
-:::column
-
 ::embed{provider="youtube" id="_z9vZXdHU6k"}
-
-:::
-
-::::
 
 ::::columns
 

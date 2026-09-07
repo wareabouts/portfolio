@@ -59,18 +59,7 @@ At the end of the day, it worked well enough for the video and Domino's was happ
 
 ::::
 
-::::columns
-
-:::column
-
-::figure{asset="04c71c6f-b7e4-42b6-b824-8e23fb935394" caption="Initial design sketches"}
-
+:::gallery
+  ::item{asset="04c71c6f-b7e4-42b6-b824-8e23fb935394" caption="Initial design sketches"}
+  ::item{asset="e7046a11-bc76-4646-9e2d-8634eb553e85"}
 :::
-
-:::column
-
-::figure{asset="e7046a11-bc76-4646-9e2d-8634eb553e85"}
-
-:::
-
-::::

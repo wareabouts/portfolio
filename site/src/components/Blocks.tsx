@@ -76,11 +76,11 @@ function BlockView({ block, onZoom }: { block: Block; onZoom: (id: string) => vo
             const img = imageSrc(it.asset, '(max-width: 820px) 50vw, 400px')
             const ar = aspect(it.asset)
             return (
-              // flex-grow by aspect ratio → rows fill the width, proportions preserved
+              // The row layout lives in CSS and reads --ar (see .gallery-item in styles.css).
               <figure
                 className={['gallery-item', invertClass(it.invert)].filter(Boolean).join(' ')}
                 key={it.asset}
-                style={{ flexGrow: ar * 100, flexBasis: `${ar * 180}px`, aspectRatio: ar }}
+                style={{ '--ar': ar } as React.CSSProperties}
               >
                 <button onClick={() => onZoom(it.asset)} aria-label="Enlarge image">
                   <img

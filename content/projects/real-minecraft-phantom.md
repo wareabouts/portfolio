@@ -50,18 +50,7 @@ All said, I wasn't ever really expecting it to ACTUALLY get me to go to sleep. I
 
 The comments on the YouTube video were all positive and great to read, and when I [posted a short clip on r/minecraftmemes](https://www.reddit.com/r/MinecraftMemes/comments/18kweor/i_made_a_real_minecraft_phantom_to_get_me_to_go/) it was received just as well!
 
-::::columns
-
-:::column
-
-::figure{asset="a7dd2c6d-6cc5-4e77-b137-f22598e76914"}
-
+:::gallery
+  ::item{asset="a7dd2c6d-6cc5-4e77-b137-f22598e76914"}
+  ::item{asset="6f26671d-286e-43f5-b2f8-bb39da7f3fd1"}
 :::
-
-:::column
-
-::figure{asset="6f26671d-286e-43f5-b2f8-bb39da7f3fd1"}
-
-:::
-
-::::

@@ -9,21 +9,10 @@ source: adobe-portfolio
 
 I designed an updated Wigglegram lens to bring to Open Sauce 2023 in San Francisco!
 
-::::columns
-
-:::column
-
-::figure{asset="516be698-56d8-4103-b7b0-896a199db94d"}
-
+:::gallery
+  ::item{asset="516be698-56d8-4103-b7b0-896a199db94d"}
+  ::item{asset="70f4d2d3-1bf1-4ffc-9caa-906947f47dee"}
 :::
-
-:::column
-
-::figure{asset="70f4d2d3-1bf1-4ffc-9caa-906947f47dee"}
-
-:::
-
-::::
 
 ::::columns
 

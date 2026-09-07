@@ -16,9 +16,6 @@ The case prints completely flat with no support material, then folds around the 
   ::item{asset="18e4a9f9-7fe8-4f4d-9388-e259730fb952"}
   ::item{asset="343fb55e-96e0-4ae7-b2a9-008a88c76ab3"}
   ::item{asset="06cd925e-3d14-45c0-9c4b-af3f420a132d"}
-:::
-
-:::gallery
   ::item{asset="a630976a-f7bf-4e86-9b22-959b74421932"}
   ::item{asset="daf85c1f-da60-4f1c-9b0a-22376e848352"}
 :::

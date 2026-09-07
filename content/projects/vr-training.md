@@ -7,21 +7,9 @@ cover: ff9c8754-adcc-4f7b-9d52-5040d1d67696
 source: adobe-portfolio
 ---
 
-::::columns
-
-:::column
-
 ::figure{asset="e907d3c5-f68a-494e-9ace-94c0379d3240" caption="Screenshot of the final warehouse model in Blender"}
 
-:::
-
-:::column
-
 ::embed{provider="youtube" id="Z2Bae4JgIBE"}
-
-:::
-
-::::
 
 ## concept
 
