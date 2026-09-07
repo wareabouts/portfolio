@@ -9,7 +9,7 @@ source: adobe-portfolio
 
 ## concept
 
-What's a project that we (Hannah Lienhardt and I) could complete in three days, that would be fun to interact with at a two day art show the following weekend?
+What's a project that we (Hannah Lienhard and I) could complete in three days, that would be fun to interact with at a two day art show the following weekend?
 
 ## process
 
