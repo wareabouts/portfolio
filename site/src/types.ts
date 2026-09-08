@@ -6,7 +6,7 @@ export type Block =
   | { type: 'gallery'; items: { asset: string; caption?: string; invert?: string }[] }
   | { type: 'embed'; provider: 'youtube' | 'vimeo'; id: string }
   | { type: 'embed'; provider: 'iframe'; src: string }
-  | { type: 'video'; src: string }
+  | { type: 'video'; src: string; loop?: boolean }
   | { type: 'button'; href: string; label: string }
   | { type: 'form'; fields: string[] }
   | { type: 'columns'; columns: Block[][] }

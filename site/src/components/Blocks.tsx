@@ -127,7 +127,21 @@ function BlockView({ block, onZoom }: { block: Block; onZoom: (id: string) => vo
     case 'video':
       return (
         <div className="embed-static">
-          <video src={videoSrc(block.src)} controls playsInline preload="metadata" />
+          {block.loop ? (
+            // A short clip that plays like a GIF: silent, looping, no controls. The ref sets
+            // muted before play() because the muted attribute does not survive server rendering.
+            <video
+              src={videoSrc(block.src)}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              ref={(el) => { if (el) { el.muted = true; el.play().catch(() => {}) } }}
+            />
+          ) : (
+            <video src={videoSrc(block.src)} controls playsInline preload="metadata" />
+          )}
         </div>
       )
 

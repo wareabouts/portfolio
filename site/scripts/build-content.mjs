@@ -132,7 +132,7 @@ function leaf(name, a) {
         ? { type: 'embed', provider: 'iframe', src: a.src }
         : { type: 'embed', provider: a.provider, id: a.id }
     case 'video':
-      return { type: 'video', src: a.src }
+      return { type: 'video', src: a.src, ...(a.loop === 'true' ? { loop: true } : {}) }
     case 'button':
       return { type: 'button', href: a.href, label: a.label }
     case 'form':

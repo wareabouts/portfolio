@@ -13892,6 +13892,29 @@
         "height": 800,
         "frames": 68
       }
+    },
+    {
+      "uuid": "5e5c3398-bbbb-4248-a9f6-d4533f76c72b",
+      "ext": "jpg",
+      "source": "drafts/led-panel-studio/media/Interface and Panel.jpg",
+      "is_original": true,
+      "best_width": 8160,
+      "intrinsic_width": 8160,
+      "intrinsic_height": 6144,
+      "alt": null,
+      "roles": [],
+      "used_by": [
+        "led-panel-studio"
+      ],
+      "download": {
+        "status": "derivatives-only",
+        "file": null,
+        "bytes": 8241589,
+        "sha256": "4ef8027bebf4d06e82b24ad67f461f53654685ce0d1388259f8380063f592cf9",
+        "width": 8160,
+        "height": 6144,
+        "frames": 1
+      }
     }
   ]
 }
