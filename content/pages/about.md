@@ -26,6 +26,6 @@ Let's talk?
 
 ::::
 
-::button{href="https://docs.google.com/document/d/1dEKqJmVlg8rAPARc8nkAeQ-qaG6b51OlgvyyE8v6o1E/export?format=pdf" label="Check out my resume?"}
+::button{href="https://docs.google.com/document/d/1CWdd_JnosoZ405-wcTNCUwMkV74akiWRO8O0LibFFds/export?format=pdf" label="Check out my resume?"}
 
 ::form{fields="Name *, Email Address *, Message *"}
