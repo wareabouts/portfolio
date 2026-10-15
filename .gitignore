@@ -21,3 +21,6 @@ site/public/video/
 # Copy-desk review: generated from review/rewrites.mjs; decisions/ is the record and IS committed.
 review/dist/
 review/proposals.json
+
+# Source master for hellopeter.mp4 (106 MB, over GitHub's 100 MB limit). Kept locally only.
+assets/video/Peter Instructions Prompt.mp4
