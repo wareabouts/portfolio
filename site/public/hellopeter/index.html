@@ -46,5 +46,12 @@
     video.addEventListener('click', function () { if (video.muted) unmute(); });
     start();
   </script>
+  <script src="/peterbox-notify.js"></script>
+  <script>
+    peterboxNotify('Hello Peter', 'Home QR page opened', 'eyes');
+    video.addEventListener('ended', function () {
+      peterboxNotify('Hello Peter', 'Watched the video to the end', 'white_check_mark');
+    }, { once: true });
+  </script>
 </body>
 </html>
