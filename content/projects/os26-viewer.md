@@ -40,4 +40,4 @@ Install week got its own features, written mostly on site: a dot over every sign
 
 Every sign at the event went through it. The real b2Sign order came straight off the order sheet, and volunteers checked signs off while walking the venue. The rollout was fairly smooth. The problems that did come up were on site, working with volunteers and sorting out mounting issues we hadn't expected.
 
-Next time? One Firestore doc per sign from day one, and the volunteer checklist built BEFORE install week instead of during. The [code is on GitHub](https://github.com/wareabouts/os26-viewer).
+Next time? One Firestore doc per sign from day one, and the volunteer checklist built BEFORE install week instead of during.
